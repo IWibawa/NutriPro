@@ -1,7 +1,7 @@
-# Project Plan
+# Nutrition Database
 
-## Project Name: XXXX
-## Group Number: 001
+## Project Name: Nutrition Database
+## Group Number: 002
 
 ### Team members
 
