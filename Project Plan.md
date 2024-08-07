@@ -7,14 +7,14 @@
 
 | Student No. | Full Name | GitHub Username | Contribution (sum to 100%) | 
 |-------------|-----------|-----------------|----------------------------|
-| s111111     | Full name | xxx             | 33.3% or Equal             |
+| s2817538    | Kate Baker| MadH3r3K8       | 33.3% or Equal             |
 | s222222     | Full name | xxx             | 33.3% or Equal             | 
 | s333333     | Full name | xxx             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
-- s111111, Full name
+- s2817538 - Kate Baker
   - Accomplishments: Describe what you have completed or achieved
 - s222222, Full name
   - Accomplishments: Describe what you have completed or achieved
