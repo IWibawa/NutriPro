@@ -8,16 +8,16 @@
 | Student No. | Full Name             | GitHub Username | Contribution (sum to 100%) | 
 |-------------|-----------------------|-----------------|----------------------------|
 | s2817538    | Kate Baker            | MadH3r3K8       | 33.3% or Equal             |
-| s5374957    | I Wibawa              | xxx             | 33.3% or Equal             | 
+| s5374957    | I Wibawa              | IWibawa         | 33.3% or Equal             | 
 | s333333     | Naveen Arakkal Nelson | xxx             | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
-- s2817538 - Kate Baker
-  - Accomplishments: Describe what you have completed or achieved
-- s222222, I Wibawa
-  - Accomplishments: Describe what you have completed or achieved
+- s2817538, Kate Baker
+  - Accomplishments: Project Plan & Gant Chart
+- s5374957, I Wibawa
+  - Accomplishments: Software Development & Gant Chart 
 - s333333, Naveen Arakkal Nelson
   - Accomplishments: Describe what you have completed or achieved
 
@@ -45,15 +45,64 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Establish objectives or goals that the project aims to achieve.
+Name: Food Search
+Description: Enable users to search for foods by name and display all the nutritional information;
+
+Name: Nutrition Breakdown
+Description: Enable users to select one food, and display pie charts & bar graphs showing the breakdown of different nutrients for the selected food.
+
+Name: Nutrition Range Filter
+Description: Enable users to select one of nutrition and input minimum & maximum values, and the tool will display a list of foods that fall within those ranges.
+
+Name: Nutrition Level Filter
+Description: Enable users to filter foods by nutritional content levels—low, mid, and high—including fat, protein, carbohydrates, sugar, and nutritional density. The three levels are defined as follows:
+Low: Less than 33% of the highest value.
+Mid: Between 33% and 66% of the highest value.
+High: Greater than 66% of the highest value.
+
+Additional feature: you will need to come up with an appropriate feature for analysing and visualising this dataset.
+Name: ?
+Description: ?
 
 ### 1.2 Project Stakeholders
 
-Identify all key stakeholders involved in the project, including internal teams and potential end-users.
+In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
+
+1. **Government Agencies**: These include health departments, agricultural ministries, and education departments that use the data for policy-making and program implementation.
+2. **Non-Governmental Organizations (NGOs)**: NGOs often contribute data, help in data collection, and use the database to plan and monitor their nutrition programs.
+3. **Healthcare Providers**: Hospitals, clinics, and community health workers provide essential data on nutritional status and outcomes.
+4. **Academic and Research Institutions**: These stakeholders analyze the data to conduct research and provide evidence-based recommendations.
+5. **International Organizations**: Entities like the World Health Organization (WHO) and the United Nations Children's Fund (UNICEF) use the data for global nutrition monitoring and support.
+6. **Private Sector**: Companies involved in food production and distribution may use the data to improve product offerings and ensure they meet nutritional standards.
+7. **Community Groups**: Local organizations and community leaders help in data collection and dissemination of information to the public.
+8. **Donors and Funding Agencies**: These stakeholders use the data to assess the impact of their investments and guide future funding decisions.
+These stakeholders collaborate to ensure the database is comprehensive, accurate, and useful for improving nutrition outcomes¹²³.
+Is there a specific aspect of stakeholder involvement you're interested in?
 
 ### 1.3 Project Scope
 
-Define and manage what is included or excluded in the project and product.
+A Nutrition Database is a comprehensive collection of data on the nutritional content of various foods. It typically includes information on macronutrients (like carbohydrates, proteins, and fats), micronutrients (such as vitamins and minerals), and other components like fiber and water content¹⁴.
+
+### Defining What is Included:
+1. **Food Items**: A wide range of foods, including raw ingredients, processed foods, and restaurant meals.
+2. **Nutrient Information**: Detailed data on macronutrients, micronutrients, and other dietary components.
+3. **Serving Sizes**: Standardized serving sizes to ensure consistency.
+4. **Food Categories**: Classification of foods into categories like fruits, vegetables, grains, etc.
+5. **Source Information**: Details about the source of the data, such as laboratory analysis or manufacturer-provided information.
+
+### Managing What is Included:
+1. **Data Collection**: Gathering data from reliable sources, including scientific research, food manufacturers, and government databases.
+2. **Data Verification**: Ensuring the accuracy and reliability of the data through rigorous validation processes.
+3. **Regular Updates**: Continuously updating the database to reflect new research, changes in food formulations, and new food products.
+4. **User Feedback**: Incorporating feedback from users to improve the database's accuracy and usability.
+
+### Excluding Data:
+1. **Inaccurate Data**: Excluding data that cannot be verified or is found to be inaccurate.
+2. **Outdated Information**: Removing outdated information that no longer reflects current food compositions.
+3. **Non-Nutritional Data**: Excluding data that is not relevant to nutritional content, such as marketing claims or non-nutritional additives.
+
+### Example of a Nutrition Database:
+The USDA's Food and Nutrient Database for Dietary Studies (FNDDS) is a well-known example. It converts food and beverages consumed into gram amounts and determines their nutrient values³.
 
 ## 2. Work Breakdown Structure
 
