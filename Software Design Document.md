@@ -8,9 +8,9 @@
 
 | Student Number | Name      |
 |----------------|-----------|
-| s2817538        | Kate Baker |
+| s2817538       | Kate Baker |
 | s5374957       | I Wibawa |
-| s333333        | Naveen Arakkal Nelson |
+| s5414931       | Naveen Arakkal Nelson |
 ## Table of Contents
 
 1. [System Vision](#1-system-vision)  
