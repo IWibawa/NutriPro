@@ -8,3 +8,5 @@
 - I uploaded the software design document
 - I added a new folder for all the diagram
 -
+## Naveen
+-I have started working with gantt chart 
