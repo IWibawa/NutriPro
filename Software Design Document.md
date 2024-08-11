@@ -277,3 +277,5 @@ These design choices were made to create an intuitive and efficient user experie
    - ![visual_design - Nutrition breakdown visualization.png](Diagrams%2Fvisual_design%20-%20Nutrition%20breakdown%20visualization.png)
 4. Filter settings screen
    - ![visual_design - Filter settings screen.png](Diagrams%2Fvisual_design%20-%20Filter%20settings%20screen.png)
+5. Food Comparison
+   - ![visual_design - Food comparison.png](Diagrams%2Fvisual_design%20-%20Food%20comparison.png)
