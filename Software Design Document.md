@@ -103,7 +103,7 @@ Note: Since no specific client or user is assigned, we envision the primary user
 
 ### 2.3 Use Case Diagrams
 
-![UCD.png](UCD.png)
+![UCD.png](Diagrams%2FUCD.png)
 
 ### 2.4 Use Cases
 
@@ -121,7 +121,7 @@ Note: Since no specific client or user is assigned, we envision the primary user
 
 ### 3.1 Software Design
 
-![Software_design_flowchart.png](Software_design_flowchart.png)
+![Software_design_flowchart.png](Diagrams%2FSoftware_design_flowchart.png)
 
 Component Breakdown:
 
@@ -226,22 +226,22 @@ Component Breakdown:
 
 #### 3.2.3 Detailed Design
 1. search_food
-   - ![Function_detailed_design - search_food.png](Function_detailed_design%20-%20search_food.png)
+   - ![Function_detailed_design - search_food.png](Diagrams%2FFunction_detailed_design%20-%20search_food.png)
 2. generate_nutrition_chart
-   - ![Function_detailed_design - generate_nutrition_chart.png](Function_detailed_design%20-%20generate_nutrition_chart.png)
+   - ![Function_detailed_design - generate_nutrition_chart.png](Diagrams%2FFunction_detailed_design%20-%20generate_nutrition_chart.png)
 3. filter_foods_by_nutrient
-   - ![Function_detailed_design - filter_foods_by_nutrient.png](Function_detailed_design%20-%20filter_foods_by_nutrient.png)
+   - ![Function_detailed_design - filter_foods_by_nutrient.png](Diagrams%2FFunction_detailed_design%20-%20filter_foods_by_nutrient.png)
 4. categorise_foods_by_nutrient_level
-   - ![Function_detailed_design - categorize_foods_by_nutrient_level.png](Function_detailed_design%20-%20categorize_foods_by_nutrient_level.png)
+   - ![Function_detailed_design - categorize_foods_by_nutrient_level.png](Diagrams%2FFunction_detailed_design%20-%20categorize_foods_by_nutrient_level.png)
 5. compare_foods
-   - ![Function_detailed_design - compare_foods.png](Function_detailed_design%20-%20compare_foods.png)
+   - ![Function_detailed_design - compare_foods.png](Diagrams%2FFunction_detailed_design%20-%20compare_foods.png)
 
 
 ## 4. User Interface Design
 
 ### 4.1 Structural Design
 
-![Structural_Design.png](Structural_Design.png)
+![Structural_Design.png](Diagrams%2FStructural_Design.png)
 
 Structure:
 - The software will be structured with a main application window containing a header, content area, and footer.
@@ -270,10 +270,10 @@ These design choices were made to create an intuitive and efficient user experie
 [Insert your UI mockups here]
 
 1. Main search screen
-   - ![visual_design - Main search Screen.png](visual_design%20-%20Main%20search%20Screen.png)
+   - ![visual_design - Main search Screen.png](Diagrams%2Fvisual_design%20-%20Main%20search%20Screen.png)
 2. Detailed food information view
-   - ![visual_design - Detailed food information view.png](visual_design%20-%20Detailed%20food%20information%20view.png)
+   - ![visual_design - Detailed food information view.png](Diagrams%2Fvisual_design%20-%20Detailed%20food%20information%20view.png)
 3. Nutrition breakdown visualization
-   - ![visual_design - Nutrition breakdown visualization.png](visual_design%20-%20Nutrition%20breakdown%20visualization.png)
+   - ![visual_design - Nutrition breakdown visualization.png](Diagrams%2Fvisual_design%20-%20Nutrition%20breakdown%20visualization.png)
 4. Filter settings screen
-   - ![visual_design - Filter settings screen.png](visual_design%20-%20Filter%20settings%20screen.png)
+   - ![visual_design - Filter settings screen.png](Diagrams%2Fvisual_design%20-%20Filter%20settings%20screen.png)
