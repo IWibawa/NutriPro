@@ -5,21 +5,21 @@
 
 ### Team members
 
-| Student No. | Full Name             | GitHub Username | Contribution (sum to 100%) | 
-|-------------|-----------------------|-----------------|----------------------------|
-| s2817538    | Kate Baker            | MadH3r3K8       | 33.3% or Equal             |
-| s5374957    | I Wibawa              | IWibawa         | 33.3% or Equal             | 
-| s333333     | Naveen Arakkal Nelson | xxx             | 33.3% or Equal             | 
+| Student No. | Full Name             | GitHub Username  | Contribution (sum to 100%) | 
+|-------------|-----------------------|------------------|----------------------------|
+| s2817538    | Kate Baker            | MadH3r3K8        | 33.3% or Equal             |
+| s5374957    | I Wibawa              | IWibawa          | 33.3% or Equal             | 
+| s5414931    | Naveen Arakkal Nelson | narakkal-nelson  | 33.3% or Equal             | 
 
 ### Brief Description of Contribution
 
 Please Describe what you have accomplished in this group project.
 - s2817538, Kate Baker
-  - Accomplishments: Project Plan & Gant Chart
+  - Accomplishments: Project Plan
 - s5374957, I Wibawa
-  - Accomplishments: Software Development & Gant Chart 
-- s333333, Naveen Arakkal Nelson
-  - Accomplishments: Describe what you have completed or achieved
+  - Accomplishments: Software Development 
+- s5414931, Naveen Arakkal Nelson
+  - Accomplishments: Gant Chart
 
 <div style="page-break-after: always;"></div>
 
