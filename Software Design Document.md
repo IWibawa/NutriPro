@@ -236,7 +236,6 @@ Component Breakdown:
    - ![Function_detailed_design - compare_foods.png](Diagrams%2FFunction_detailed_design%20-%20compare_foods.png)
 6. generate_meal_plan(user_preferences: Dict, nutritional_goals: Dict, num_days: int) -> MealPlan
    - ![Function_detailed_design - generate_meal_plan.png](Diagrams%2FFunction_detailed_design%20-%20generate_meal_plan.png)
-
 ## 4. User Interface Design
 
 ### 4.1 Structural Design
