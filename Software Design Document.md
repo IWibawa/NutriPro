@@ -107,15 +107,14 @@ Note: Since no specific client or user is assigned, we envision the primary user
 
 ### 2.4 Use Cases
 
-| Use Case ID | Use Case Name | Actors | Description | Flow of Events | Alternate Flow |
-|-------------|---------------|--------|-------------|-----------------|----------------|
-| UC001 | Search Food | User | User searches for a specific food item in the database | 1. User enters food name in the search bar<br>2. System processes the search query<br>3. System displays a list of matching food items<br>4. User selects a specific food item<br>5. System displays detailed nutritional information for the selected item | If no matching items are found, the system displays a "No results found" message |
-| UC002 | View Nutritional Information | User | User views detailed nutritional information for a selected food item | 1. User selects a food item from the search results or a list<br>2. System retrieves the nutritional data for the selected food<br>3. System displays comprehensive nutritional information including calories, macronutrients, vitamins, and minerals<br>4. User can scroll or navigate through the information | None |
-| UC003 | Visualize Nutrient Breakdown | User | User views graphical representation of a food's nutritional content | 1. User selects "Visualize" option for a food item<br>2. System generates a pie chart showing macronutrient breakdown (fat, protein, carbohydrates)<br>3. System generates a bar graph showing micronutrient content<br>4. System displays both visualizations to the user | None |
-| UC004 | Filter Foods by Nutrient Range | User | User filters food database based on specific nutrient ranges | 1. User selects a nutrient (e.g., protein)<br>2. User inputs minimum and maximum values for the selected nutrient<br>3. System filters the food database based on the input range<br>4. System displays the list of foods that fall within the specified range | If no foods match the criteria, system displays "No foods found within the specified range" |
-| UC005 | Categorize Foods by Nutrient Level | User | User filters foods based on low, mid, or high levels of specific nutrients | 1. User selects a nutrient (fat, protein, carbohydrates, sugar, or nutritional density)<br>2. User chooses a level (low, mid, or high)<br>3. System categorizes foods based on the selected criteria<br>4. System displays the list of foods in the chosen category | If no foods match the criteria, system displays "No foods found in this category" |
-| UC006 | Compare Foods | User | User compares nutritional information of multiple selected food items side-by-side | 1. User selects multiple food items for comparison<br>2. User chooses "Compare" option<br>3. System retrieves nutritional data for all selected items<br>4. System displays a side-by-side comparison of nutritional information | None |
-| UC007 | Generate Meal Plan | User | User generates a personalized meal plan based on nutritional goals and preferences | 1. User inputs nutritional goals and dietary preferences<br>2. User specifies the number of meals per day<br>3. System processes the input and searches the database<br>4. System generates a meal plan meeting the specified criteria<br>5. System displays the meal plan to the user | If no suitable meal plan can be generated, system suggests adjustments to the user's input |
+| Use Case ID | Use Case Name | Actors | Description | Flow of Events                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Alternate Flow | Postcondition |
+|-------------|---------------|--------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|---------------|
+| UC001       | Search Food | User | User searches for a specific food item in the database | 1. User enters food name in the search bar<br>2. System processes the search query<br>3. System queries the Food Database<br>4. System displays a list of matching food items<br>5. User selects a specific food item<br>6. System displays detailed nutritional information for the selected item                                                                                                                                                                                 | If no matching items are found, the system displays a "No results found" message | Search results are displayed, or user is notified of no matches |
+| UC002       | View Nutritional Information | User | User views detailed nutritional information for a selected food item | 1. User selects a food item from the search results or a list<br>2. System retrieves the nutritional data for the selected food from the Food Database<br>3. System displays comprehensive nutritional information including calories, macronutrients, vitamins, and minerals<br>4. User can scroll or navigate through the information                                                                                                                                            | If the food item data is unavailable, system displays an error message | Detailed nutritional information is displayed for the selected food item |
+| UC003       | Visualize Nutrient Breakdown | User | User views graphical representation of a food's nutritional content | 1. User selects "Visualize" option for a food item<br>2. System retrieves nutritional data from the Food Database<br>3. System generates a pie chart showing macronutrient breakdown (fat, protein, carbohydrates)<br>4. System generates a bar graph showing micronutrient content<br>5. System displays both visualizations to the user                                                                                                                                          | If visualization cannot be generated, system displays an error message | Nutrient breakdown visualizations are displayed to the user |
+| UC004       | Apply Filter Settings | User | User filters and categorizes foods based on nutrient content | 1. User navigates to the Filter Settings screen<br>2. User selects nutrient(s) to filter by (e.g., protein, carbs, fat)<br>3. User can either:<br>   a) Input specific range values for the selected nutrients, or<br>   b) Choose categorization levels (low, medium, high) for the nutrients<br>4. User applies the filter settings<br>5. System queries the Food Database based on the selected criteria<br>6. System displays the list of foods that match the filter settings | If no foods match the criteria, system displays "No foods found matching these criteria" | Filtered list of foods is displayed based on the applied settings, or user is notified of no matches |
+| UC005       | Compare Foods | User | User compares nutritional information of multiple selected food items side-by-side | 1. User selects multiple food items for comparison<br>2. User chooses "Compare" option<br>3. System retrieves nutritional data for all selected items from the Food Database<br>4. System displays a side-by-side comparison of nutritional information                                                                                                                                                                                                                            | If user selects more than the maximum allowed number of items for comparison, system prompts user to reduce selection | Comparison view is displayed with nutritional information of selected foods side-by-side |
+| UC006       | Generate Meal Plan | User | User generates a personalized meal plan based on nutritional goals and preferences | 1. User inputs nutritional goals and dietary preferences<br>2. User specifies the number of meals per day<br>3. System processes the input and searches the Food Database<br>4. System generates a meal plan meeting the specified criteria<br>5. System displays the meal plan to the user                                                                                                                                                                                        | If no suitable meal plan can be generated, system suggests adjustments to the user's input | Personalized meal plan is displayed, or system provides suggestions for adjustment |
 
 ## 3. Software Design and System Components
 
@@ -225,17 +224,18 @@ Component Breakdown:
      - comparison_data: Dict[str, List[float]]
 
 #### 3.2.3 Detailed Design
-1. search_food
+1. search_food(query: str) -> List[FoodItem]
    - ![Function_detailed_design - search_food.png](Diagrams%2FFunction_detailed_design%20-%20search_food.png)
-2. generate_nutrition_chart
+2. generate_nutrition_chart(food_item: FoodItem)
    - ![Function_detailed_design - generate_nutrition_chart.png](Diagrams%2FFunction_detailed_design%20-%20generate_nutrition_chart.png)
-3. filter_foods_by_nutrient
+3. filter_foods_by_nutrient(nutrient: str, min_value: float, max_value: float) -> List[FoodItem]
    - ![Function_detailed_design - filter_foods_by_nutrient.png](Diagrams%2FFunction_detailed_design%20-%20filter_foods_by_nutrient.png)
-4. categorise_foods_by_nutrient_level
+4. categorize_foods_by_nutrient_level(nutrient: str, level: str) -> List[FoodItem]
    - ![Function_detailed_design - categorize_foods_by_nutrient_level.png](Diagrams%2FFunction_detailed_design%20-%20categorize_foods_by_nutrient_level.png)
-5. compare_foods
+5. compare_foods(food_items: List[FoodItem]) -> ComparisonResult
    - ![Function_detailed_design - compare_foods.png](Diagrams%2FFunction_detailed_design%20-%20compare_foods.png)
-
+6. generate_meal_plan(user_preferences: Dict, nutritional_goals: Dict, num_days: int) -> MealPlan
+   - ![Function_detailed_design - generate_meal_plan.png](Diagrams%2FFunction_detailed_design%20-%20generate_meal_plan.png)
 
 ## 4. User Interface Design
 
@@ -243,39 +243,86 @@ Component Breakdown:
 
 ![Structural_Design.png](Diagrams%2FStructural_Design.png)
 
-Structure:
-- The software will be structured with a main application window containing a header, content area, and footer.
-- The content area will be the primary focus, housing the search functionality, results display, and various views for detailed information and comparisons.
+The Nutritional Food Database application is structured as follows:
 
-Information Grouping:
-- Information will be organized into distinct sections within the content area.
-- This includes a search bar for user input, a results display area that can show different views (food list, detailed food information, comparisons, and meal plans), a filter panel for refining searches, and a visualization area for graphical representation of nutritional data.
+#### Main Application Window
+The main window consists of two primary sections:
+- Header
+- Content Area
 
-Navigation:
-- Users will navigate through the software primarily using the navigation menu in the header and through interactive elements within the content area.
-- The search bar will be the starting point for most user interactions, with results leading to more detailed views.
-- Users can move between different views (e.g., from food list to detailed view) through clickable elements within the interface.
+#### Header
+The header contains:
+- Logo: Reinforces brand identity
+- Navigation Menu: Provides quick access to main sections
+  - Home
+  - Compare
+  - Meal Plan
 
-Design Choices:
-These design choices were made to create an intuitive and efficient user experience:
-1. The hierarchical structure allows for clear organization of features and information.
-2. Placing the search bar prominently encourages users to start their interaction with a search.
-3. The filter panel alongside the results allows for easy refinement of searches.
-4. Separating different views (list, detailed, comparison, meal plan) allows for focused presentation of information without overwhelming the user.
+#### Content Area
+The content area is the primary interface for user interactions, comprising:
+
+1. **Search Bar**: 
+   - Prominently placed for easy access
+   - Allows users to search for food items
+2. **Results/Content Display**:
+   - Dynamically shows different views based on user interaction:
+     - Food List View: Displays search results
+     - Detailed Food View: Shows comprehensive information about a selected food item
+     - Comparison View: Allows side-by-side comparison of multiple food items
+     - Meal Plan View: Displays generated meal plans
+3. **Filter Panel**:
+   - Enables users to refine search results or set preferences
+   - Typically located on the right side for easy access
+4. **Visualization Area**:
+   - Presents nutritional data in graphical formats
+   - Enhances understanding of nutritional information
+
+#### Design Choices
+1. The hierarchical structure ensures clear organization of features and information.
+2. Centrally placing the search bar emphasizes its importance in the user workflow.
+3. The consistent right-sided filter panel provides a familiar location for refining searches.
+4. Separating different content views (list, details, comparison, meal plan) allows for focused presentation of information.
 5. Including a visualization area enables quick understanding of nutritional data through graphical representations.
-6. The footer provides easy access to supplementary information (About and Help) without cluttering the main interface.
 
+This structure is designed to provide an intuitive and efficient user experience, allowing easy navigation between different functionalities while maintaining a clear and organized interface.
 ### 4.2 Visual Design
 
-[Insert your UI mockups here]
-
 1. Main search screen
-   - ![visual_design - Main search Screen.png](Diagrams%2Fvisual_design%20-%20Main%20search%20Screen.png)
+   - This screen serves as the main entry point for users. It features:
+     - A prominent search bar for food queries
+     - A large area for displaying search results
+     - A right-sided panel for applying filters
+     - Clear navigation options in the header
+     ![visual_design - main_search_screen.png](Diagrams%2Fvisual_design%20-%20main_search_screen.png)
 2. Detailed food information view
-   - ![visual_design - Detailed food information view.png](Diagrams%2Fvisual_design%20-%20Detailed%20food%20information%20view.png)
+    - This view provides comprehensive information about a selected food item:
+      - Nutritional information is clearly separated into two panels: general nutrition and vitamin/mineral content
+      - "Visualize" and "Add to Comparison" buttons offer quick access to additional features
+      - A "Back to Search" option ensures easy navigation
+      ![visual_design - food_details_screen.png](Diagrams%2Fvisual_design%20-%20food_details_screen.png)
 3. Nutrition breakdown visualization
-   - ![visual_design - Nutrition breakdown visualization.png](Diagrams%2Fvisual_design%20-%20Nutrition%20breakdown%20visualization.png)
+   - This screen offers a visual representation of a food item's nutritional content:
+     - Macronutrients are displayed in a large chart or graph (left panel)
+     - Micronutrients are listed with visual indicators of their relative quantities (right panel)
+     - A "Back" button allows users to return to the previous screen
+     ![visual_design - nutrition_breakdown_screen.png](Diagrams%2Fvisual_design%20-%20nutrition_breakdown_screen.png)
 4. Filter settings screen
-   - ![visual_design - Filter settings screen.png](Diagrams%2Fvisual_design%20-%20Filter%20settings%20screen.png)
+    - The filter screen allows users to refine their food searches:
+      - Separate sections for "Nutrient Ranges" and "Nutrient Levels" provide comprehensive filtering options
+      - "Apply Filters" and "Reset" buttons give users control over their selections
+      - Consistent with other screens, a "Back to Search" option is available
+      ![visual_design - filter_screen.png](Diagrams%2Fvisual_design%20-%20filter_screen.png)
 5. Food Comparison
-   - ![visual_design - Food comparison.png](Diagrams%2Fvisual_design%20-%20Food%20comparison.png)
+   - This screen enables users to compare multiple food items side-by-side:
+     - Three columns allow for easy comparison of nutritional information
+     - "Add Another Food" and "Generate Comparison Chart" buttons provide additional functionality
+     - Consistent with other screens, a "Back to Search" option is available
+     ![visual_design - comparison_screen.png](Diagrams%2Fvisual_design%20-%20comparison_screen.png)
+6. Meal Plan Screen
+   - The meal plan screen allows users to create and view personalized meal plans:
+     - A calendar view displays meals for each day of the week
+     - Each day shows breakfast, lunch, dinner, and snacks
+     - Users can add or edit meals for each time slot
+     - Nutritional information summaries are provided for each day
+     - "Generate Meal Plan" and "Save Meal Plan" buttons offer key functionality
+     ![visual_design - meal_plan_screen.png](Diagrams%2Fvisual_design%20-%20meal_plan_screen.png)
