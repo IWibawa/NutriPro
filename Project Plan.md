@@ -77,6 +77,7 @@ Nutirital Database Programs Objectives
 ### 1.2 Project Stakeholders
 
 In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
+
 Internal Stakeholder
 1. **Company Executives**:
 2. **IT Team (Programmers)**:
