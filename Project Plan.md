@@ -1,6 +1,6 @@
 # Nutrition Database
 
-## Project Name: Nutrition Database
+## Project Name: NutriPro
 ## Group Number: 002
 
 ### Team members
@@ -45,7 +45,7 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Food Nutritional Database is used for a variety of purposes including standards development, nutrition labelling, research on diet and disease, education and to help consumers make better informed food choices. the main project objectives are:
+NutriPro is used for a variety of purposes including standards development, nutrition labelling, research on diet and disease, education and to help consumers make better informed food choices. the main project objectives are:
 - To serve the requirments of the potential users
 - Work cost-effective and with timeframe for editions
 - Consult with all stakeholder and interested parties and users
