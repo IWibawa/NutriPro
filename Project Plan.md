@@ -72,33 +72,31 @@ Nutirital Database Programs Objectives
 9. Laugauge (English, Chinese, Japanese)
 10. Food Identification (classification/description)
 11. Food Numbering (indicating food groups and swquential numbering within)
-12. 
 
 ### 1.2 Project Stakeholders
 
 In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
 
 Internal Stakeholder
-1. **Company Executives**:
-2. **IT Team (Programmers)**:
+1. **Company Executives**: These include Chief Executive Officers, Chief Finacial Officers, Chief Cyber Security Officer
+2. **IT Team**: Programmers, Software Developers, Cyber Security Specialist, 
 3. **Marketing Team**:
-4. **Software Developers**:
-5. 
+4. **Legal Team**: 
+5. **Customer Service team**: 
 
 
 External Stakeholders
-1. **Government Agencies**: These include health departments, agricultural ministries, and education departments that use the data for policy-making and program implementation.
-2. **Non-Governmental Organizations (NGOs)**: NGOs often contribute data, help in data collection, and use the database to plan and monitor their nutrition programs.
-3. **Healthcare Providers**: Hospitals, clinics, and community health workers provide essential data on nutritional status and outcomes.
-4. **Academic and Research Institutions**: These stakeholders analyze the data to conduct research and provide evidence-based recommendations.
-5. **International Organizations**: Entities like the World Health Organization (WHO) and the United Nations Children's Fund (UNICEF) use the data for global nutrition monitoring and support.
-6. **Private Sector**: Companies involved in food production and distribution may use the data to improve product offerings and ensure they meet nutritional standards.
-7. **Community Groups**: Local organizations and community leaders help in data collection and dissemination of information to the public.
-8. **Donors and Funding Agencies**: These stakeholders use the data to assess the impact of their investments and guide future funding decisions.
-9. **Customers/Cliental/User**: These stakeholders use the data to monitor and assess the impact for their future intake. Allow to moniotor their daily calorie count. 
+1. **Customers/Cliental/User**: These stakeholders use the data to monitor and assess the impact for their food intake. Allow to moniotor their daily calorie count. 
+2. **Government Agencies**: These include health departments, agricultural ministries, and education departments that use the data for policy-making and program implementation.
+3. **Non-Governmental Organizations (NGOs)**: NGOs often contribute data, help in data collection, and use the database to plan and monitor their nutrition programs.
+4. **Healthcare Providers**: Hospitals, clinics, and community health workers provide essential data on nutritional status and outcomes.
+5. **Academic and Research Institutions**: These stakeholders analyze the data to conduct research and provide evidence-based recommendations.
+6. **International Organizations**: Entities like the World Health Organization (WHO) and the United Nations Children's Fund (UNICEF) use the data for global nutrition monitoring and support.
+7. **Private Sector**: Companies involved in food production and distribution may use the data to improve product offerings and ensure they meet nutritional standards.
+8. **Community Groups**: Local organizations and community leaders help in data collection and dissemination of information to the public.
+9. **Donors and Funding Agencies**: These stakeholders use the data to assess the impact of their investments and guide future funding decisions.
 
-
-These stakeholders collaborate to ensure the database is comprehensive, accurate, and useful for improving nutrition outcomes¹²³.
+These stakeholders collaborate to ensure the database is comprehensive, accurate, and useful for improving nutrition outcomes.
 
 ### 1.3 Project Scope
 
@@ -131,11 +129,43 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 
 Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
 
-| Activity #No | Activity Name | Brief Description | Duration | Responsible Team Members |
-|--------------|---------------|-------------------|----------|--------------------------|
-| xxx          | xxx           | xxx               | xxx      | xxx \& yyy               |
-| xxxx         | xxx           | xxx               | xxx      | All                      |
-| xxxx         | xxx           | xxx               | xxx      | xxx                      |
+| Activity #No     | Activity Name                     | Brief Description                                                      | Duration     | Responsible Team Members |
+|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+| 1 - Initiating   |                                   |                                                                        |   2-3 months |   All                    |
+| 1.1              | Project Objective                 |                                                                        |              | Kate                     | 
+| 1.1.1            | - Define Objectives               | Outline goals and objectives for project                               |              | Kate                     |
+| 1.1.2            | - Conduct User Requirments        | Conducting user requirments will help in aliging with objectives       |              | Kate                     |
+|                  |                                   | e.g Supply & demand                                                    |              |                          |
+| 1.2              | Project Stakeholders              |                                                                        |              |                          |
+| 1.2.1            | - Conduct Stakeholder Interviews  |                                                                        |              |                          |
+| 1.3              | Project Scope                     |                                                                        |              |                          |
+| 1.3.1            |- Define Project Scope             |                                                                        |              |                          |
+|                  |                                   |                                                                        |              |                          |
+|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+
+| 2 - Planning     |                                   |
+| 2.1              | Work Breakdown Structure          |
+| 2.2              | Activity Definition Estimation    |
+| 2.3              | Gant Chart                        | 
+
+|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+
+| 3. Executing     |                                   |
+| 3.1.1            | Problem Background                |
+| 3.1.2            | System Capabilities & Overview    |
+|                  | - Define system requirements      |
+|                  | - Align requirments with budget   |
+|                  | - Align requirments with Software |
+|                  | - Finalise System Requirements    |
+
+
+
+
+
+
+
+
+
 
 ## 4. Gantt Chart
 You have to use the provided Gantt chart template.  
