@@ -45,29 +45,47 @@ Please Describe what you have accomplished in this group project.
 
 ### 1.1 Project Objectives
 
-Name: Food Search
-Description: Enable users to search for foods by name and display all the nutritional information;
+Food Nutritional Database is used for a variety of purposes including standards development, nutrition labelling, research on diet and disease, education and to help consumers make better informed food choices. the main project objectives are:
+- To serve the requirments of the potential users
+- Work cost-effective and with timeframe for editions
+- Consult with all stakeholder and interested parties and users
+- Provided continues access of all users to the outputs
+- Disseminate program widely
 
-Name: Nutrition Breakdown
-Description: Enable users to select one food, and display pie charts & bar graphs showing the breakdown of different nutrients for the selected food.
-
-Name: Nutrition Range Filter
-Description: Enable users to select one of nutrition and input minimum & maximum values, and the tool will display a list of foods that fall within those ranges.
-
-Name: Nutrition Level Filter
-Description: Enable users to filter foods by nutritional content levels—low, mid, and high—including fat, protein, carbohydrates, sugar, and nutritional density. The three levels are defined as follows:
-Low: Less than 33% of the highest value.
-Mid: Between 33% and 66% of the highest value.
-High: Greater than 66% of the highest value.
-
-Additional feature: you will need to come up with an appropriate feature for analysing and visualising this dataset.
-Name: ?
-Description: ?
+Nutirital Database Programs Objectives 
+1. Name: Food Search
+   Description: Enable users to search for foods by name and display all the nutritional information;
+2. Name: Nutrition Breakdown
+   Description: Enable users to select one food, and display pie charts & bar graphs showing the breakdown of different nutrients for the selected food.
+3. Name: Nutrition Range Filter
+   Description: Enable users to select one of nutrition and input minimum & maximum values, and the tool will display a list of foods that fall within those ranges.
+4. Name: Nutrition Level Filter
+   Description: Enable users to filter foods by nutritional content levels—low, mid, and high—including fat, protein, carbohydrates, sugar, and nutritional density. The three levels are defined as 
+   follows:
+         Low: Less than 33% of the highest value.
+         Mid: Between 33% and 66% of the highest value.
+         High: Greater than 66% of the highest value.
+5. Standard Procedures are in line with international guildlines
+6. Integrated in an international network
+7. Document all data
+8. Systematically be able to explain your data and data choices.
+9. Laugauge (English, Chinese, Japanese)
+10. Food Identification (classification/description)
+11. Food Numbering (indicating food groups and swquential numbering within)
+12. 
 
 ### 1.2 Project Stakeholders
 
 In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
+Internal Stakeholder
+1. **Company Executives**:
+2. **IT Team (Programmers)**:
+3. **Marketing Team**:
+4. **Software Developers**:
+5. 
 
+
+External Stakeholders
 1. **Government Agencies**: These include health departments, agricultural ministries, and education departments that use the data for policy-making and program implementation.
 2. **Non-Governmental Organizations (NGOs)**: NGOs often contribute data, help in data collection, and use the database to plan and monitor their nutrition programs.
 3. **Healthcare Providers**: Hospitals, clinics, and community health workers provide essential data on nutritional status and outcomes.
@@ -76,14 +94,16 @@ In a nutrition database, stakeholders play crucial roles in ensuring the effecti
 6. **Private Sector**: Companies involved in food production and distribution may use the data to improve product offerings and ensure they meet nutritional standards.
 7. **Community Groups**: Local organizations and community leaders help in data collection and dissemination of information to the public.
 8. **Donors and Funding Agencies**: These stakeholders use the data to assess the impact of their investments and guide future funding decisions.
+9. **Customers/Cliental/User**: These stakeholders use the data to monitor and assess the impact for their future intake. Allow to moniotor their daily calorie count. 
+
+
 These stakeholders collaborate to ensure the database is comprehensive, accurate, and useful for improving nutrition outcomes¹²³.
-Is there a specific aspect of stakeholder involvement you're interested in?
 
 ### 1.3 Project Scope
 
-A Nutrition Database is a comprehensive collection of data on the nutritional content of various foods. It typically includes information on macronutrients (like carbohydrates, proteins, and fats), micronutrients (such as vitamins and minerals), and other components like fiber and water content¹⁴.
+A Nutrition Database is a comprehensive collection of data on the nutritional content of various foods. It typically includes information on macronutrients (like carbohydrates, proteins, and fats), micronutrients (such as vitamins and minerals), and other components like fiber and water content. 
 
-### Defining What is Included:
+### What is Included:
 1. **Food Items**: A wide range of foods, including raw ingredients, processed foods, and restaurant meals.
 2. **Nutrient Information**: Detailed data on macronutrients, micronutrients, and other dietary components.
 3. **Serving Sizes**: Standardized serving sizes to ensure consistency.
@@ -101,8 +121,6 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 2. **Outdated Information**: Removing outdated information that no longer reflects current food compositions.
 3. **Non-Nutritional Data**: Excluding data that is not relevant to nutritional content, such as marketing claims or non-nutritional additives.
 
-### Example of a Nutrition Database:
-The USDA's Food and Nutrient Database for Dietary Studies (FNDDS) is a well-known example. It converts food and beverages consumed into gram amounts and determines their nutrient values³.
 
 ## 2. Work Breakdown Structure
 
