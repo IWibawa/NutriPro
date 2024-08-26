@@ -124,9 +124,7 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 
 ## 2. Work Breakdown Structure
 
-Include the Work Breakdown Structure (WBS) for the entire project. WBS should be presented as a hierarchical diagram. Use the elements from the WBS to define activities in Section 3, and schedule these activities in the Gantt Chart in Section 4. Ensure all project activities are considered and included in the WBS.
-
-![WBS](![alt text](https://github.com/IWibawa/Project-Management/blob/main/WBS%20-%20Workflow.jpg))
+[alt text](https://github.com/IWibawa/Project-Management/blob/main/WBS%20-%20Workflow.jpg)
 
 ## 3. Activity Definition Estimation
 
