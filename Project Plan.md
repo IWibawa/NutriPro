@@ -128,7 +128,7 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 ## 3. Activity Definition Estimation
 
 Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
-|________________________________________________________________________________________________________________________________________________________________________________________|
+|_____________________________________________________________________________________________________________________________________________________________|
 | Activity #No           | Activity Name                                    | Brief Description                                                | Duration     | Responsible Team Members |
 |------------------------|--------------------------------------------------|------------------------------------------------------------------|--------------|--------------------------|
 | 1 - Initiating         |                                                  |                                                                  |   2-3 months |   All                    |
