@@ -129,43 +129,68 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 
 Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
 
-| Activity #No     | Activity Name                     | Brief Description                                                      | Duration     | Responsible Team Members |
-|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
-| 1 - Initiating   |                                   |                                                                        |   2-3 months |   All                    |
-| 1.1              | Project Objective                 |                                                                        |              | Kate                     | 
-| 1.1.1            | - Define Objectives               | Outline goals and objectives for project                               |              | Kate                     |
-| 1.1.2            | - Conduct User Requirments        | Conducting user requirments will help in aliging with objectives       |              | Kate                     |
-|                  |                                   | e.g Supply & demand                                                    |              |                          |
-| 1.2              | Project Stakeholders              |                                                                        |              |                          |
-| 1.2.1            | - Conduct Stakeholder Interviews  |                                                                        |              |                          |
-| 1.3              | Project Scope                     |                                                                        |              |                          |
-| 1.3.1            |- Define Project Scope             |                                                                        |              |                          |
-|                  |                                   |                                                                        |              |                          |
-|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
-
-| 2 - Planning     |                                   |
-| 2.1              | Work Breakdown Structure          |
-| 2.2              | Activity Definition Estimation    |
-| 2.3              | Gant Chart                        | 
-
-|------------------|-----------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
-
-| 3. Executing     |                                   |
-| 3.1.1            | Problem Background                |
-| 3.1.2            | System Capabilities & Overview    |
-|                  | - Define system requirements      |
-|                  | - Align requirments with budget   |
-|                  | - Align requirments with Software |
-|                  | - Finalise System Requirements    |
-
-
-
-
-
-
-
-
-
+| Activity #No           | Activity Name                                    | Brief Description                                                      | Duration     | Responsible Team Members |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+| 1 - Initiating         |                                                  |                                                                        |   2-3 months |   All                    |
+| 1.1                    | Project Objective                                |                                                                        |              | Kate                     | 
+| 1.1.1                  | - Define Objectives                              | Outline goals and objectives for project                               |              | Kate                     |
+| 1.1.2                  | - Conduct User Requirments                       | Conducting user requirments will help in aliging with objectives       |              | Kate                     |
+|                        |                                                  | e.g Supply & demand                                                    |              |                          |
+| 1.2                    | Project Stakeholders                             |                                                                        |              |                          |
+| 1.2.1                  | - Conduct Stakeholder Interviews                 |                                                                        |              |                          |
+| 1.3                    | Project Scope                                    |                                                                        |              |                          |
+| 1.3.1                  |- Define Project Scope                            |                                                                        |              |                          |
+|                        |                                                  |                                                                        |              |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+| 2 - Planning           |                                                  |                                                                        |              |                          |
+| 2.1                    | Work Breakdown Structure                         |                                                                        |              |                          |
+| 2.2                    | Activity Definition Estimation                   |                                                                        |              |                          |
+| 2.3                    | Gant Chart                                       |                                                                        |              |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+| 3. Executing           |                                                  |                                                                        |              |                          |
+| 3.1.1                  | Problem Background                               |                                                                        |              |                          |    
+| 3.1.2                  | System Capabilities & Overview                   |                                                                        |              |                          |
+|                        | - Define system requirements                     |                                                                        |              |                          |
+|                        | - Align requirments with budget                  |                                                                        |              |                          |
+|                        | - Align requirments with Software                |                                                                        |              |                          |
+|                        | - Finalise System Requirements                   |                                                                        |              |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+| 4.Software Development |                                                  |                                                                        |   (10 days)  |   All                    |
+|                        |- System architecture design                      |                                                                        |     3 days   |                          |
+|                        |- Database schema design                          |                                                                        |     2 days   |                          |
+|                        |- UI/UX wireframing                               |                                                                        |     3 days   |                          |
+|                        |- Design review and approval                      |                                                                        |     2 days   |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|5. Backend Development  |                                                  |                                                                        |   (20 days)  |                          |
+|                        |- Set up development environment                  |                                                                        |    1 day     |                          |
+|                        |- Implement data loading from CSV                 |                                                                        |    3 days    |                          |
+|                        |- Develop search functionality                    |                                                                        |    5 days    |                          |  
+|                        |- Implement filtering and categorization logic    |                                                                        |    7 days    |                          |
+|                        |- Create API endpoints for frontend communication |                                                                        |    4 days    |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|6. Frontend Development |                                                  |                                                                        |   (25 days)  |                          |
+|                        |- Set up frontend framework                       |                                                                        |    2 days    |                          |
+|                        |- Implement user interface components             |                                                                        |    5 days    |                          |
+|                        |- Develop search and results display              |                                                                        |    5 days    |                          |
+|                        |- Create visualization components                 | (charts and graphs)                                                    |    6 days    |                          |
+|                        |- Implement comparison view                       |                                                                        |    4 days    |                          |
+|                        |- Develop meal plan generator interface           |                                                                        |    3 days    |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|7. Data Management      |                                                  |                                                                        |    (8 days)  |                          |
+|                        |- Data cleaning and preprocessing                 |                                                                        |     3 days   |                          |
+|                        |- Database setup and configuration                |                                                                        |     1 day    |                          |
+|                        |- Data import and validation                      |                                                                        |     3 days   |                          |
+|                        |- Implement data update mechanism                 |                                                                        |     1 day    |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|8. Controlling          |                                                  |                                                                        |              |                          |
+|                        | Status Report                                    |                                                                        |              |                          |
+|                        | Update Reports                                   |                                                                        |              |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|9. Closing              |                                                  |                                                                        |              |                          |    
+|                        | Final Performance Review                         |                                                                        |              |                          |
+|                        | Prepare Final Report                             |                                                                        |              |                          |
+|------------------------|--------------------------------------------------|------------------------------------------------------------------------|--------------|--------------------------|
+|                        |                                                  |                                                                        |              |                          |
 
 ## 4. Gantt Chart
 You have to use the provided Gantt chart template.  
