@@ -16,6 +16,16 @@
 Please Describe what you have accomplished in this group project.
 - s2817538, Kate Baker
   - Accomplishments: Project Plan
+  - Project Management: Understanding the principles of project management, including methodologies like Agile, Waterfall, or Scrum, is crucial.
+Time Management: Ability to create realistic timelines, set milestones, and ensure deadlines are met.
+Budgeting: Estimating costs accurately and managing the project budget to avoid overspending.
+Risk Management: Identifying potential risks and developing mitigation strategies to handle them.
+Communication: Clear and effective communication with team members, stakeholders, and clients to ensure everyone is on the same page.
+Leadership: Guiding and motivating the team, resolving conflicts, and making decisive decisions.
+Problem-Solving: Addressing issues as they arise and finding effective solutions quickly.
+Technical Skills: Depending on the project, specific technical skills may be required, such as software development, engineering, or design.
+Documentation: Keeping detailed records of project progress, decisions, and changes to ensure transparency and accountability.
+Adaptability: Being flexible and able to adjust the plan as needed based on new information or changes in the project scope.
 - s5374957, I Wibawa
   - Accomplishments: Software Development 
 - s5414931, Naveen Arakkal Nelson
