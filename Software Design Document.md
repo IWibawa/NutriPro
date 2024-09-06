@@ -49,7 +49,7 @@
   - Input: User queries for food items, nutritional ranges, and dietary preferences.
   - Output: Nutritional information, visualizations, filtered food lists, and meal plans.
 
-- Target Users: The system targets health-conscious individuals, dieters, nutritionists, and dietitians who need to analyze and understand nutritional information for various foods.
+- Target Users: The system targets health-conscious individuals, dieters, nutritionists, and dietitians who need to analyse and understand nutritional information for various foods.
 
 ### 1.2 System capabilities/overview
 
@@ -155,6 +155,7 @@ Component Breakdown:
    - Description: Searches for food items based on user input
    - Input Parameters: query (string) - The search term entered by the user
    - Return Value: A list of FoodItem objects matching the search query
+   - Side Effects: None
 
 2. generate_nutrition_chart(food_item: FoodItem) -> Chart
    - Description: Creates a visual representation of the nutritional breakdown
@@ -168,6 +169,7 @@ Component Breakdown:
      2. min_value (float) - The minimum value of the nutrient
      3. max_value (float) - The maximum value of the nutrient
    - Return Value: A list of FoodItem objects that fall within the specified range
+   - Side Effects: None
 
 4. categorize_foods_by_nutrient_level(nutrient: str, level: str) -> List[FoodItem]
    - Description: Categorizes foods based on low, mid, or high levels of a specific nutrient
@@ -175,11 +177,13 @@ Component Breakdown:
      1. nutrient (string) - The nutrient to categorize by
      2. level (string) - The level to filter (low, mid, or high)
    - Return Value: A list of FoodItem objects in the specified category
+   - Side Effects: None
 
 5. compare_foods(food_items: List[FoodItem]) -> ComparisonResult
    - Description: Compares multiple food items
    - Input Parameters: food_items (List[FoodItem]) - A list of FoodItem objects to compare
    - Return Value: A ComparisonResult object containing the comparison data
+   - Side Effects: None
 
 #### 3.2.2 Data Structures / Data Sources
 

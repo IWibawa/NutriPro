@@ -13,7 +13,7 @@
 
 ### Brief Description of Contribution
 
-\- s2817538, Kate Baker
+- s2817538, Kate Baker
 
   - Accomplishments: Project Plan
 
@@ -29,27 +29,28 @@
 1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
 1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-\- s5374957, I Wibawa
+- s5374957, I Wibawa
 
   - Accomplishments: Software Development
 
-1. **Defining Project Objectives**: Clearly outline the goals of the software. This might include providing accurate nutritional information, supporting dietary planning, or integrating with other health apps.
-1. **Scope Definition**: Establish the boundaries of the project. Determine what types of nutritional data will be included (e.g., macronutrients, micronutrients, allergens), and what features the software will support (e.g., search functionality, user input, data analytics).
-1. **System Architecture Design**: Develop a high-level design of the software architecture. This includes deciding on the technology stack, database structure, and integration points with other systems.
-1. **Data Collection and Validation**: Identify reliable sources for nutritional data and establish methods for validating this information. This ensures the database contains accurate and trustworthy data.
-1. **Task Breakdown**: Create a Work Breakdown Structure (WBS) that details all tasks required to develop the software. This might include data collection, database design, user interface development, backend development, and testing.
-1. **Resource Allocation**: Assign the necessary resources, such as software developers, data analysts, and nutrition experts. Ensure that the project has the required budget, tools, and technology.
-1. **Timeline Creation**: Develop a detailed schedule that outlines when each task will be completed. Set milestones for key phases such as data collection, database development, and user testing.
-1. **Risk Management**: Identify potential risks, such as data inaccuracies, technical challenges, or security vulnerabilities, and develop strategies to mitigate these risks. This helps to anticipate and address issues proactively.
-1. **Communication Plan**: Establish how information will be shared among team members and stakeholders. Set up regular meetings, progress reports, and communication channels to ensure everyone is informed and aligned.
-1. **Quality Assurance**: Define the quality standards for the software and the nutritional data. Develop testing protocols to ensure the software meets these standards before launch. This includes unit testing, integration testing, and user acceptance testing.
-1. **User Interface and Experience Design**: Design an intuitive and user-friendly interface. Ensure that the software is easy to navigate and meets the needs of its users.
-1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the software meets their requirements.
-1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
+1. **Defining Project Objectives**: Clearly outline the goals of the software. This includes providing accurate nutritional information, supporting dietary planning, and enabling nutritional data visualisation as specified in the SDD.
+2. **Scope Definition**: Establish the boundaries of the project. Determine the types of nutritional data to be included (e.g., macronutrients, micronutrients, vitamins, minerals) and the features the software will support (e.g., food search, nutrition breakdown visualisation, filtering, comparison, and meal planning).
+3. **System Architecture Design**: Develop a high-level design of the software architecture. This includes deciding on the technology stack, database structure, and defining the User Interface, Application Layer, and Data Layer components as outlined in the SDD.
+4. **Data Collection and Validation**: Utilise the specified Nutritional_Food_Database.csv file and establish methods for validating this information. This ensures the database contains accurate and trustworthy data.
+5. **Task Breakdown**: Create a Work Breakdown Structure (WBS) that details all tasks required to develop the software. This includes data processing, user interface development, implementing search functionality, creating visualisation components, and developing the meal planning feature.
+6. **Resource Allocation**: Assign the necessary resources, such as software developers and data analysts. Ensure that the project has the required budget, tools, and technology to implement all specified components and features.
+7. **Timeline Creation**: Develop a detailed schedule that outlines when each task will be completed. Set milestones for key phases such as database development, UI implementation, and user testing.
+8. **Risk Management**: Identify potential risks, such as data inaccuracies, technical challenges, or security vulnerabilities, and develop strategies to mitigate these risks. This helps to anticipate and address issues proactively.
+9. **Communication Plan**: Establish how information will be shared among team members and stakeholders. Set up regular meetings, progress reports, and communication channels to ensure everyone is informed and aligned.
+10. **Quality Assurance**: Define the quality standards for the software and the nutritional data. Develop testing protocols to ensure the software meets these standards before launch. This includes unit testing, integration testing, user acceptance testing, and specific tests for requirements like response time and calculation accuracy.
+11. **User Interface and Experience Design**: Design an intuitive and user-friendly interface based on the structural and visual designs outlined in the SDD. Ensure that the software is easy to navigate and meets the needs of its users.
+12. **Stakeholder Engagement**: Identify all stakeholders, including end-users (health-conscious individuals, dieters, nutritionists, and dietitians), nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the software meets their requirements.
+13. **Data Structures and Functions Implementation**: Develop and implement the core data structures (FoodItem, NutritionalDatabase, Chart, ComparisonResult) and functions as specified in the SDD.
+14. **Additional Feature Development**: Plan and implement the additional feature mentioned in the SDD, beyond the required features.
+15. **Documentation**: Maintain and update the Software Development Document throughout the development process, ensuring it remains a comprehensive and accurate representation of the system.
+16. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-
-
-\- s5414931, Naveen Arakkal Nelson
+- s5414931, Naveen Arakkal Nelson
 
   - Accomplishments: Gant Chart
 
@@ -164,7 +165,7 @@ A NutriPro Database is a comprehensive collection of data on the nutritional con
 
 ## 2. Work Breakdown Structure
 
-![UCD.png](https://github.com/IWibawa/Project-Management/blob/main/WBS%20-%20Updated%20.jpg)
+![WBS - Updated .jpg](Diagrams%2FWBS%20-%20Updated%20.jpg)
 
 ## 3. Activity Definition Estimation
 
