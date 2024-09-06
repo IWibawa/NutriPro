@@ -123,9 +123,7 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 
 ## 2. Work Breakdown Structure
 
-<p align="left">
-<img src="(https://github.com/IWibawa/Project-Management/blob/main/WBS%20-%20Updated%20.jpg)"/>
-</p>
+![UCD.png](https://github.com/IWibawa/Project-Management/blob/main/WBS%20-%20Updated%20.jpg)
 
 ## 3. Activity Definition Estimation
 
