@@ -27,9 +27,31 @@ Technical Skills: Depending on the project, specific technical skills may be req
 Documentation: Keeping detailed records of project progress, decisions, and changes to ensure transparency and accountability.
 Adaptability: Being flexible and able to adjust the plan as needed based on new information or changes in the project scope.
 - s5374957, I Wibawa
-  - Accomplishments: Software Development 
+  - Accomplishments: Software Development
+  - Programming: Proficiency in programming languages such as Python, Java, C++, or JavaScript, depending on the project requirements.
+Problem-Solving: Ability to troubleshoot and debug issues, and find efficient solutions to complex problems.
+System Design: Understanding how to design scalable and maintainable systems, including knowledge of algorithms, data structures, and design patterns.
+Version Control: Familiarity with version control systems like Git to manage code changes and collaborate with other developers.
+Testing: Skills in writing and executing unit tests, integration tests, and end-to-end tests to ensure the software is reliable and bug-free.
+Project Management: Knowledge of project management methodologies (e.g., Agile, Scrum) to plan, track, and deliver software projects on time.
+Communication: Clear communication with team members, stakeholders, and clients to understand requirements and provide updates.
+Collaboration: Working effectively in a team environment, often using tools like Jira, Trello, or Slack for collaboration and task management.
+Continuous Learning: Staying updated with the latest technologies, frameworks, and best practices in the software development field.
+Attention to Detail: Ensuring code quality and adhering to coding standards to maintain a clean and efficient codebase.
+Adaptability: Being flexible and able to adapt to new tools, technologies, and changing project requirements.
+Security Awareness: Understanding basic security principles to protect the software from vulnerabilities and threats.
 - s5414931, Naveen Arakkal Nelson
   - Accomplishments: Gant Chart
+  - Project Management: Understanding the basics of project management to organize tasks, set milestones, and allocate resources.
+Time Management: Ability to estimate the duration of tasks and set realistic deadlines.
+Attention to Detail: Ensuring all tasks and dependencies are accurately represented in the chart.
+Software Proficiency: Familiarity with Gantt chart software like Microsoft Project, Trello, Asana, or online tools like Smartsheet and GanttPRO.
+Analytical Skills: Analyzing the project requirements and breaking them down into manageable tasks.
+Communication: Clearly communicating the project timeline and task assignments to team members and stakeholders.
+Adaptability: Updating the Gantt chart as the project progresses and adjusting for any changes or delays.
+Critical Thinking: Identifying potential bottlenecks and dependencies that could impact the project timeline.
+Collaboration: Working with team members to gather input and ensure the Gantt chart reflects the actual project workflow.
+Documentation: Keeping detailed records of changes and updates to the Gantt chart for transparency and accountability.
 
 <div style="page-break-after: always;"></div>
 
