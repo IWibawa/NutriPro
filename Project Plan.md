@@ -129,6 +129,28 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 
 Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
 
+<table>
+<tr>
+<td width="10%"">
+Activity #No 
+</td>
+<td width="20%">
+Activity Name  
+</td>
+<td width="40%">
+Brief Description  
+</td>
+<td width="15%">
+Duration 
+</td>
+<td width="15%">
+Responsible Team Members
+</td>	
+</tr>
+</table>
+
+
+
 Initiating 
 1.1 – Project Objective		1.	Understand the Project Scope: Clearly define the boundaries and deliverables of the project. This helps in setting realistic objectives.
 2.	Identify Stakeholder Needs: Gather input from all stakeholders to understand their expectations and requirements.
