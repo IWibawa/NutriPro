@@ -116,7 +116,7 @@ Nutirital Database Programs Objectives
 
 ### 1.2 Project Stakeholders
 
-In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
+In a NutriPro database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
 
 Internal Stakeholder
 1. **Company Executives**:Chief Executive Officers, Chief Finacial Officers, Chief Cyber Security Officer, Chief Operating Office, Chief Marketing Officer, Chief Technology Officer, Chief Information Officer, General Council, Vice President
@@ -141,7 +141,7 @@ These stakeholders collaborate to ensure the database is comprehensive, accurate
 
 ### 1.3 Project Scope
 
-A Nutrition Database is a comprehensive collection of data on the nutritional content of various foods. It typically includes information on macronutrients (like carbohydrates, proteins, and fats), micronutrients (such as vitamins and minerals), and other components like fiber and water content. 
+A NutriPro Database is a comprehensive collection of data on the nutritional content of various foods. It typically includes information on macronutrients (like carbohydrates, proteins, and fats), micronutrients (such as vitamins and minerals), and other components like fiber and water content. 
 
 ### What is Included:
 1. **Food Items**: A wide range of foods, including raw ingredients, processed foods, and restaurant meals.
