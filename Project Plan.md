@@ -119,11 +119,11 @@ Nutirital Database Programs Objectives
 In a nutrition database, stakeholders play crucial roles in ensuring the effective collection, management, and utilization of nutrition-related data. Here are some key stakeholders typically involved:
 
 Internal Stakeholder
-1. **Company Executives**: These include Chief Executive Officers, Chief Finacial Officers, Chief Cyber Security Officer
-2. **IT Team**: Programmers, Software Developers, Cyber Security Specialist, 
-3. **Marketing Team**:
-4. **Legal Team**: 
-5. **Customer Service team**: 
+1. **Company Executives**:Chief Executive Officers, Chief Finacial Officers, Chief Cyber Security Officer, Chief Operating Office, Chief Marketing Officer, Chief Technology Officer, Chief Information Officer, General Council, Vice President
+2. **IT Team**: IT Manager, System Administator, Network Engineer, IT Support Specialist, Software Developer, Data Administrator, Security Analyst, QA Tester, IT Project Manager, Data Analyst
+3. **Marketing Team**: Marketing Manager, SEO Specialist, Content Marketer, Data Analyst, Brand Strategist, Public Relations Manager, Visual Designer, Social Media Manager & Website Developer
+4. **Legal Team**: Partners, Associates, Paralegals, Legal Assistance, General Counsel, Contract Managers & Compliance Officers
+5. **Customer Service team**: Customer Service Representative, Customer Service Manager, Technical Support Specialist, Quality Assuarance Analyst, Customer Success Manager, Training and Development Specialist, Social Media Manager, Live Chat Support Agent & Customer Experiance Specialist.  
 
 
 External Stakeholders
