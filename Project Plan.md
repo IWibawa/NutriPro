@@ -15,7 +15,7 @@
 
 \- s2817538, Kate Baker
 
-`  `- Accomplishments: Project Plan
+  - Accomplishments: Project Plan
 
 1. **Defining Project Objectives**: Clearly outline the goals of the nutritional database. This might include providing accurate nutritional information, supporting dietary planning, or integrating with other health apps.
 1. **Scope Definition**: Establish the boundaries of the project. Determine what types of nutritional data will be included (e.g., macronutrients, micronutrients, allergens), and what features the database will support (e.g., search functionality, user input).
@@ -31,7 +31,7 @@
 
 \- s5374957, I Wibawa
 
-`  `- Accomplishments: Software Development
+  - Accomplishments: Software Development
 
 1. **Defining Project Objectives**: Clearly outline the goals of the software. This might include providing accurate nutritional information, supporting dietary planning, or integrating with other health apps.
 1. **Scope Definition**: Establish the boundaries of the project. Determine what types of nutritional data will be included (e.g., macronutrients, micronutrients, allergens), and what features the software will support (e.g., search functionality, user input, data analytics).
@@ -51,7 +51,7 @@
 
 \- s5414931, Naveen Arakkal Nelson
 
-`  `- Accomplishments: Gant Chart
+  - Accomplishments: Gant Chart
 
 1. **Clear Project Timeline:** Establish Start and End Dates: Define the overall project duration. Set Milestones: Identify key dates for major deliverables or phases.
 1. **Task Breakdown: Identify Tasks**: List all tasks required to complete the project. Define Task Dependencies: Determine which tasks depend on the completion of others.
