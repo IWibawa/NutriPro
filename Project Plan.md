@@ -131,14 +131,51 @@ Define the activities required for your project based on the WBS, and assign res
 from docx import Document
 
 
-doc = Document('Update - Activity CHART.docx')
-table = doc.tables[0]
-data = []
-for row in table.rows:
-    row_data = [cell.text for cell in row.cells]
-    data.append(row_data)
-for row in data:
-    print(row)
+activities = [
+    {
+        "Activity #": "1-",
+        "Activity Name": "Initiating",
+        "Brief Description": [
+            {
+                "1.1 Project Objective": [
+                    "Understand the Project Scope: Clearly define the boundaries and deliverables of the project. This helps in setting realistic objectives.",
+                    "Identify Stakeholder Needs: Gather input from all stakeholders to understand their expectations and requirements.",
+                    "Set SMART Objectives: Ensure that the objectives are Specific, Measurable, Achievable, Relevant, and Time-bound.",
+                    "Align with Business Goals: Make sure the project objectives align with the broader business goals and strategies.",
+                    "Document Objectives: Write down the objectives clearly and concisely. This helps in communicating them effectively to the project team and stakeholders.",
+                    "Review and Validate: Get feedback from stakeholders and make necessary adjustments to ensure the objectives are realistic and agreed upon."
+                ],
+                "Duration": "5 Days",
+                "Responsible Team Members": "All Team Members, Kate as Lead Chief Officer"
+            },
+            {
+                "1.2 Project Stakeholders": [
+                    "Identify Stakeholders: Determine who the stakeholders are. This includes anyone who has an interest in or is affected by the project.",
+                    "Analyze Stakeholders: Understand each stakeholder’s interests, influence, and impact on the project. This helps prioritize their needs and manage their expectations.",
+                    "Engage Stakeholders: Develop strategies to engage stakeholders based on their level of interest and influence. This might include regular meetings, updates, and feedback sessions.",
+                    "Manage Stakeholder Expectations: Continuously communicate with stakeholders to manage their expectations and address any concerns. This helps build trust and ensures their support throughout the project.",
+                    "Monitor and Review: Regularly review stakeholder engagement and adjust as needed to ensure ongoing alignment with project goals."
+                ],
+                "Duration": "14 Days",
+                "Responsible Team Members": "All Team Members, Kate as Lead Chief Officer"
+            }
+        ]
+    }
+]
+
+# Example of accessing the data
+for activity in activities:
+    print(f"Activity #: {activity['Activity #']}")
+    print(f"Activity Name: {activity['Activity Name']}")
+    for description in activity["Brief Description"]:
+        for key, value in description.items():
+            if key != "Duration" and key != "Responsible Team Members":
+                print(f"{key}:")
+                for item in value:
+                    print(f"  - {item}")
+            else:
+                print(f"{key}: {value}")
+
 
 ## 4. Gantt Chart
 You have to use the provided Gantt chart template.  
