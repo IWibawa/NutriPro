@@ -130,19 +130,13 @@ A Nutrition Database is a comprehensive collection of data on the nutritional co
 Define the activities required for your project based on the WBS, and assign responsibilities to team members. Each activity should be numbered and correspond with your Gantt chart. Provide estimated durations for each activity to facilitate Gantt chart preparation.
 from docx import Document
 
-# Load the document
+
 doc = Document('Update - Activity CHART.docx')
-
-# Assuming the table is the first one in the document
 table = doc.tables[0]
-
-# Extract data from the table
 data = []
 for row in table.rows:
     row_data = [cell.text for cell in row.cells]
     data.append(row_data)
-
-# Print the extracted data
 for row in data:
     print(row)
 
