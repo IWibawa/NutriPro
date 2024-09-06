@@ -26,6 +26,18 @@ Problem-Solving: Addressing issues as they arise and finding effective solutions
 Technical Skills: Depending on the project, specific technical skills may be required, such as software development, engineering, or design.
 Documentation: Keeping detailed records of project progress, decisions, and changes to ensure transparency and accountability.
 Adaptability: Being flexible and able to adjust the plan as needed based on new information or changes in the project scope.
+- Requirement Gathering: Successfully identifying and documenting the needs of users, stakeholders, and regulatory requirements for the nutritional database.
+Scope Definition: Clearly defining the project scope, including the features and functionalities of the database, to avoid scope creep.
+Timeline Creation: Developing a detailed project timeline with milestones and deadlines, ensuring all tasks are scheduled appropriately.
+Resource Allocation: Efficiently assigning resources, including team members, budget, and tools, to various tasks within the project.
+Risk Management: Identifying potential risks and developing mitigation strategies to handle them, ensuring the project stays on track.
+Database Design: Creating a robust and scalable database schema that can handle large volumes of nutritional data efficiently.
+Data Integration: Successfully integrating various data sources, such as food composition tables, user input, and external APIs, into the database.
+Testing and Validation: Implementing thorough testing procedures to ensure the database is accurate, reliable, and secure.
+User Training: Providing training sessions and documentation to help users understand and effectively use the nutritional database.
+Launch and Deployment: Successfully deploying the database and ensuring it is accessible to users, with minimal downtime.
+Feedback and Iteration: Collecting user feedback post-launch and making necessary updates and improvements to the database.
+Documentation: Maintaining comprehensive documentation of the project plan, design decisions, and user guides for future reference.
 - s5374957, I Wibawa
   - Accomplishments: Software Development
   - Programming: Proficiency in programming languages such as Python, Java, C++, or JavaScript, depending on the project requirements.
@@ -40,6 +52,19 @@ Continuous Learning: Staying updated with the latest technologies, frameworks, a
 Attention to Detail: Ensuring code quality and adhering to coding standards to maintain a clean and efficient codebase.
 Adaptability: Being flexible and able to adapt to new tools, technologies, and changing project requirements.
 Security Awareness: Understanding basic security principles to protect the software from vulnerabilities and threats.
+- Requirement Analysis: Successfully gathering and analyzing user and stakeholder requirements to ensure the database meets their needs.
+System Design: Designing a scalable and efficient database schema that can handle large volumes of nutritional data and support complex queries.
+Technology Stack Selection: Choosing the appropriate technologies and tools for the project, such as database management systems (e.g., MySQL, PostgreSQL), programming languages (e.g., Python, Java), and frameworks.
+Data Integration: Integrating various data sources, such as food composition tables, user input, and external APIs, into the database seamlessly.
+Backend Development: Implementing the backend logic, including data storage, retrieval, and processing, ensuring the database operates efficiently.
+Frontend Development: Creating a user-friendly interface that allows users to easily input, search, and retrieve nutritional information.
+Security Implementation: Ensuring the database is secure by implementing authentication, authorization, and encryption measures to protect sensitive data.
+Testing and Quality Assurance: Conducting thorough testing, including unit tests, integration tests, and user acceptance tests, to ensure the database is reliable and bug-free.
+Performance Optimization: Optimizing the database and application performance to handle high loads and ensure quick response times.
+Documentation: Creating comprehensive documentation for the database, including design documents, user guides, and API documentation.
+Deployment: Successfully deploying the database to a production environment, ensuring it is accessible to users with minimal downtime.
+User Training and Support: Providing training sessions and ongoing support to help users understand and effectively use the nutritional database.
+Feedback and Iteration: Collecting user feedback post-launch and making necessary updates and improvements to the database.
 - s5414931, Naveen Arakkal Nelson
   - Accomplishments: Gant Chart
   - Project Management: Understanding the basics of project management to organize tasks, set milestones, and allocate resources.
@@ -52,7 +77,18 @@ Adaptability: Updating the Gantt chart as the project progresses and adjusting f
 Critical Thinking: Identifying potential bottlenecks and dependencies that could impact the project timeline.
 Collaboration: Working with team members to gather input and ensure the Gantt chart reflects the actual project workflow.
 Documentation: Keeping detailed records of changes and updates to the Gantt chart for transparency and accountability.
-
+- Project Scope Definition: Clearly defining the scope of the nutritional database project, including all tasks and deliverables.
+Task Breakdown: Breaking down the project into manageable tasks and subtasks, ensuring each aspect of the project is covered.
+Timeline Creation: Developing a detailed timeline that includes start and end dates for each task, along with milestones to track progress.
+Resource Allocation: Assigning resources, such as team members, budget, and tools, to each task to ensure they are completed efficiently.
+Dependency Identification: Identifying dependencies between tasks to understand the sequence of activities and avoid bottlenecks.
+Risk Management: Incorporating risk management strategies into the Gantt chart to address potential issues that could impact the timeline.
+Progress Tracking: Setting up mechanisms to track the progress of each task and update the Gantt chart accordingly.
+Communication Plan: Establishing a communication plan to keep all stakeholders informed about the project status and any changes to the timeline.
+Milestone Achievement: Successfully reaching key milestones, such as completing the database design, integrating data sources, and conducting testing.
+Adaptability: Updating the Gantt chart as the project progresses to reflect any changes in scope, resources, or timelines.
+Documentation: Maintaining detailed documentation of the Gantt chart, including changes and updates, for transparency and future reference.
+Final Review: Conducting a final review of the Gantt chart to ensure all tasks are completed and the project is ready for deployment.
 <div style="page-break-after: always;"></div>
 
 
