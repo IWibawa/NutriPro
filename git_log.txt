@@ -1,0 +1,105 @@
+*   1a559c9 2024-09-07 by [IWibawa] | Merge branch 'main' of https://github.com/IWibawa/Project-Management (HEAD -> main, origin/main, origin/HEAD)
+|\  
+| * 29e9225 2024-09-07 by [narakkal-nelson] | Add files via upload
+| * 8fb9faa 2024-09-07 by [narakkal-nelson] | Rename Gantt chart (1).xlsx to Gantt chart.xlsx
+| * 8870101 2024-09-07 by [narakkal-nelson] | Add files via upload
+| * 7a9436a 2024-09-07 by [narakkal-nelson] | Delete Gantt chart.xlsx
+* | 4b87349 2024-09-07 by [IWibawa] | Updated diagrams and removed obsolete ones, modified Software Design Document
+|/  
+* 2bc962f 2024-09-07 by [MadH3r3K8] | Update Project Plan.md
+* 77d2648 2024-09-07 by [IWibawa] | Updated README.md file
+* 9f660ca 2024-09-06 by [IWibawa] | Updated Project Plan and Software Design Document, moved diagrams to Diagrams folder
+* d1ecf2f 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 2f0fadb 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 81d7072 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* c688533 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 4b68c50 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 0b016c5 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 3cf78c9 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 57498e8 2024-09-06 by [MadH3r3K8] | Project Plan - Notes
+* fd175ef 2024-09-06 by [MadH3r3K8] | Delete Project Plan - Notes
+* 66be3d9 2024-09-06 by [MadH3r3K8] | Create Project Plan - Notes
+* 4010ca7 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* cd64ea4 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* ba7ea61 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 362c4e1 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 17d4fbd 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* f8bbdd2 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 8ffd478 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* a2576ff 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* b14ed1c 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 29e88f8 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* f28a467 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 4d7c166 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* e5a4dae 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 44c1bd4 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 93ea5c0 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 1a2c007 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* e6c453c 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 0bf90c9 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* a6eb947 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 6db51d0 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 0946d1d 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* b991fc0 2024-09-06 by [MadH3r3K8] | Activity Table - Updated
+* 44ac681 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* bbf1f9a 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* d0acced 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 280d0b4 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* a6275da 2024-09-06 by [MadH3r3K8] | Update Project Plan.md
+* 68f583a 2024-09-06 by [MadH3r3K8] | Add files via upload
+* bf516d2 2024-09-06 by [MadH3r3K8] | Add files via upload
+* feeb48c 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* d13bb52 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 0c9a44d 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 10b66e5 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 75ef8c6 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 55a1f9a 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 0513ae8 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* e6ee8f9 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 24dc8e0 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* e7e22ba 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 37da4c7 2024-09-05 by [MadH3r3K8] | Update Project Plan.md
+* 354615c 2024-09-04 by [narakkal-nelson] | Add files via upload
+* 0dd0e6f 2024-09-04 by [narakkal-nelson] | Delete Gantt_chart.png
+* 9427e61 2024-09-04 by [narakkal-nelson] | Delete Gantt chart.xlsx
+* 566d44f 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 6a53e7d 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* b39e669 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 55407b4 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 2f848c7 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 97f6fa1 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 888503a 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* e61ce82 2024-08-26 by [MadH3r3K8] | Draft WBS Image WorkFlow
+* d2398df 2024-08-26 by [MadH3r3K8] | Update README.md
+* ee1dfee 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 32277d0 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+* 812dc4e 2024-08-26 by [MadH3r3K8] | Work Structure Flow Chart
+* 2d76d77 2024-08-26 by [MadH3r3K8] | Update Project Plan.md
+*   da57fd9 2024-08-24 by [IWibawa] | Merge branch 'main' of https://github.com/IWibawa/Project-Management
+|\  
+| * cc88ca9 2024-08-24 by [IWibawa] | Update README.md
+* | 45ed060 2024-08-24 by [IWibawa] | Adjusted the Functional detailed diagram size for the meal plan diagram
+|/  
+* 7cbd340 2024-08-24 by [IWibawa] | Updated diagrams, removed old files, and added new visual designs and another functional design diagram
+* 6f39495 2024-08-12 by [MadH3r3K8] | Update README.md
+* f02b1c1 2024-08-12 by [MadH3r3K8] | WBS - Work Breakdown Structure
+* 20e3d39 2024-08-12 by [IWibawa] | Added the Food comparison wireframe to the Software Design Document
+* b2a5abc 2024-08-12 by [IWibawa] | Removed the visual design examle from Diagrams folder
+* 8a2035b 2024-08-12 by [IWibawa] | Add Food Comparison wireframe to Diagrams folder
+* 658e0e6 2024-08-11 by [narakkal-nelson] | Update README.md
+* 57c7e42 2024-08-11 by [MadH3r3K8] | Update Project Plan.md
+* 899acf9 2024-08-11 by [IWibawa] | Remove unnecessary PNG files from repository
+* b578ff9 2024-08-11 by [IWibawa] | Diagrams folder is added and adjustment to the Software Design Document has been made
+* 157c355 2024-08-11 by [IWibawa] | Add Software Design Document and associated diagrams
+* dfc12f6 2024-08-11 by [IWibawa] | the Software Design Document has been Uploaded
+* f1e77f6 2024-08-11 by [IWibawa] | I added my bits to the README file
+* 7f9558c 2024-08-08 by [MadH3r3K8] | Update README.md
+* ee5b629 2024-08-08 by [MadH3r3K8] | Update Project Plan.md
+* c677431 2024-08-08 by [MadH3r3K8] | Update Project Plan.md
+* 7ef44e2 2024-08-07 by [MadH3r3K8] | Update README.md
+* c91f5d3 2024-08-07 by [MadH3r3K8] | Milestone 1 Files
+* 037786d 2024-08-07 by [MadH3r3K8] | Update .gitignore
+* a4e52f4 2024-08-07 by [MadH3r3K8] | Update Project Plan.md
+* db66f6f 2024-08-07 by [MadH3r3K8] | Update Project Plan.md
+* d481d31 2024-08-07 by [MadH3r3K8] | Project Plan - Test Upload
+* 6acd2ed 2024-07-29 by [IWibawa] | Initial commit
