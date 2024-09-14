@@ -2,6 +2,13 @@
 
 ## Nutritional Food Database Analysis and Visualization Tool
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ANY UPDATES PLACE HERE. 
+
+
+
+
+
 ### Project Overview
 
 The Nutritional Food Database Analysis and Visualization Tool is a desktop application designed to empower users with comprehensive nutritional information and analysis capabilities. This software aims to address the challenge of making informed dietary choices by providing an intuitive interface for exploring and understanding nutritional data.
@@ -97,9 +104,6 @@ Please upload each required file individually; compressed files in .zip format a
   - Create a .txt for each .py file by copying and pasting the code for plagiarism review.
 - Other resources
   - Such as images/screenshots in png/bmp/jpg formats.
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Any Updates place 
 
 # Submission Instructions:
 
