@@ -98,7 +98,8 @@ Please upload each required file individually; compressed files in .zip format a
 - Other resources
   - Such as images/screenshots in png/bmp/jpg formats.
 
----
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Any Updates place 
 
 # Submission Instructions:
 
