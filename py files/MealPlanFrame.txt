@@ -1,0 +1,100 @@
+# -*- coding: utf-8 -*- 
+
+###########################################################################
+## Python code generated with wxFormBuilder (version Jun 17 2015)
+## http://www.wxformbuilder.org/
+##
+## PLEASE DO "NOT" EDIT THIS FILE!
+###########################################################################
+
+import wx
+import wx.xrc
+
+###########################################################################
+## Class MealPlanFrame
+###########################################################################
+
+class MealPlanFrame ( wx.Frame ):
+	
+	def __init__( self, parent ):
+		wx.Frame.__init__ ( self, parent, id = wx.ID_ANY, title = u"Meal Plan", pos = wx.DefaultPosition, size = wx.Size( 800,690 ), style = wx.DEFAULT_FRAME_STYLE )
+		
+		self.SetSizeHintsSz( wx.DefaultSize, wx.DefaultSize )
+		self.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_ACTIVECAPTION ) )
+		
+		bSizer8 = wx.BoxSizer( wx.VERTICAL )
+		
+		sbSizer4 = wx.StaticBoxSizer( wx.StaticBox( self, wx.ID_ANY, u"Meal Plan Overview" ), wx.HORIZONTAL )
+		
+		self.select_day_label = wx.StaticText( sbSizer4.GetStaticBox(), wx.ID_ANY, u"Select Day:", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.select_day_label.Wrap( 0 )
+		sbSizer4.Add( self.select_day_label, 0, wx.ALL, 5 )
+		
+		day_choiceChoices = []
+		self.day_choice = wx.Choice( sbSizer4.GetStaticBox(), wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, day_choiceChoices, 0 )
+		self.day_choice.SetSelection( 0 )
+		sbSizer4.Add( self.day_choice, 0, wx.ALL, 5 )
+		
+		self.weekly_view_button = wx.Button( sbSizer4.GetStaticBox(), wx.ID_ANY, u"Switch to Weekly View", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.weekly_view_button.SetDefault() 
+		self.weekly_view_button.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INACTIVEBORDER ) )
+		self.weekly_view_button.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHT ) )
+		
+		sbSizer4.Add( self.weekly_view_button, 0, wx.ALL, 5 )
+		
+		
+		bSizer8.Add( sbSizer4, 1, wx.EXPAND, 5 )
+		
+		self.meal_plan_list = wx.ListCtrl( self, wx.ID_ANY, wx.DefaultPosition, wx.Size( 780,300 ), wx.LC_REPORT|wx.LC_SINGLE_SEL )
+		bSizer8.Add( self.meal_plan_list, 0, wx.ALL, 5 )
+		
+		bSizer9 = wx.BoxSizer( wx.HORIZONTAL )
+		
+		self.nutrient_summary = wx.StaticText( self, wx.ID_ANY, u"Total for the day: Calories: 0, Protein: 0g, Carbs: 0g, Fat: 0g", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.nutrient_summary.Wrap( 0 )
+		bSizer9.Add( self.nutrient_summary, 0, wx.ALL, 5 )
+		
+		
+		bSizer8.Add( bSizer9, 1, wx.EXPAND, 5 )
+		
+		bSizer10 = wx.BoxSizer( wx.HORIZONTAL )
+		
+		self.add_food_button = wx.Button( self, wx.ID_ANY, u"Add Food", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.add_food_button.SetDefault() 
+		self.add_food_button.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INACTIVEBORDER ) )
+		self.add_food_button.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHT ) )
+		
+		bSizer10.Add( self.add_food_button, 0, wx.ALL, 5 )
+		
+		self.change_food_button = wx.Button( self, wx.ID_ANY, u"Change Food", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.change_food_button.SetDefault() 
+		self.change_food_button.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INACTIVEBORDER ) )
+		self.change_food_button.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHT ) )
+		
+		bSizer10.Add( self.change_food_button, 0, wx.ALL, 5 )
+		
+		self.remove_food_button = wx.Button( self, wx.ID_ANY, u"Remove Food", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.remove_food_button.SetDefault() 
+		self.remove_food_button.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INACTIVEBORDER ) )
+		self.remove_food_button.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHT ) )
+		
+		bSizer10.Add( self.remove_food_button, 0, wx.ALL, 5 )
+		
+		self.clear_meal_plan_button = wx.Button( self, wx.ID_ANY, u"Clear Meal Plan", wx.DefaultPosition, wx.DefaultSize, 0 )
+		self.clear_meal_plan_button.SetDefault() 
+		self.clear_meal_plan_button.SetForegroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_INACTIVEBORDER ) )
+		self.clear_meal_plan_button.SetBackgroundColour( wx.SystemSettings.GetColour( wx.SYS_COLOUR_HIGHLIGHT ) )
+		
+		bSizer10.Add( self.clear_meal_plan_button, 0, wx.ALL, 5 )
+		
+		
+		bSizer8.Add( bSizer10, 1, wx.EXPAND, 5 )
+		
+		
+		self.SetSizer( bSizer8 )
+		self.Layout()
+	
+	def __del__( self ):
+		pass
+	
+
