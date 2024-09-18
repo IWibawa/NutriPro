@@ -114,3 +114,114 @@ Please upload each required file individually; compressed files in .zip format a
 2. Follow the prompts to upload your file.
 3. Tick **I agree** to indicate the submission is your own work.
 4. Click **Submit Assignment**.
+
+---
+
+what change from the original software doc:
+# 1. Overall Structure:
+**Original Design Document:**
+- 8 separate Python files: 4 frame files and 4 logic files.
+
+**Current Implementation:**
+- 4 frame files and 4 corresponding logic files, plus a central `main.py` file coordinating the application.
+
+**Notable Changes:**
+- Consolidation into fewer files, with `main.py` coordinating the logic and maintaining instances of the frames, which deviates from the original approach of using 8 separate files.
+- This consolidation helps in better handling navigation and avoids recreating frame instances unnecessarily.
+
+# 2. Main Navigation and Application Logic:
+**Original Design Document:**
+- No clear mention of how navigation between frames was to be handled.
+
+**Current Implementation (`main.py`):**
+- `MainApp` class manages the frames, allowing smooth transitions between them (e.g., from meal plan to dataset list).
+- Functions like `show_dataset_list()` and `show_meal_plan()` manage navigation.
+
+**Notable Changes:**
+- The centralized navigation and frame management system using the `MainApp` class was a design improvement not explicitly outlined in the original document.
+- The ability to avoid recreating frames on each navigation action is a new addition, improving efficiency.
+
+# 3. Dataset Handling:
+**Original Design Document:**
+- Likely implied a simple food dataset without specifications on how it would be managed.
+
+**Current Implementation:**
+- Dataset loaded using `pandas` for efficient handling and filtering (seen in both `DatasetListLogic.py` and `FoodSearchDialogLogic.py`).
+- Data is filtered and searched using `pandas`, with conditions for specific nutritional values (e.g., filtering by protein, carbs, fat).
+- Dataset displayed in a `ListCtrl` for easier comparison and selection.
+
+**Notable Changes:**
+- The use of `pandas` to handle the food dataset and perform data type conversion for nutritional values is a significant change.
+- The `initialize_list_controls()` method dynamically sets up the columns for food lists, which was not detailed in the original design.
+
+# 4. Meal Plan Management:
+**Original Design Document:**
+- Likely a simple meal plan system without detailed mechanisms for adding, removing, and modifying food.
+
+**Current Implementation (`MealPlanFrameLogic.py`):**
+- The `MealPlanManager` class tracks meals by day and meal time (Breakfast, Lunch, Dinner, Snack).
+- `generate_balanced_meal()` method added for generating a well-balanced meal plan for the week using the dataset.
+- Added logic for filtering cooked/whole meals using keywords like "cooked," "baked," etc. This logic ensures that the meal plan generation avoids individual ingredients.
+
+**Notable Changes:**
+- Random meal generation for the entire week, based on caloric and macronutrient targets, was not part of the original design.
+- The addition of filtering logic for cooked foods represents a significant refinement from the original design, ensuring the selection of appropriate meals.
+
+# 5. Food Search and Selection:
+**Original Design Document:**
+- Expected a basic food search system.
+
+**Current Implementation (`FoodSearchDialogLogic.py`):**
+- Implements search functionality using `pandas` to filter foods by name and bind them to search results.
+- The selected food is stored as a dictionary with nutritional information, ensuring accurate meal plan addition.
+
+**Notable Changes:**
+- The use of `pandas` to search the dataset by food names is a significant improvement over any simpler string matching system that might have been expected in the original design.
+
+# 6. Visual Design and GUI Changes:
+**Original Design Document:**
+- Presumed basic navigation between frames with buttons but no clear specification on visual structure.
+
+**Current GUI:**
+- The GUI design includes various buttons for navigation and interaction:
+  - **Main Menu**: Contains "Search & Compare Foods," "Meal Plan," and "Exit" buttons.
+  - **Dataset List Frame**: Includes filters, a comparison chart generator, and an option to add food to the meal plan.
+  - **Meal Plan Frame**: Allows switching between daily and weekly views and generating meal plans.
+
+**Notable Changes:**
+- Improved interaction with the user, allowing more robust filtering options (e.g., high protein, low carbs) and comparison charts.
+- GUI components like `ListCtrl` for showing food items and comparison charts are more sophisticated than the presumed original design.
+- The back navigation to the main menu, direct navigation to the meal plan from the dataset list, and daily/weekly views are useful additions not mentioned in the original document.
+
+# 7. Error Handling and Warnings:
+**Original Design Document:**
+- No details on error handling.
+
+**Current Implementation:**
+- Warnings for wxPython deprecation are suppressed in `main.py`.
+- Error handling during dataset loading, including displaying error messages if the dataset fails to load.
+
+**Notable Changes:**
+- The robust error handling and suppression of wxPython deprecation warnings were not originally planned, but they improve user experience and application reliability.
+
+# 8. Data Management and Calculations:
+**Original Design Document:**
+- No mention of specific data management techniques.
+
+**Current Implementation:**
+- The system uses `pandas` to manage the food dataset, ensuring that all nutritional values are properly converted to floats for accurate calculations.
+- Nutritional summaries are calculated dynamically and updated in the meal plan view.
+
+**Notable Changes:**
+- The transition to using `pandas` for managing the dataset and performing accurate nutritional calculations represents a major enhancement over the presumed simpler data management system.
+
+# Conclusion:
+Your current implementation significantly improves upon the original design in terms of efficiency, functionality, and user experience. The following key differences were noted:
+
+- Centralized navigation system using `MainApp`.
+- More robust dataset handling with `pandas`.
+- Randomized meal plan generation based on nutritional targets.
+- Filtering of cooked/whole foods to ensure appropriate meal selection.
+- Enhanced visual design and GUI components, including filters, comparison charts, and direct navigation.
+
+If you’d like to explore further adjustments or need help with any specific part of the application, feel free to ask!
