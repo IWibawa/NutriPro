@@ -1,72 +1,72 @@
-﻿
-# Software Design Document
+﻿# **Software Design Document**
 
-## Project Name: NutriPro
-# Group Number: 002
+## **Project Name: NutriPro**
 
-## Team members
+# **Group Number: 002**
 
-| Student Number | Name      |
-|----------------|-----------|
-| s2817538       | Kate Baker |
-| s5374957       | I Wibawa |
-| s5414931       | Naveen Arakkal Nelson |
-## Table of Contents
+## **Team members**
 
-1. [System Vision](#1-system-vision)  
-    1.1 [Problem Background](#11-problem-background)  
-    1.2 [System Capabilities/Overview](#12-system-capabilitiesoverview)  
-    1.3 [Potential Benefits](#13-potential-benefits)  
+| **Student Number** | **Name** |
+| --- | --- |
+| s2817538 | Kate Baker |
+| s5374957 | I Wibawa |
+| s5414931 | Naveen Arakkal Nelson |
 
-2. [Requirements](#2-requirements)  
-    2.1 [User Requirements](#21-user-requirements)  
-    2.2 [Software Requirements](#22-software-requirements)  
-    2.3 [Use Case Diagrams](#23-use-case-diagrams)  
-    2.4 [Use Cases](#24-use-cases)  
+## **Table of Contents**
 
-3. [Software Design and System Components](#3-software-design-and-system-components)  
-    3.1 [Software Design](#31-software-design)  
-    3.2 [System Components](#32-system-components)  
-        - 3.2.1 [Functions](#321-functions)  
-        - 3.2.2 [Data Structures / Data Sources](#322-data-structures--data-sources)  
-        - 3.2.3 [Detailed Design](#323-detailed-design)  
-
-   
-4. [User Interface Design](#4-user-interface-design)  
-    4.1 [Structural Design](#41-structural-design)  
-    4.2 [Visual Design](#42-visual-design)  
+1. [System Vision](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#1-system-vision)  
+    1.1 [Problem Background](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#11-problem-background)  
+    1.2 [System Capabilities/Overview](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#12-system-capabilitiesoverview)  
+    1.3 [Potential Benefits](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#13-potential-benefits)
+2. [Requirements](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#2-requirements)  
+    2.1 [User Requirements](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#21-user-requirements)  
+    2.2 [Software Requirements](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#22-software-requirements)  
+    2.3 [Use Case Diagrams](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#23-use-case-diagrams)  
+    2.4 [Use Cases](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#24-use-cases)
+3. [Software Design and System Components](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#3-software-design-and-system-components)  
+    3.1 [Software Design](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#31-software-design)  
+    3.2 [System Components](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#32-system-components)  
+    - 3.2.1 [Functions](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#321-functions)  
+    - 3.2.2 [Data Structures / Data Sources](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#322-data-structures--data-sources)  
+    - 3.2.3 [Detailed Design](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#323-detailed-design)
+4. [User Interface Design](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#4-user-interface-design)  
+    4.1 [Structural Design](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#41-structural-design)  
+    4.2 [Visual Design](http://localhost:63342/markdownPreview/1903310800/markdown-preview-index-951966250.html?_ijt=1ancm59qsp0s25jppnh1vril06#42-visual-design)
 
 ---
-## 1. System Vision
+## **1. System Vision**
 
-### 1.1 Problem Background
+### **1.1 Problem Background**
 
 - Problem Identification: The system addresses the challenge of making informed dietary choices due to the complexity of nutritional data and the lack of user-friendly tools to analyze this information.
-
 - Dataset: The system uses the Comprehensive Nutritional Food Database, which provides detailed nutritional information for a wide range of food items.
-
 - Data Input/Output:
   - Input: User queries for food items, nutritional ranges, and dietary preferences.
   - Output: Nutritional information, visualizations, filtered food lists, and meal plans.
-
 - Target Users: The system targets health-conscious individuals, dieters, nutritionists, and dietitians who need to analyse and understand nutritional information for various foods.
 
-### 1.2 System capabilities/overview
+### **1.2 System capabilities/overview**
 
-NutriPro provides a comprehensive platform for users to explore, compare, and plan meals based on detailed nutritional information. 
+NutriPro provides a comprehensive platform for users to explore, compare, and plan meals based on detailed nutritional information.
 
 The system now includes the following key features:
-  - A central main menu for easy navigation to all major functions
-  - Advanced food search with filtering capabilities
-  - Detailed nutritional breakdown of individual food items
-  - Side-by-side comparison of up to three food items
-  - Meal planning functionality with weekly overview and daily nutritional summaries
-  - Data visualization through charts and graphs
-  - Data persistence for saving and loading meal plans
 
-The system is structured around five main frames: Main Menu, Search, Food Details, Comparison, and Meal Planner, each accessible through intuitive navigation.
+- A central main menu for easy navigation to all major functions
+- Advanced food search with filtering capabilities
+- <span style="color: red;">Enhanced filtering options including high protein, low carbs, and low fat <--this is new
+- Detailed nutritional breakdown of individual food items
+- Side-by-side comparison of up to three food items
+- <span style="color: red;">Visual comparison of nutritional data using interactive charts <--this is new
+- Meal planning functionality with weekly overview and daily nutritional summaries
+- <span style="color: red;">Automated generation of balanced meal plans for the entire week <--this is new
+- <span style="color: red;">Toggle between daily and weekly meal plan views <--this is new
+- Data visualization through charts and graphs
+- <span style="color: red;">Integration with pandas for efficient data handling and analysis <--this is new
+- <span style="color: red;">Use of matplotlib for generating nutritional comparison charts <--this is new
 
-### 1.3 Potential Benefits (Expanded)
+<span style="color: red;">The system is now structured around three main frames: Main Menu, Dataset List (combining Search and Comparison), and Meal Planner. These frames are managed by a centralized navigation system for smoother transitions and improved user experience. <--this is new
+
+### **1.3 Potential Benefits (Expanded)**
 
 - Improved Dietary Decision-Making:
   - Impact: Users may see a 30% increase in adherence to recommended daily nutritional values within 3 months of consistent app use.
@@ -91,23 +91,29 @@ The system is structured around five main frames: Main Menu, Search, Food Detail
   - Example: By using the app to maintain a balanced diet, a user with high blood pressure could potentially see a reduction in their blood pressure readings over time.
 ---
 
-## 2. Requirements
+## **2. Requirements**
 
-### 2.1 User Requirements
+### **2.1 User Requirements**
 
 1. Users shall be able to navigate between different sections of the application from a central main menu.
 2. Users shall be able to search for foods and apply filters to refine search results.
-3. Users shall be able to view detailed nutritional information for individual food items.
-4. Users shall be able to compare nutritional information of up to three food items side-by-side.
-5. Users shall be able to create, save, and load weekly meal plans.
-6. Users shall be able to view a daily and weekly nutritional summary of their meal plans.
-7. Users shall be able to add food items to their meal plan directly from the search or comparison views.
-8. Users shall be able to generate visual representations (charts/graphs) of nutritional data.
+3. <span style="color: red;">Users shall be able to apply specific nutritional filters (high protein, low carbs, low fat) to food search results. <--this is new
+4. Users shall be able to view detailed nutritional information for individual food items.
+5. Users shall be able to compare nutritional information of up to three food items side-by-side.
+6. <span style="color: red;">Users shall be able to generate and view weekly meal plans. <--this is new
+7. Users shall be able to view a daily and weekly nutritional summary of their meal plans.
+8. Users shall be able to add food items to their meal plan directly from the search or comparison views.
+9. Users shall be able to generate visual representations (charts/graphs) of nutritional data.
+10. <span style="color: red;">Users shall be able to toggle between daily and weekly views of their meal plans. <--this is new
+11. <span style="color: red;">Users shall be able to generate a random, nutritionally balanced meal plan for the entire week. <--this is new
+12. <span style="color: red;">Users shall be able to add, change, and remove individual food items from their meal plan. <--this is new
 
 Note: Since no specific client or user is assigned, we envision the primary users of this software to be health-conscious individuals, dieters, nutritionists, and dietitians who need to analyze and understand nutritional information for various foods quickly and efficiently.
 
-### 2.2 Software Requirements
-#### General
+**2.2 Software Requirements**
+
+**General**
+
 - **R1.1** The system shall provide a main menu with options to access Search, Compare, and Meal Planner functions.
 - **R1.2** The system shall display a "Nutrition Tip of the Day" on the main menu.
 - **R1.3** The system shall allow users to search for foods by name and apply nutritional filters.
@@ -119,34 +125,48 @@ Note: Since no specific client or user is assigned, we envision the primary user
 - **R1.9** The system shall calculate and display daily nutritional summaries based on planned meals.
 - **R1.10** The system shall allow users to save and load meal plans.
 - **R1.11** The system shall provide navigation options to return to the main menu from all sections.
-#### Data Security
+
+**Data Security**
+
 - **R2.1** The system shall encrypt all user data, including saved meal plans and user preferences, using industry-standard encryption methods.
 - **R2.2** The system shall implement secure user authentication, requiring strong passwords with a minimum of 8 characters, including uppercase, lowercase, numbers, and special characters.
 - **R2.3** The system shall automatically log out inactive users after 30 minutes of inactivity.
-#### Performance
+
+**Performance**
+
 - **R3.1** The system shall return search results within 2 seconds for a database of up to 10,000 food items.
 - **R3.2** The system shall generate meal plans within 5 seconds for a week-long plan.
 - **R3.3** The system shall support concurrent usage of up to 1000 users without degradation in performance.
-#### Scalability
+
+**Scalability**
+
 - **R4.1** The system shall be designed to handle a 200% increase in the food database size without significant performance degradation.
 - **R4.2** The system architecture shall support horizontal scaling to accommodate user growth up to 1 million active users.
 - **R4.3** The system shall implement caching mechanisms to reduce database load for frequently accessed food items and nutritional data.
-#### Usability
+
+**Usability**
+
 - **R5.1** The user interface shall be responsive and compatible with devices ranging from smartphones to desktop computers.
 - **R5.2** The system shall provide clear error messages and guidance for all user inputs and interactions.
 - **R5.3** The system shall include a help section and tooltips for new users to understand all features within 15 minutes of first use.
-#### Data Integrity
+
+**Data Integrity**
+
 - **R6.1** The system shall validate all user inputs to ensure data integrity in the food database and meal plans.
 - **R6.2** The system shall maintain a change log for all updates to the food database, allowing for auditing and rollback if necessary.
 
-### 2.3 Use Case Diagrams
-#### Use Case Diagram Overview
+### **2.3 Use Case Diagrams**
+
+**Use Case Diagram Overview**
+
 The Use Case Diagram illustrates the main functionalities of the NutriPro application and how users interact with these features. Below is a brief explanation of the diagram:
 
-##### Central Actor
+**Central Actor**
+
 - **User**: The primary actor in our system, represented by the stick figure.
 
-##### Main Use Cases
+**Main Use Cases**
+
 1. **Access Main Menu**: Entry point for all other functionalities.
 2. **Search Food**: Allows users to find specific food items in the database.
 3. **View Food Details**: Provides detailed nutritional information for selected foods.
@@ -155,391 +175,383 @@ The Use Case Diagram illustrates the main functionalities of the NutriPro applic
 6. **Manage Meal Plan**: Encompasses creating, editing, and viewing meal plans.
 7. **Generate Meal Plan**: An automated feature for creating meal plans based on user preferences.
 8. **View Nutritional Summary**: Provides an overview of nutritional intake based on meal plans.
-##### Relationships
+
+**Relationships**
+
 - The lines connecting the **User** to various use cases indicate which functionalities the user can directly interact with.
 - The arrows between use cases (e.g., from "Search Food" to "View Food Details") represent "include" relationships, showing that one use case is part of the flow of another.
-##### System Boundary
+
+**System Boundary**
+
 - The rectangle enclosing the use cases represents the **boundary of the NutriPro system**, clearly delineating what functionalities are within the scope of our application.
 
 This diagram provides a high-level view of the system's capabilities and how users will interact with NutriPro, serving as a roadmap for development and a quick reference for understanding the app's core functionalities.
-![UCD.png](Diagrams%2FUCD.png)
+![UCD.png](..%2FDiagrams%2FUCD.png) 
+### **2.4 Use Cases**
 
-### 2.4 Use Cases
-
-| **Use Case ID** | **Use Case Name**        | **Actors** | **Description**                                                     | **Flow of Events**                                                                                                                                                                                                                                                                                                 | ***Alternate Flow**                                                                        | **Postcondition**                                                                        |
-|-----------------|--------------------------|------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| **UC001**       | Access Main Menu         | User       | User accesses the main menu to navigate to different functions      | 1. User opens the application<br>2. System displays the main menu with options for Search, Compare, Meal Planner, and Nutrition Tip of the Day                                                                                                                                                                     | N/A                                                                                        | Main menu is displayed                                                                   |
-| **UC002**       | Search Food              | User       | User searches for a specific food item in the database              | 1. User selects "Search Foods" from the main menu<br>2. User enters food name in the search bar<br>3. System processes the search query<br>4. System displays a list of matching food items<br>5. User can select a specific food item for detailed view                                                           | If no matching items are found, the system displays a "No results found" message           | Search results are displayed, or user is notified of no matches                          |
-| **UC003**       | View Food Details        | User       | User views detailed nutritional information for a selected food item | 1. User selects a food item from the search results<br>2. System retrieves the nutritional data for the selected food<br>3. System displays comprehensive nutritional information including macronutrients, micronutrients, and a chart of macronutrient breakdown<br>4. User can scroll through the information   | If the food item data is unavailable, system displays an error message                     | Detailed nutritional information is displayed for the selected food item                 |
-| **UC004**       | Apply Filter Settings    | User       | User filters foods based on nutrient content                        | 1. User selects filter options in the search screen<br>2. User selects nutrient(s) to filter by<br>3. User inputs specific range values for the selected nutrients<br>4. User applies the filter settings<br>5. System queries the database based on the criteria<br>6. System displays the filtered list of foods | If no foods match the criteria, system displays "No foods found matching these criteria"   | Filtered list of foods is displayed                                                      |
-| **UC005**       | Compare Foods            | User       | User compares nutritional information of multiple food items        | 1. User selects "Compare Foods" from the main menu<br>2. User selects up to three food items for comparison<br>3. System retrieves nutritional data for selected items<br>4. System displays a side-by-side comparison<br>5. User can generate a comparison chart                                                  | If user tries to add more than three items, system prompts user to remove an item first    | Comparison view is displayed with nutritional information of selected foods side-by-side |
-| **UC006**       | Manage Meal Plan         | User       | User creates, views, and edits a weekly meal plan                   | 1. User selects "Meal Planner" from the main menu<br>2. System displays the weekly meal plan view<br>3. User can add foods to specific meals and days<br>4. System updates the nutritional summary for each day<br>5. User can save or load meal plans                                                             | If adding a food exceeds daily nutritional goals, system warns the user                    | Weekly meal plan is displayed and can be edited                                          |
-| **UC007**       | Generate Meal Plan       | User       | User generates a meal plan based on nutritional goals               | 1. In the Meal Planner, user selects "Generate Meal Plan"<br>2. User inputs nutritional goals<br>3. System generates a meal plan meeting the criteria<br>4. System displays the generated meal plan                                                                                                                | If no suitable meal plan can be generated, system suggests adjustments to the user's input | Generated meal plan is displayed in the weekly view                                      |
-| **UC008**       | View Nutritional Summary | User       | User views a summary of nutritional information for planned meals   | 1. In the Meal Planner, user views the daily nutritional summary<br>2. System calculates and displays total nutrients for each day<br>3. User can toggle between different days to view summaries                                                                                                                  | N/A                                                                                        | Daily nutritional summaries are displayed                                                |
+| Use Case ID | Use Case Name | Actors | Description | Flow of Events                                                                                                                                                                                                                                                                                                     | Alternate Flow | Postcondition |
+|-------------|---------------|--------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|---------------|
+| UC001 | Access Main Menu | User | User accesses the main menu to navigate to different functions | 1. User opens the application<br><span style="color: red;">2. System displays the main menu with options for Search & Compare Foods, Meal Plan, and Exit <--this is new                                                                                                                                            | N/A | Main menu is displayed |
+| UC002 | Search Food | User | User searches for a specific food item in the database | <span style="color: red;">1. User selects "Search & Compare Foods" from the main menu <--this is new</span><br>2. User enters food name in the search bar<br>3. System processes the search query<br>4. System displays a list of matching food items<br>5. User can select a specific food item for detailed view | If no matching items are found, the system displays a "No results found" message | Search results are displayed, or user is notified of no matches |
+| UC003 | View Food Details | User | User views detailed nutritional information for a selected food item | 1. User selects a food item from the search results<br>2. System retrieves the nutritional data for the selected food<br>3. System displays comprehensive nutritional information including macronutrients, micronutrients<br>4. User can scroll through the information                                           | If the food item data is unavailable, system displays an error message | Detailed nutritional information is displayed for the selected food item |
+| UC004 | Apply Filter Settings | User | User filters foods based on nutrient content | 1. User selects filter options in the search screen<br><span style="color: red;">2. User selects high protein, low carbs, or low fat filters <--this is new</span><br>3. User applies the filter settings<br>4. System queries the database based on the criteria<br>5. System displays the filtered list of foods | If no foods match the criteria, system displays "No foods found matching these criteria" | Filtered list of foods is displayed |
+| UC005 | Compare Foods | User | User compares nutritional information of multiple food items | 1. User selects up to three food items for comparison<br>2. System retrieves nutritional data for selected items<br>3. System displays a side-by-side comparison<br>4. User can generate a comparison chart                                                                                                        | <span style="color: red;">If user tries to add more than three items, system prevents the addition <--this is new | Comparison view is displayed with nutritional information of selected foods side-by-side |
+| UC006 | Manage Meal Plan | User | User views and edits a weekly meal plan <--this is new | 1. User selects "Meal Plan" from the main menu<br>2. System displays the weekly meal plan view<br>3. User can add foods to specific meals and days<br>4. System updates the nutritional summary for each day<br><span style="color: red;">5. User can toggle between daily and weekly views <--this is new         | <span style="color: red;">If adding a food exceeds daily nutritional goals, system updates the nutritional summary <--this is new | Weekly meal plan is displayed and can be edited |
+| UC007 | Generate Meal Plan | User | User generates a random, balanced meal plan <--this is new | 1. In the Meal Planner, user selects "Generate Meal Plan"<br><span style="color: red;">2. System generates a balanced meal plan for the entire week <--this is new<br>3. System displays the generated meal plan                                                                                                   | <span style="color: red;">If generation fails, system notifies the user <--this is new | Generated meal plan is displayed in the weekly view |
+| UC008 | View Nutritional Summary | User | User views a summary of nutritional information for planned meals | <span style="color: red;">1. In the Meal Planner, user views the daily or weekly nutritional summary <--this is new<br>2. System calculates and displays total nutrients for the selected view <--this is new<br>3. User can toggle between different views to view summaries <--this is new                                          | N/A | <span style="color: red;">Daily or weekly nutritional summaries are displayed <--this is new |
 ---
-## 3. Software Design and System Components
+## **3. Software Design and System Components**
 
-### 3.1 Software Design
-![Software_design_flowchart.png](Diagrams%2FSoftware_design_flowchart.png)
+### **3.1 Software Design**
+![Software_design_flowchart.png](..%2FDiagrams%2FSoftware_design_flowchart.png)
+<span style="color: red;">**Software Design Flowchart is adjusted:**
+- <span style="color: red;">The overall structure is maintained with three main layers:
+- <span style="color: red;">User Interface components are grouped together.
+- <span style="color: red;">Application Layer components, including the Data Manager, are grouped.
+- <span style="color: red;">The Data Layer illustrates the relationship between:
+  - <span style="color: red;">Data management
+  - <span style="color: red;">Food database
+  - <span style="color: red;">CSV file import
+- <span style="color: red;">The connections between layers are simplified to show the general flow of data and control.
+
 Component Breakdown:
 
 1. User Interface:
-   - Web Interface: The main user interaction point
-   - Search Bar: For food item searches
-   - Filter/Range Selector: For applying nutritional filters
-   - Visualization Panel: For displaying charts and graphs
-   - Comparison Panel: For side-by-side food comparisons
-   - Meal Plan Generator: Interface for creating meal plans
-
+    - Web Interface: The main user interaction point
+    - Search Bar: For food item searches
+    - Filter/Range Selector: For applying nutritional filters
+    - Visualization Panel: For displaying charts and graphs
+    - Comparison Panel: For side-by-side food comparisons
+    - Meal Plan Generator: Interface for creating meal plans
 2. Application Layer:
-   - Search Component: Handles food search functionality
-   - Filter Component: Manages filtering and categorization
-   - Visualization Component: Generates charts and graphs
-   - Comparison Component: Processes food comparisons
-   - Meal Planning Component: Generates meal plans
-   - Data Manager: Central component for data handling and communication with the data layer
-
+    - Search Component: Handles food search functionality
+    - Filter Component: Manages filtering and categorization
+    - Visualization Component: Generates charts and graphs
+    - Comparison Component: Processes food comparisons
+    - Meal Planning Component: Generates meal plans
+    - Data Manager: Central component for data handling and communication with the data layer
 3. Data Layer:
-   - Food Database: Stores all food and nutritional information
-   - CSV File: The source of the nutritional data
+    - Food Database: Stores all food and nutritional information
+    - CSV File: The source of the nutritional data
 
-### 3.2 System Components
+## **3.2 System Components**
 
-#### 3.2.1 Functions
+### **3.2.1 Functions**
 
-1. search_food(query: str) -> List[FoodItem]
-   - Description: Searches for food items based on user input
-   - Input Parameters: query (string) - The search term entered by the user
-   - Return Value: A list of FoodItem objects matching the search query
-   - Side Effects: None
+1. <span style="color: red;">search_food(query: str) -> pd.DataFrame <--this is new
+    - Description: Searches for food items based on user input
+    - Input Parameters: query (string) - The search term entered by the user
+    - <span style="color: red;">Return Value: A pandas DataFrame containing matching food items <--this is new
+    - Side Effects: None
+2. <span style="color: red;">generate_comparison_chart(food_items: List\[Dict\]) -> None <--this is new
+    - Description: Creates a visual representation of the nutritional comparison
+    - <span style="color: red;">Input Parameters: food_items (List of Dictionaries) - The selected food items <--this is new
+    - Return Value: None
+    - Side Effects: Displays a matplotlib chart <--this is new
+3. <span style="color: red;">apply_nutritional_filters(df: pd.DataFrame, high_protein: bool, low_carbs: bool, low_fat: bool) -> pd.DataFrame <--this is new
+    - Description: Filters foods based on nutritional criteria
+    - Input Parameters:
+        1. df (pandas DataFrame) - The food dataset
+        2. high_protein (bool) - Whether to filter for high protein foods
+        3. low_carbs (bool) - Whether to filter for low carb foods
+        4. low_fat (bool) - Whether to filter for low fat foods
+    - Return Value: A filtered pandas DataFrame
+    - Side Effects: None
+4. <span style="color: red;">add_food_to_meal_plan(day: str, meal: str, food: Dict) -> None <--this is new
+    - Description: Adds a food item to the meal plan
+    - Input Parameters:
+        1. day (string) - The day of the week
+        2. meal (string) - The meal type (Breakfast, Lunch, Dinner, Snack)
+        3. food (Dictionary) - The food item to add
+    - Return Value: None
+    - Side Effects: Updates the meal plan
+5. <span style="color: red;">compare_foods(food_items: List\[Dict\]) -> pd.DataFrame <--this is new
+    - Description: Compares multiple food items
+    - Input Parameters: food_items (List of Dictionaries) - A list of food items to compare <--this is new
+    - Return Value: A pandas DataFrame containing the comparison data <--this is new
+    - Side Effects: None
+6. <span style="color: red;">generate_balanced_meal_plan() -> Dict <--this is new
+    - Description: Generates a balanced weekly meal plan
+    - Input Parameters: None
+    - Return Value: A dictionary containing the generated meal plan
+    - Side Effects: None
+7. navigate_to_main_menu()
+    - Description: Returns the user to the main menu from any screen
+    - Input Parameters: None
+    - Return Value: None
+    - Side Effects: Changes the current view to the main menu
+8. <span style="color: red;">toggle_meal_plan_view() <--this is new
+    - Description: Toggles between daily and weekly meal plan views
+    - Input Parameters: None
+    - Return Value: None
+    - Side Effects: Updates the meal plan display
+9. <span style="color: red;">update_nutrient_summary(view: str) -> str <--this is new
+    - Description: Calculates and returns the nutrient summary for the current view
+    - Input Parameters: view (string) - 'daily' or 'weekly'
+    - Return Value: A string containing the nutrient summary
+    - Side Effects: None
 
-2. generate_nutrition_chart(food_item: FoodItem) -> Chart
-   - Description: Creates a visual representation of the nutritional breakdown
-   - Input Parameters: food_item (FoodItem) - The selected food item
-   - Return Value: A Chart object containing the visualization
+### **3.2.2 Data Structures / Data Source**
 
-3. filter_foods_by_nutrient(nutrient: str, min_value: float, max_value: float) -> List[FoodItem]
-   - Description: Filters foods based on a specific nutrient range
-   - Input Parameters:
-     1. nutrient (string) - The nutrient to filter by
-     2. min_value (float) - The minimum value of the nutrient
-     3. max_value (float) - The maximum value of the nutrient
-   - Return Value: A list of FoodItem objects that fall within the specified range
-   - Side Effects: None
+<span style="color: red;">This section describes the key data structures used in the NutriPro application and elaborates on how they interact with each other and with the system's functions. <-- this is new
 
-4. categorize_foods_by_nutrient_level(nutrient: str, level: str) -> List[FoodItem]
-   - Description: Categorizes foods based on low, mid, or high levels of a specific nutrient
-   - Input Parameters:
-     1. nutrient (string) - The nutrient to categorize by
-     2. level (string) - The level to filter (low, mid, or high)
-   - Return Value: A list of FoodItem objects in the specified category
-   - Side Effects: None
+#### 1. **Food Dataset**
+- <span style="color: red;">**Type:** pandas DataFrame <-- this is new
+- **Usage:** Stores all food items and their nutritional information
+- <span style="color: red;">**Key Columns:** 'food', 'Caloric Value', 'Protein', 'Carbohydrates', 'Fat', and other nutritional values <-- this is new
+- <span style="color: red;">**Key Methods:** DataFrame operations like filtering, sorting, and selection <-- this is new
 
-5. compare_foods(food_items: List[FoodItem]) -> ComparisonResult
-   - Description: Compares multiple food items
-   - Input Parameters: food_items (List[FoodItem]) - A list of FoodItem objects to compare
-   - Return Value: A ComparisonResult object containing the comparison data
-   - Side Effects: None
-
-6. generate_meal_plan(nutritional_goals: Dict[str, float]) -> MealPlan
-   - Description: Generates a weekly meal plan based on user-defined nutritional goals
-   - Input Parameters: nutritional_goals (dictionary of nutrient names and target values)
-   - Return Value: A MealPlan object containing the generated meal plan
-   - Side Effects: None
-
-7. save_meal_plan(meal_plan: MealPlan, file_path: str) -> bool
-   - Description: Saves the current meal plan to a file
-   - Input Parameters: meal_plan (MealPlan object), file_path (string)
-   - Return Value: Boolean indicating success or failure of save operation
-   - Side Effects: Creates or overwrites a file at the specified path
-
-8. load_meal_plan(file_path: str) -> MealPlan
-   - Description: Loads a meal plan from a file
-   - Input Parameters: file_path (string)
-   - Return Value: A MealPlan object containing the loaded meal plan
-   - Side Effects: None
-
-9. navigate_to_main_menu()
-   - Description: Returns the user to the main menu from any screen
-   - Input Parameters: None
-   - Return Value: None
-   - Side Effects: Changes the current view to the main menu
-
-#### 3.2.2 Data Structures / Data Source
-
-This section describes the key data structures used in the NutriPro application and elaborates on how they interact with each other and with the system's functions.
-
-##### 1. FoodItem
-- **Type**: Class
-- **Usage**: Represents a single food item with all its nutritional information
-- **Key Attributes**: `name`, `calories`, `protein`, `carbohydrates`, `fats`, `vitamins`, `minerals`
-- **Key Methods**: `get_nutrient_value(nutrient)`
-
-**Interactions**:
-- Serves as the fundamental unit of food information in the **NutritionalDatabase**
+**Interactions:**
+- Serves as the central data source for all food-related operations
 - Used in search, filter, and comparison functions
-- Forms the basis of meal components in the **MealPlan** structure
+- Provides data for meal plan generation and nutritional calculations
 
-##### 2. NutritionalDatabase
-- **Type**: Class
-- **Usage**: Manages the entire database of food items
-- **Key Attributes**: `food_items` (a list of **FoodItem** objects)
-- **Key Methods**: `load_data(file_path)`, `search_food(query)`, `apply_filters(filters)`
+#### 2. **MealPlanManager**
+- **Type:** Class
+- <span style="color: red;">**Usage:** Manages the meal plan data and operations <-- this is new
+- <span style="color: red;">**Key Attributes:** meal_plan (a nested dictionary structure), food_dataset (pandas DataFrame) <-- this is new
+- <span style="color: red;">**Key Methods:** add_food, remove_food, change_food, clear_meal_plan, generate_balanced_meal <-- this is new
 
-**Interactions**:
-- Acts as the central repository for all **FoodItem** instances
-- Interfaces with the CSV file data source to populate its food items list
-- Provides data access for search, filter, and meal planning functions
+**Interactions:**
+- Interacts with the Food Dataset to retrieve food information
+- Provides meal plan data to the user interface for display
+- Used by meal planning functions to manipulate the meal plan
 
-##### 3. Chart
-- **Type**: Class
-- **Usage**: Represents a visualization of nutritional data
-- **Key Attributes**: `chart_type`, `data`
-- **Key Methods**: `render()`
+#### 3. **Chart**
+- <span style="color: red;">**Type:** matplotlib Figure <-- this is new
+- **Usage:** Represents a visualization of nutritional data
+- **Key Attributes:** chart type (bar, pie, etc.), data
+- <span style="color: red;">**Key Methods:** plotting functions from matplotlib <-- this is new
 
-**Interactions**:
-- Created by the `generate_nutrition_chart` function using **FoodItem** data
-- Used in the user interface to display visual representations of nutritional information
-- May be incorporated in **ComparisonResult** to visualize food comparisons
+**Interactions:**
+- <span style="color: red;">Created by the generate_comparison_chart function using selected food data <-- this is new
+- Used in the user interface to display visual representations of nutritional comparisons
 
-##### 4. ComparisonResult
-- **Type**: Class
-- **Usage**: Represents the result of a food comparison
-- **Key Attributes**: `food_items` (list of compared **FoodItems**), `comparison_data` (nutritional data for comparison)
+#### 4. **ComparisonData**
+- <span style="color: red;">**Type:** pandas DataFrame <-- this is new
+- **Usage:** Represents the data for food comparison
+- <span style="color: red;">**Key Columns:** 'Food', 'Calories', 'Protein', 'Carbs', 'Fat' <-- this is new
 
-**Interactions**:
-- Produced by the `compare_foods` function using multiple **FoodItem** instances
-- Used in the user interface for side-by-side food comparisons
-- May interact with the **Chart** class for visual comparison generation
+**Interactions:**
+- Produced by selecting specific foods from the main Food Dataset
+- Used to generate comparison charts
+- Displayed in the user interface for side-by-side food comparisons
 
-##### 5. MealPlan
-- **Type**: Class
-- **Usage**: Represents a weekly meal plan with daily breakdowns
-- **Key Attributes**: `weekly_plan` (structured meal data), `daily_summaries` (nutritional summaries)
-- **Key Methods**: `add_food_to_meal`, `calculate_daily_summary`, `get_weekly_overview`
+#### 5. **NutritionalSummary**
+- <span style="color: red;">**Type:** Dictionary <-- this is new
+- **Usage:** Represents the nutritional summary for a day or week
+- <span style="color: red;">**Key Items:** 'Calories', 'Protein', 'Carbs', 'Fat' <-- this is new
 
-**Interactions**:
-- Created and populated by the `generate_meal_plan` function using **FoodItems** from the **NutritionalDatabase**
-- Interacts with **FoodItem** instances to calculate nutritional summaries
-- Used by `save_meal_plan` and `load_meal_plan` functions for data persistence
+**Interactions:**
+- Calculated from the meal plan data in MealPlanManager
+- Used to display nutritional totals in the meal plan view
+- Updated when changes are made to the meal plan
 
 ---
 
-#### Data Flow and Interactions
+**Data Flow and Interactions:**
 
-##### 1. Data Loading
-The **NutritionalDatabase** initializes by loading data from a CSV file, creating **FoodItem** instances for each entry.
+##### 1. <span style="color: red;">**Data Loading:** 
+<span style="color: red;">The Food Dataset is initialized by loading data from a CSV file into a pandas DataFrame. <-- this is new
+##### 2. <span style="color: red;">**Searching and Filtering:** 
+<span style="color: red;">User queries activate search_food and apply_nutritional_filters functions. These functions interact with the Food Dataset to retrieve and process data based on specified criteria. <-- this is new
+##### 3. <span style="color: red;">**Comparison:** 
+<span style="color: red;">The compare_foods function takes selected foods from the Food Dataset and generates a ComparisonData DataFrame. This data is then used to create a Chart for visual representation. <-- this is new
+##### 4. <span style="color: red;">**Meal Planning:** 
+<span style="color: red;">The generate_balanced_meal_plan function interacts with the Food Dataset to select appropriate foods based on nutritional criteria. It populates the meal_plan structure in the MealPlanManager. <-- this is new
+##### 5. <span style="color: red;">**Data Visualization:** 
+<span style="color: red;">The generate_comparison_chart function creates Chart objects using data from the ComparisonData DataFrame. <-- this is new
+##### 6. <span style="color: red;">**Nutritional Calculations:** 
+<span style="color: red;">The MealPlanManager calculates NutritionalSummary data based on the current meal plan, which is then displayed in the user interface. <-- this is new
 
-##### 2. Searching and Filtering
-User queries activate `search_food`, `filter_foods_by_nutrient`, and `categorize_foods_by_nutrient_level` functions. These functions interact with the **NutritionalDatabase** to retrieve and process **FoodItem** data based on specified criteria.
+This description of data structures and their interactions provides an overview of how data flows through the NutriPro system, from initial loading to user interactions and nutritional calculations. It demonstrates how the various components work together to provide the application's functionality using pandas for efficient data management and matplotlib for visualization. <-- this is new
 
-##### 3. Comparison
-The `compare_foods` function takes multiple **FoodItem** instances and generates a **ComparisonResult** object. This result can then be used to create a **Chart** for visual representation.
+**3.2.3 Detailed Design Below is the detailed pseudo code for each function: <-- this is new**
 
-##### 4. Meal Planning
-The `generate_meal_plan` function interacts with the **NutritionalDatabase** to select appropriate **FoodItems** based on nutritional goals. It creates and populates a **MealPlan** object, organizing **FoodItems** into meals and days, and calculates nutritional summaries.
-
-##### 5. Data Visualization
-The `generate_nutrition_chart` function creates **Chart** objects using data from **FoodItems**, **ComparisonResults**, or **MealPlan** summaries.
-
-##### 6. Data Persistence
-The `save_meal_plan` and `load_meal_plan` functions handle the serialization and deserialization of **MealPlan** objects for storage and retrieval.
-
-This description of data structures and their interactions provides an overview of how data flows through the NutriPro system, from initial loading to user interactions and data persistence. It demonstrates how the various components work together to provide the application's functionality.
-
-#### 3.2.3 Detailed Design
-Below is the detailed pseudo code for each functions 
-
-1. **search_food(query: str) -> List[FoodItem]**
-    - Initialize empty list result
-    - Convert query to lowercase
-    - For each food_item in database:
-        - If query is in food_item.name (case-insensitive):
-            - Add food_item to result
-    - Return result
-
-2. **generate_nutrition_chart(food_item: FoodItem) -> Chart**
-    - Initialize new Chart object
-    - Set chart type to "Pie"
-    - Calculate total macronutrients (protein + carbs + fats)
-    - For each macronutrient in [protein, carbs, fats]:
-        - Calculate percentage = (macronutrient / total) * 100
-        - Add to chart data: {name: macronutrient, value: percentage}
-    - Return chart
-
-3. **filter_foods_by_nutrient(nutrient: str, min_value: float, max_value: float) -> List[FoodItem]**
-    - Initialize empty list result
-    - For each food_item in database:
-        - nutrient_value = food_item.get_nutrient_value(nutrient)
-        - If min_value <= nutrient_value <= max_value:
-            - Add food_item to result
-    - Return result
-
-4. **categorize_foods_by_nutrient_level(nutrient: str, level: str) -> List[FoodItem]**
-    - Initialize empty list result
-    - Define thresholds for low, mid, high levels
-    - For each food_item in database:
-        - nutrient_value = food_item.get_nutrient_value(nutrient)
-        - If (level is "low" and nutrient_value < low_threshold) or
-           - (level is "mid" and low_threshold <= nutrient_value < high_threshold) or
-           - (level is "high" and nutrient_value >= high_threshold):
-            - Add food_item to result
-    - Return result
-
-5. **compare_foods(food_items: List[FoodItem]) -> ComparisonResult**
-    - Initialize new ComparisonResult object
-    - For each nutrient in [calories, protein, carbs, fats, vitamins, minerals]:
-        - Initialize empty list nutrient_values
-        - For each food_item in food_items:
-            - Add food_item.get_nutrient_value(nutrient) to nutrient_values
-        - Add to comparison_data: {nutrient: nutrient_values}
-    - Set ComparisonResult.food_items to food_items
-    - Set ComparisonResult.comparison_data to comparison_data
-    - Return ComparisonResult
-
-6. **generate_meal_plan(nutritional_goals: Dict[str, float]) -> MealPlan**
-    - Initialize new MealPlan object
-    - For each day in week:
-        - For each meal in [breakfast, lunch, dinner, snacks]:
-            - Initialize empty list meal_foods
-            - While daily nutritional goals not met:
-                - Select random food_item from database
-                - If adding food_item meets nutritional goals:
-                    - Add food_item to meal_foods
-            - Add meal_foods to MealPlan for current day and meal
-        - Calculate and store daily nutritional summary
-    - Return MealPlan
-
-7. **save_meal_plan(meal_plan: MealPlan, file_path: str) -> bool**
-    - Try:
-        - Open file at file_path in write mode
-        - Serialize meal_plan object to JSON
-        - Write JSON to file
-        - Close file
-        - Return True
-    - Catch IOError:
-        - Print "Error saving meal plan"
-        - Return False
-
-8. **load_meal_plan(file_path: str) -> MealPlan**
-    - Try:
-        - Open file at file_path in read mode
-        - Read JSON from file
-        - Deserialize JSON to MealPlan object
-        - Close file
-        - Return MealPlan object
-    - Catch IOError:
-        - Print "Error loading meal plan"
-        - Return None
-
-9. **navigate_to_main_menu()**
-    - Clear current screen
-    - Display main menu options
-    - Wait for user input
+1. <span style="color: red;">**search_food(query: str) -> pd.DataFrame <-- this is new**
+    - <span style="color: red;">Convert query to lowercase <-- this is new
+    - <span style="color: red;">Filter food_data DataFrame where food name contains query (case-insensitive) <-- this is new
+    - <span style="color: red;">Return filtered DataFrame <-- this is new
+2. <span style="color: red;">**generate_comparison_chart(food_items: List\[Dict\]) -> None <-- this is new**
+    - <span style="color: red;">Create a pandas DataFrame from food_items <-- this is new
+    - <span style="color: red;">Set 'Food' as index of the DataFrame <-- this is new
+    - <span style="color: red;">Create a bar plot using matplotlib <-- this is new
+    - <span style="color: red;">Set title, labels, and legend <-- this is new
+    - <span style="color: red;">Display the plot <-- this is new
+3. <span style="color: red;">**apply_nutritional_filters(df: pd.DataFrame, high_protein: bool, low_carbs: bool, low_fat: bool) -> pd.DataFrame <-- this is new**
+    - <span style="color: red;">Initialize filtered_data as a copy of df <-- this is new
+    - <span style="color: red;">If high_protein is True: <-- this is new
+        - <span style="color: red;">Filter filtered_data where Protein > 20 <-- this is new
+    - <span style="color: red;">If low_carbs is True: <-- this is new
+        - <span style="color: red;">Filter filtered_data where Carbohydrates < 20 <-- this is new
+    - <span style="color: red;">If low_fat is True: <-- this is new
+        - <span style="color: red;">Filter filtered_data where Fat < 5 <-- this is new
+    - <span style="color: red;">Return filtered_data <-- this is new
+4. <span style="color: red;">**add_food_to_meal_plan(day: str, meal: str, food: Dict) -> None <-- this is new**
+    - <span style="color: red;">Append food to self.meal_plan\[day\]\[meal\] list <-- this is new
+5. <span style="color: red;">**compare_foods(food_items: List\[Dict\]) -> pd.DataFrame <-- this is new**
+    - <span style="color: red;">Create a pandas DataFrame from food_items <-- this is new
+    - <span style="color: red;">Set 'Food' as index of the DataFrame <-- this is new
+    - <span style="color: red;">Return DataFrame <-- this is new
+6. <span style="color: red;">**generate_balanced_meal_plan() -> Dict <-- this is new**
+    - <span style="color: red;">Initialize empty meal plan dictionary <-- this is new
+    - <span style="color: red;">For each day in week: <-- this is new
+        - <span style="color: red;">For each meal in \[Breakfast, Lunch, Dinner, Snack\]: <-- this is new
+            - <span style="color: red;">Call generate_balanced_meal() <-- this is new
+            - <span style="color: red;">Add returned foods to meal plan <-- this is new
+    - Return meal plan dictionary <-- this is new
+7. <span style="color: red;">**navigate_to_main_menu() <-- this is new**
+    - <span style="color: red;">Hide current frame <-- this is new
+    - <span style="color: red;">Show main menu frame <-- this is new
+8. <span style="color: red;">**toggle_meal_plan_view() <-- this is new**
+    - <span style="color: red;">If current view is 'daily': <-- this is new
+        - <span style="color: red;">Set current view to 'weekly' <-- this is new
+    - <span style="color: red;">Else: <-- this is new
+        - <span style="color: red;">Set current view to 'daily' <-- this is new
+    - <span style="color: red;">Update meal plan display <-- this is new
+9. <span style="color: red;">**update_nutrient_summary(view: str) -> str <-- this is new**
+    - <span style="color: red;">Initialize total_calories, total_protein, total_carbs, total_fat to 0 <-- this is new
+    - <span style="color: red;">If view is 'daily': <-- this is new
+        - <span style="color: red;">Sum nutrients for selected day <-- this is new
+    - <span style="color: red;">If view is 'weekly': <-- this is new
+        - <span style="color: red;">Sum nutrients for all days <-- this is new
+    - <span style="color: red;">Format summary string with calculated totals <-- this is new
+    - <span style="color: red;">Return summary string <-- this is new
+10. <span style="color: red;">**generate_balanced_meal() <-- this is new**
+    - <span style="color: red;">Set nutritional targets <-- this is new
+    - <span style="color: red;">Initialize empty list for selected foods <-- this is new
+    - <span style="color: red;">Filter food dataset for cooked/whole meals <-- this is new
+    - <span style="color: red;">While nutritional targets not met: <-- this is new
+        - <span style="color: red;">Randomly select a food from filtered dataset <-- this is new
+        - <span style="color: red;">Add food to selected foods list <-- this is new
+        - <span style="color: red;">Update current nutritional totals <-- this is new
+    - <span style="color: red;">Return selected foods <-- this is new
 ---
 
-## 4. User Interface Design
+## **4. User Interface Design**
 
-## 4.1 Structural Design
+4.1 Structural Design
 
-The Nutritional Food Database application is structured as follows:
+The NutriPro application is structured as follows:
 
-### Main Application Window
+### <span style="color: red;">**Main Application Window**
 
-The main window consists of two primary sections:
-- Header
-- Content Area
+<span style="color: red;">The main window consists of three primary frames: <-- this is new
 
-### Header
+- <span style="color: red;">Main Menu
+- <span style="color: red;">Dataset List (Search and Compare)
+- <span style="color: red;">Meal Planner
 
-The header contains:
-- **Logo**: Reinforces brand identity
-- **Navigation Menu**: Provides quick access to main sections
-  - Home
-  - Compare
+### **Main Menu**
+
+The main menu contains:
+
+- Logo: NutriPro branding
+- Buttons:
+  - Search & Compare Foods
   - Meal Plan
+  - <span style="color: red;">Exit<-- this is new
 
-### Content Area
+### <span style="color: red;">**Dataset List (Search and Compare) Frame <-- this is new**
 
-The content area is the primary interface for user interactions, comprising:
+<span style="color: red;">This frame is the primary interface for food search and comparison, comprising:
 
-1. **Search Bar**: 
-   - Prominently placed for easy access
-   - Allows users to search for food items
+1. <span style="color: red;">Search Bar:
+    - <span style="color: red;">Allows users to search for food items
+2. <span style="color: red;">Results Display:
+    - <span style="color: red;">Shows search results in a list format <-- this is new
+3. <span style="color: red;">Filter Panel:
+    - <span style="color: red;">Enables users to apply nutritional filters (high protein, low carbs, low fat)<-- this is new
+4. <span style="color: red;">Comparison Area:
+    - <span style="color: red;">Allows selection of up to three foods for comparison
+    - <span style="color: red;">Displays selected foods side by side
+5. <span style="color: red;">Visualization Area:
+    - <span style="color: red;">Presents nutritional comparison data in graphical format
+6. <span style="color: red;">Meal Plan Options:
+    - <span style="color: red;">Allows adding selected foods to the meal plan <-- this is new
 
-2. **Results/Content Display**:
-   - Dynamically shows different views based on user interaction:
-     - Food List View: Displays search results
-     - Detailed Food View: Shows comprehensive information about a selected food item
-     - Comparison View: Allows side-by-side comparison of multiple food items
-     - Meal Plan View: Displays generated meal plans
+### <span style="color: red;">**Meal Planner Frame**
 
-3. **Filter Panel**:
-   - Enables users to refine search results or set preferences
-   - Typically located on the right side for easy access
+<span style="color: red;">This frame is dedicated to meal planning and nutritional summary, comprising:
 
-4. **Visualization Area**:
-   - Presents nutritional data in graphical formats
-   - Enhances understanding of nutritional information
+1. <span style="color: red;">View Toggle:
+    - <span style="color: red;">Allows switching between daily and weekly views
+2. <span style="color: red;">Meal Plan Display:
+    - <span style="color: red;">Shows meals for each day of the week
+3. <span style="color: red;">Nutritional Summary:
+    - <span style="color: red;">Displays total nutritional information for the selected view
+4. <span style="color: red;">Meal Plan Controls:
+    - <span style="color: red;">Add Food
+    - <span style="color: red;">Change Food
+    - <span style="color: red;">Remove Food
+    - <span style="color: red;">Clear Meal Plan
+    - <span style="color: red;">Generate Meal Plan<-- this is new
 
-### Design Choices
+### **Design Choices**
 
-1. The hierarchical structure ensures clear organization of features and information.
-2. Centrally placing the search bar emphasizes its importance in the user workflow.
-3. The consistent right-sided filter panel provides a familiar location for refining searches.
-4. Separating different content views (list, details, comparison, meal plan) allows for focused presentation of information.
-5. Including a visualization area enables quick understanding of nutritional data through graphical representations.
+1. <span style="color: red;">The use of separate frames for main functions (search/compare and meal planning) allows for focused interaction within each feature set.<-- this is new
+2. <span style="color: red;">The main menu provides clear, simple navigation to core functionalities.<-- this is new
+3. Centrally placing the search bar emphasizes its importance in the user workflow.
+4. The filter panel provides easy access for refining searches based on nutritional criteria.
+5. <span style="color: red;">The meal planner's toggle between daily and weekly views offers flexibility in meal planning and nutritional tracking.<-- this is new
+6. Including a visualization area enables quick understanding of nutritional data through graphical representations.
 
 This structure is designed to provide an intuitive and efficient user experience, allowing easy navigation between different functionalities while maintaining a clear and organized interface.
 
-### Structural Design Diagram
+### **Structural Design Diagram**
 
-To visually represent the structure of our application, here's a structural design diagram showing the overall interface organization:
-![Structural_Design.png](Diagrams%2FStructural_Design.png)
-This hierarchy chart provides a visual representation of the NutriPro application's structure diagram, illustrating how different components are organized and related to each other. It complements the detailed description provided above by offering a quick, at-a-glance view of the application's structure.
+This hierarchy chart provides a visual representation of the NutriPro application's structure, illustrating how different components are organized and related to each other. It complements the detailed description provided above by offering a quick, at-a-glance view of the application's structure.
 
 The diagram shows:
-1. The main components of the application (Main Menu, Header, Footer)
-2. The key sections accessible from the Main Menu (Search, Compare, Meal Planner)
-3. The sub-components within each main section
+
+1. <span style="color: red;">The main components of the application (Main Menu, Dataset List, Meal Planner) <-- this is new
+2. The key sections within each main component
+3. The sub-components within each section
 4. The relationships between different parts of the interface
 
 This visual representation, combined with the detailed textual description, provides a comprehensive overview of the NutriPro application's structural design, fulfilling the template's requirements for this section.
-### 4.2 Visual Design
 
-In designing the NutriPro application, our primary goal will be to create an interface that is not only visually appealing but also intuitive and efficient. We will aim to design a user experience that will make nutritional information accessible and actionable for users of all levels of nutritional knowledge. Let's explore the key screens of our application, examining the design choices that will shape the user's interaction with NutriPro.
+4.2 Visual Design
 
-1. **Main screen**
-- ![visual_design - main_screen.png](Diagrams%2Fvisual_design%20-%20main_screen.png)
-- Upon launching NutriPro, users will be greeted by a clean, uncluttered main menu. This screen will serve as the central hub of the application, offering three primary pathways: Search Foods, Compare Foods, and Meal Planner. Each option will be presented as a large, inviting button that will span the width of the screen.
-- The simplicity of this design will be intentional. By presenting only three core functions, we will avoid overwhelming users with choices and instead guide them towards the app's primary features. The generous size of the buttons will serve a dual purpose: it will make the options unmissable, even at a glance, and will provide large touch targets that will enhance usability across devices, particularly benefiting users with motor impairments.
-- At the top of the screen, the NutriPro logo will stand prominently, reinforcing brand identity and assuring users they're in the right place. This consistent presence across all screens will act as an anchor, maintaining a sense of continuity throughout the user's journey.
-2. **Detailed food information and Nutrition breakdown view**
-- ![visual_design - food_details_and_nutrition_breakdown_screen.png](Diagrams%2Fvisual_design%20-%20food_details_and_nutrition_breakdown_screen.png)
-- The Food Details screen will serve as a comprehensive nutritional profile for individual food items. We will organize the wealth of information into four main sections: Nutritional Information, Vitamin/Mineral Content, Macronutrients, and Micronutrients. Each section will be presented in a tabular format, striking a balance between information density and readability.
-- To prevent information overload, we will employ a tabbed layout. Users will be able to easily switch between different aspects of the nutritional profile, allowing them to focus on the specific information they're interested in without being overwhelmed by the entirety of the data.
-- At the bottom of the screen, we will place two action buttons: "Add to Comparison" and "Add to Meal Plan". These buttons will create seamless integration with other key features of the app, allowing users to immediately act on the information they've viewed. This integration of features will encourage exploration and utilization of the app's full capabilities.
-- For navigation, we will include both "Back to Search" and "Back to Main Menu" buttons. This dual navigation option will provide flexibility, allowing users to either return to their search results or navigate back to the app's main menu, depending on their needs.
-3. **Search Screen**
-- ![visual_design - search_screen.png](Diagrams%2Fvisual_design%20-%20search_screen.png)
-- The Search Foods screen will be where users begin their nutritional discovery. At the heart of this interface will be a prominently placed search bar, inviting users to start their query immediately. The dedicated "Search" button beside it will provide a clear call-to-action, catering to users who prefer tap interactions over keyboard submission.
-- Below the search bar, results will be displayed in a multi-column grid. This layout will efficiently utilize screen real estate, allowing users to scan multiple food items quickly. Each cell in the grid will represent a food item, providing a snapshot of key nutritional information at a glance.
-- To the right of the results, we will position a comprehensive filter panel. This placement will keep advanced search options readily accessible without cluttering the main view. Users will be able to select specific nutrients and set value ranges, enabling precise filtering of results. A "Clear Filters" button will sit at the bottom of this panel, offering an easy way to reset all filters with a single tap - a small but significant feature for users conducting multiple searches.
-- At the bottom of the screen, a "Back to Main Menu" button will ensure users can easily navigate back to the app's central hub, maintaining a clear and consistent navigation structure throughout the application.
-4. **Food Comparison**
-- ![visual_design - comparison_screen.png](Diagrams%2Fvisual_design%20-%20comparison_screen.png)
-- The Food Comparison screen will embody one of NutriPro's core functionalities: the ability to directly compare nutritional values across different foods. The interface will be divided into three equal columns, each representing a food item. This side-by-side layout will facilitate easy visual comparison, allowing users to quickly identify nutritional differences and similarities.
-- Each column will be topped with its own search bar, a design choice that will enable users to swiftly find and compare specific food items without leaving the comparison view. Below these search bars, nutritional information will be presented in a tabular format. This structured layout will ensure that corresponding nutritional values align horizontally across all three columns, further simplifying the comparison process.
-- At the bottom of the screen, we will place a "Generate Comparison Chart" button. This feature will transform the tabular data into a visual chart, offering an alternative representation that can reveal trends or differences that might not be immediately apparent in the numeric format.
-- As with all screens, a "Back to Main Menu" button will be consistently placed at the bottom, ensuring users can easily return to the app's central navigation point.
-5. **Meal Plan Screen**
-- ![visual_design - meal_plan_screen.png](Diagrams%2Fvisual_design%20-%20meal_plan_screen.png)
-- The Meal Planner screen will transform nutritional information into practical, actionable meal plans. The interface will be divided into three main components: a weekly overview, a daily nutritional summary, and a detailed daily meal plan.
-- The weekly overview, presented as a table at the top of the screen, will provide a bird's-eye view of the entire week's meal plan. This will allow users to see patterns and variety in their planned meals at a glance.
-- Adjacent to the weekly overview, we will place a daily nutritional summary. This feature will aggregate the nutritional content of all planned meals for a selected day, enabling users to track their nutritional intake and ensure they're meeting their dietary goals.
-- The lower portion of the screen will be dedicated to the detailed daily meal plan. We will divide this section into four distinct areas: Breakfast, Lunch, Dinner, and Snacks. Each meal category will have its own "Add Item" button, allowing users to easily populate their meal plan with foods from the database.
-- At the bottom of the screen, we will include three key function buttons: "Generate Meal Plan", "Save Meal Plan", and "Load Meal Plan". These features will add significant value to the meal planning process. Users will be able to automatically generate a plan based on their nutritional goals, save their carefully crafted plans for future use, or load previously saved plans.
+In designing the NutriPro application, our primary goal is to create an interface that is not only visually appealing but also intuitive and efficient. We aim to design a user experience that makes nutritional information accessible and actionable for users of all levels of nutritional knowledge. Let's explore the key screens of our application, examining the design choices that shape the user's interaction with NutriPro.
 
-Throughout the design process, our focus will remain on creating an interface that is not just functional, but also engaging and empowering. By presenting complex nutritional information in an accessible, interactive format, NutriPro will aim to make the journey of nutritional discovery and meal planning both informative and enjoyable.
+1. <span style="color: red;">**Main Menu**
+
+- ![visual_design - main_screen.png](..%2FDiagrams%2Fvisual_design%20-%20main_screen.png)
+- <span style="color: red;">Upon launching NutriPro, users are greeted by a clean, uncluttered main menu. This screen serves as the central hub of the application, offering three primary options: Search & Compare Foods, Meal Plan, and Exit. Each option is presented as a large, inviting button. <-- this is new
+- <span style="color: red;">The simplicity of this design is intentional. By presenting only three core functions, we avoid overwhelming users with choices and instead guide them towards the app's primary features. The generous size of the buttons serves a dual purpose: it makes the options unmissable, even at a glance, and provides large touch targets that enhance usability across devices. <-- this is new
+- <span style="color: red;">At the top of the screen, the NutriPro logo stands prominently, reinforcing brand identity and assuring users they're in the right place. <-- this is new
+
+2. <span style="color: red;">**Dataset List (Search and Compare) Screen**
+
+- ![visual_design - search_and_comparison_screen.png](..%2FDiagrams%2Fvisual_design%20-%20search_and_comparison_screen.png)
+- <span style="color: red;">The Dataset List screen combines search and comparison functionalities. At the top of the screen is a prominently placed search bar, inviting users to start their query immediately. A "Search" button is placed next to it. <-- this is new
+- <span style="color: red;">Below the search bar, results are displayed in a list format. This layout efficiently utilizes screen real estate, allowing users to scan multiple food items quickly. Each row in the list represents a food item, providing key nutritional information. <-- this is new
+- <span style="color: red;">To the right of the results, we position a filter panel with options for high protein, low carbs, and low fat. This placement keeps filtering options readily accessible without cluttering the main view. An "Apply Filters" button allows users to activate their selections. <-- this is new
+- <span style="color: red;">A comparison section is included, allowing users to select up to three foods for side-by-side comparison. A "Generate Comparison Chart" button transforms the selected data into a visual chart. <-- this is new
+- <span style="color: red;">At the bottom of the screen, meal plan options (Breakfast, Lunch, Dinner, Snack) allow users to add selected foods directly to their meal plan. <-- this is new
+- <span style="color: red;">Navigation buttons for "Go to Meal Plan" and "Back to Main Menu" ensure easy movement between different sections of the app. <-- this is new
+
+3. <span style="color: red;">**Meal Plan Screen**
+
+- ![visual_design - meal_plan_screen.png](..%2FDiagrams%2Fvisual_design%20-%20meal_plan_screen.png)
+- <span style="color: red;">The Meal Planner screen transforms nutritional information into practical, actionable meal plans. The interface includes options to select a specific day and switch between daily and weekly views. <-- this is new
+- <span style="color: red;">The main portion of the screen is dedicated to displaying the meal plan, showing foods for different meal times (Breakfast, Lunch, Dinner, Snack). <-- this is new
+- <span style="color: red;">A nutritional summary is displayed, showing total calories, protein, carbs, and fat for the current view (daily or weekly). <-- this is new
+- <span style="color: red;">Control buttons at the bottom of the screen allow users to add food, change food, remove food, and clear the meal plan. A "Generate Meal Plan" button enables automatic creation of a balanced meal plan. <-- this is new
+- <span style="color: red;">Navigation buttons for "Back to Main Menu" and "Go to Data List" provide easy movement between different sections of the app. <-- this is new
+
+4. <span style="color: red;">**Select Food Screen/Supplementary Screen**
+
+- ![visual_design - supplementary_search__screen.png](..%2FDiagrams%2Fvisual_design%20-%20supplementary_search__screen.png)
+- <span style="color: red;">The Select Food screen provides a focused interface for searching and selecting individual food items. <-- this is new
+- <span style="color: red;">At the top of the screen, there's a search bar labeled "Search for Food:" which allows users to input their food query. <-- this is new
+- <span style="color: red;">A "Search" button is prominently placed next to the search bar, enabling users to initiate their search. <-- this is new
+- <span style="color: red;">Below the search area, a list control displays the search results. This list shows multiple columns of information about each food item, allowing users to see key nutritional data at a glance. <-- this is new
+- <span style="color: red;">A scroll bar on the right side of the list allows users to navigate through longer lists of search results. <-- this is new
+- <span style="color: red;">At the bottom of the screen, a "Select Food" button allows users to confirm their selection and add the chosen food to their meal plan or comparison. <-- this is new
+- <span style="color: red;">This screen's focused design helps users quickly find and select specific food items without distraction from other application features. <-- this is new
+
+Throughout the design process, our focus remains on creating an interface that is not just functional, but also engaging and empowering. By presenting complex nutritional information in an accessible, interactive format, NutriPro aims to make the journey of nutritional discovery and meal planning both informative and enjoyable.
 
 ---
