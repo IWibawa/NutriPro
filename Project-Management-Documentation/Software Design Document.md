@@ -430,11 +430,16 @@ This description of data structures and their interactions provides an overview 
 
 ## **4. User Interface Design**
 
-4.1 Structural Design
+### **4.1 Structural Design**
+#### **<span style="color: red;">The Strucural diagram has been adjusted:**
 
-The NutriPro application is structured as follows:
-
-### <span style="color: red;">**Main Application Window**
+- <span style="color: red;">Removed the Header node and its associated Logo element.
+- <span style="color: red;">The diagram now starts directly with the NutriPro Application leading to the Main Menu.
+- <span style="color: red;">The main structure remains focused on the three key components: Main Menu, Search & Compare Foods, and Meal Planner.
+- <span style="color: red;">All sub-components under Search & Compare Foods and Meal Planner remain unchanged
+- <span style="color: red;">The NutriPro application is structured as follows:
+![Structural_Design.png](..%2FDiagrams%2FStructural_Design.png)
+#### <span style="color: red;">**Main Application Window**
 
 <span style="color: red;">The main window consists of three primary frames: <-- this is new
 
@@ -442,7 +447,7 @@ The NutriPro application is structured as follows:
 - <span style="color: red;">Dataset List (Search and Compare)
 - <span style="color: red;">Meal Planner
 
-### **Main Menu**
+#### **Main Menu**
 
 The main menu contains:
 
@@ -452,7 +457,7 @@ The main menu contains:
   - Meal Plan
   - <span style="color: red;">Exit<-- this is new
 
-### <span style="color: red;">**Dataset List (Search and Compare) Frame <-- this is new**
+#### <span style="color: red;">**Dataset List (Search and Compare) Frame <-- this is new**
 
 <span style="color: red;">This frame is the primary interface for food search and comparison, comprising:
 
@@ -470,7 +475,7 @@ The main menu contains:
 6. <span style="color: red;">Meal Plan Options:
     - <span style="color: red;">Allows adding selected foods to the meal plan <-- this is new
 
-### <span style="color: red;">**Meal Planner Frame**
+#### <span style="color: red;">**Meal Planner Frame**
 
 <span style="color: red;">This frame is dedicated to meal planning and nutritional summary, comprising:
 
@@ -487,7 +492,7 @@ The main menu contains:
     - <span style="color: red;">Clear Meal Plan
     - <span style="color: red;">Generate Meal Plan<-- this is new
 
-### **Design Choices**
+#### **Design Choices**
 
 1. <span style="color: red;">The use of separate frames for main functions (search/compare and meal planning) allows for focused interaction within each feature set.<-- this is new
 2. <span style="color: red;">The main menu provides clear, simple navigation to core functionalities.<-- this is new
@@ -498,7 +503,7 @@ The main menu contains:
 
 This structure is designed to provide an intuitive and efficient user experience, allowing easy navigation between different functionalities while maintaining a clear and organized interface.
 
-### **Structural Design Diagram**
+#### **Structural Design Diagram**
 
 This hierarchy chart provides a visual representation of the NutriPro application's structure, illustrating how different components are organized and related to each other. It complements the detailed description provided above by offering a quick, at-a-glance view of the application's structure.
 
@@ -511,7 +516,7 @@ The diagram shows:
 
 This visual representation, combined with the detailed textual description, provides a comprehensive overview of the NutriPro application's structural design, fulfilling the template's requirements for this section.
 
-4.2 Visual Design
+### **4.2 Visual Design**
 
 In designing the NutriPro application, our primary goal is to create an interface that is not only visually appealing but also intuitive and efficient. We aim to design a user experience that makes nutritional information accessible and actionable for users of all levels of nutritional knowledge. Let's explore the key screens of our application, examining the design choices that shape the user's interaction with NutriPro.
 
