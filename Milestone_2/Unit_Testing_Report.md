@@ -172,115 +172,206 @@ def test_apply_filters():
   - __init__(self, chart_type, data)
   - render(self)	 
 - **Description**
-  - A brief description of the tested function's usage, including its purpose, input, and output.
+  - The NutritionChart class is designed to visualize nutritional data. It includes attributes such as chart_type and data. The __init__ method initializes these attributes, while the render method generates the appropriate chart based on the chart_type.
 - **1) Valid Input and Expected Output**  
-
-| **Valid Input**               | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 2)`               | `5`                 |
-| `divide(10, -2)`              | `-5`                |
-| `add more cases in necessary` | `...`               |
+- Purpose: To verify that the __init__ method correctly initializes the attributes of the NutritionChart class.
+| **Valid Input**                        | **Expected Output**                     |
+|----------------------------------------|-----------------------------------------|
+| chart_type = 'bar'                     | chart_type == 'bar'                     |
+| data = {'Calories': 95, 'Protein': 0.5}| data == {'Calories': 95, 'Protein': 0.5}|
+|                                                              `...`               |
 
 - **1) Code for the Test Function**
-```python
-def test_divide_valid():
-    assert divide(10, 2) == 5
-    assert divide(10, -2) == -5
+def test_nutrition_chart_initialization():
+    data = {'Calories': 95, 'Protein': 0.5}
+    chart = NutritionChart('bar', data)
+    assert chart.chart_type == 'bar'
+    assert chart.data == data
 ```
 - **2) Invalid Input and Expected Output**
-
-| **Invalid Input**             | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 0)`               | `Handle Exception`  |
-| `add more cases in necessary` | `...`               |
+- Purpose: To verify that the render method correctly generates a bar chart.
+| **Invalid Input**                      | **Expected Output**       |
+|----------------------------------------|---------------------------|
+| chart_type = 'bar'                     | A bar chart is displayed  |
+| data = {'Calories': 95, 'Protein': 0.5}| without errors            |
+| `...`                                                              |
 
 - **2) Code for the Test Function**
 ```python
-def test_divide_invalid():
-    with pytest.raises(ValueError) as exc_info:
-        divide(10, 0)
-    assert exc_info.type is ValueError
+def test_render_bar_chart():
+    data = {'Calories': 95, 'Protein': 0.5}
+    chart = NutritionChart('bar', data)
+    chart.render()  # This should display a bar chart without errors
 ```
+- **3) Invalid Input and Expected Output**
+- Purpose: To verify that the render method handles unsupported chart types correctly.
+| **Invalid Input**                       | **Expected Output**    |
+|-----------------------------------------|------------------------|
+| chart_type = 'unsupported'              | A message “Unsupported |
+| data = {'Calories': 95, 'Protein': 0.5} | chart type” is printed.| 
+|                      `...`                                       |
 
+- **3) Code for the Test Function**
+def test_render_unsupported_chart():
+    data = {'Calories': 95, 'Protein': 0.5}
+    chart = NutritionChart('unsupported', data)
+    chart.render()  # This should print "Unsupported chart type"
+```
+- *4) Invalid Input and Expected Output**
+- Purpose: To verify that the render method correctly generates a pie chart.
+| **Invalid Input**                      | **Expected Output**                          |
+|----------------------------------------|----------------------------------------------|
+| chart_type = 'pie'                     | A pie chart is displayed without errors.     |
+| data = {'Calories': 95, 'Protein': 0.5}|                                              |
+|                                 `...`                                                 |
+
+- **) Code for the Test Function**
+```python
+def test_render_pie_chart():
+    data = {'Calories': 95, 'Protein': 0.5}
+    chart = NutritionChart('pie', data)
+    chart.render()  # This should display a pie chart without errors
+```
 ### Test Case 4:
 - **Test Function/Module**
-  - `test_divide_valid()`
-  - `test_divide_invalid()`
+  - test_comparison_result_initialization() 
+  -  test_get_comparison_data()  
 - **Tested Function/Module**
-  - `divide(a, b)`
+  - __init__(self, food_items)
+  - get_comparison_data(self, nutrient)	 
 - **Description**
-  - A brief description of the tested function's usage, including its purpose, input, and output.
+  - The ComparisonResult class is designed to represent the result of a food comparison. It includes attributes such as food_items (a list of compared FoodItem objects) and comparison_data (nutritional data for comparison). The __init__ method initializes these attributes, while the get_comparison_data method retrieves the comparison data for a specified nutrient.
 - **1) Valid Input and Expected Output**  
-
-| **Valid Input**               | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 2)`               | `5`                 |
-| `divide(10, -2)`              | `-5`                |
-| `add more cases in necessary` | `...`               |
+- The ComparisonResult class is designed to represent the result of a food comparison. It includes attributes such as food_items (a list of compared FoodItem objects) and comparison_data (nutritional data for comparison). The __init__ method initializes these attributes, while the get_comparison_data method retrieves the comparison data for a specified nutrient.
+| **Valid Input**                                                                | **Expected Output**                                                   |
+|--------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| food_items = [FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4},          |food_items == [FoodItem("Apple", 95, 0.5, 25, 0.3,                     |
+| comparison_data is correctly generated for each nutrient.                      |{"Vitamin C": 8.4}, {"Potassium": 195}), FoodItem                      |
+| {"Potassium": 195}), FoodItem("Banana", 105, 1.3, 27, 0.3, {"Vitamin C": 10.3},|("Banana", 105, 1.3, 27, 0.3,{"Vitamin C": 10.3}, {"Potassium": 422})] |
+|{"Potassium": 422})]                                                            |                                                                       |
+|                                                                                                                                    `...`               |
 
 - **1) Code for the Test Function**
 ```python
-def test_divide_valid():
-    assert divide(10, 2) == 5
-    assert divide(10, -2) == -5
+def test_comparison_result_initialization():
+    apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
+    banana = FoodItem("Banana", 105, 1.3, 27, 0.3, {"Vitamin C": 10.3}, {"Potassium": 422})
+    comparison = ComparisonResult([apple, banana])
+    assert comparison.food_items == [apple, banana]
+    assert 'calories' in comparison.comparison_data
+    assert comparison.comparison_data['calories'] == {'Apple': 95, 'Banana': 105}
 ```
 - **2) Invalid Input and Expected Output**
-
-| **Invalid Input**             | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 0)`               | `Handle Exception`  |
-| `add more cases in necessary` | `...`               |
+- Purpose: To verify that the get_comparison_data method correctly retrieves the comparison data for a specified nutrient.
+| **Invalid Input**             | **Expected Output**                                               |
+|-------------------------------|-------------------------------------------------------------------|
+| nutrient = 'calories'         | get_comparison_data('calories') == {'Apple': 95, 'Banana': 105}`  |
+| nutrient = 'protein'          | get_comparison_data('protein') == {'Apple': 0.5, 'Banana': 1.3}   |
+| nutrient = 'nonexistent'      | get_comparison_data('nonexistent') == {}                          |
+| `...`                                                                                             |
 
 - **2) Code for the Test Function**
 ```python
-def test_divide_invalid():
-    with pytest.raises(ValueError) as exc_info:
-        divide(10, 0)
-    assert exc_info.type is ValueError
+def test_get_comparison_data():
+    apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
+    banana = FoodItem("Banana", 105, 1.3, 27, 0.3, {"Vitamin C": 10.3}, {"Potassium": 422})
+    comparison = ComparisonResult([apple, banana])
+    assert comparison.get_comparison_data('calories') == {'Apple': 95, 'Banana': 105}
+    assert comparison.get_comparison_data('protein') == {'Apple': 0.5, 'Banana': 1.3}
+    assert comparison.get_comparison_data('nonexistent') == {}
 ```
 
 
 ### Test Case 5:
 - **Test Function/Module**
-  - `test_divide_valid()`
-  - `test_divide_invalid()`
+  - test_meal_plan_initialization() 
+  - test_add_food_to_meal()                 
+  - test_calculate_daily_summary() 
+  - test_get_weekly_overview() 
 - **Tested Function/Module**
-  - `divide(a, b)`
+  - __init__(self)
+  - add_food_to_meal(self, day, meal, food_item)
+  - calculate_daily_summary(self, day)
+  - get_weekly_overview(self) 
 - **Description**
-  - A brief description of the tested function's usage, including its purpose, input, and output.
+  - The MealPlan class represents a weekly meal plan with daily breakdowns. It includes attributes such as weekly_plan (structured meal data) and daily_summaries (nutritional summaries). The __init__ method initializes these attributes, while the add_food_to_meal method adds food items to specific meals on specific days. The calculate_daily_summary method calculates the nutritional summary for a day, and the get_weekly_overview method provides a summary of the nutritional data for the entire week.
 - **1) Valid Input and Expected Output**  
-
-| **Valid Input**               | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 2)`               | `5`                 |
-| `divide(10, -2)`              | `-5`                |
-| `add more cases in necessary` | `...`               |
+- Purpose: To verify that the __init__ method correctly initializes the attributes of the MealPlan class.
+| **Valid Input**  | **Expected Output**                                                     |
+|------------------|-------------------------------------------------------------------------|
+| None             | weekly_plan is initialized with empty lists for each meal on each day.  |
+|                  | daily_summaries is initialized with empty dictionaries for each day.    |
+|                                                                        `...`               |
 
 - **1) Code for the Test Function**
 ```python
-def test_divide_valid():
-    assert divide(10, 2) == 5
-    assert divide(10, -2) == -5
+def test_meal_plan_initialization():
+    meal_plan = MealPlan()
+    assert 'Monday' in meal_plan.weekly_plan
+    assert 'breakfast' in meal_plan.weekly_plan['Monday']
+    assert meal_plan.weekly_plan['Monday']['breakfast'] == []
+    assert meal_plan.daily_summaries['Monday'] == {}
 ```
 - **2) Invalid Input and Expected Output**
-
-| **Invalid Input**             | **Expected Output** |
-|-------------------------------|---------------------|
-| `divide(10, 0)`               | `Handle Exception`  |
-| `add more cases in necessary` | `...`               |
-
+- Purpose: To verify that the add_food_to_meal method correctly adds food items to specific meals on specific days.
+| **Invalid Input**                                 | **Expected Output**   |
+|---------------------------------------------------|-----------------------|
+| day = 'Monday'                                    |The food item is added |
+| meal = 'breakfast'                                | to the specified meal |
+| food_item = FoodItem("Apple", 95, 0.5, 25, 0.3,   | on the specified day. |
+| {"Vitamin C": 8.4}, {"Potassium": 195})           |                       |
+|                                                                           |
 - **2) Code for the Test Function**
 ```python
-def test_divide_invalid():
-    with pytest.raises(ValueError) as exc_info:
-        divide(10, 0)
-    assert exc_info.type is ValueError
+def test_add_food_to_meal():
+    meal_plan = MealPlan()
+    apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
+    meal_plan.add_food_to_meal('Monday', 'breakfast', apple)
+    assert meal_plan.weekly_plan['Monday']['breakfast'] == [apple]
 ```
-
-### Test Case 6:
-
-add more test cases if necessary.
-
+- **3) Invalid Input and Expected Output**
+- Purpose: To verify that the calculate_daily_summary method correctly calculates the nutritional summary for a day.
+| **Invalid Input**                                 | **Expected Output**   |
+|---------------------------------------------------|-----------------------|
+| day = 'Monday'                                    |The daily summary for  |
+| meal = 'breakfast'                                | the specified day is  |
+| food_item = FoodItem("Apple", 95, 0.5, 25, 0.3,   | correctly calculated. |
+| {"Vitamin C": 8.4}, {"Potassium": 195})           |                       |
+|                                                                           |
+- **3) Code for the Test Function**
+```python
+def test_calculate_daily_summary():
+    meal_plan = MealPlan()
+    apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
+    meal_plan.add_food_to_meal('Monday', 'breakfast', apple)
+    summary = meal_plan.daily_summaries['Monday']
+    assert summary['calories'] == 95
+    assert summary['protein'] == 0.5
+    assert summary['carbohydrates'] == 25
+    assert summary['fats'] == 0.3
+```
+```
+- **4) Invalid Input and Expected Output**
+- Purpose: To verify that the get_weekly_overview method correctly provides a summary of the nutritional data for the entire week.
+| **Invalid Input**                                 | **Expected Output**         |
+|---------------------------------------------------|-----------------------------|
+| food_item = FoodItem("Apple", 95, 0.5, 25, 0.3,   |The weekly overview correctly|
+| {"Vitamin C": 8.4}, {"Potassium": 195})           |summarizes the nutritional   |
+|                                                   | data for each day.          |
+|                                                                                 |
+- **) Code for the Test Function**
+```python
+def test_get_weekly_overview():
+    meal_plan = MealPlan()
+    apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
+    meal_plan.add_food_to_meal('Monday', 'breakfast', apple)
+    overview = meal_plan.get_weekly_overview()
+    assert 'Monday' in overview
+    assert overview['Monday']['calories'] == 95
+    assert overview['Monday']['protein'] == 0.5
+    assert overview['Monday']['carbohydrates'] == 25
+    assert overview['Monday']['fats'] == 0.3
+```
 ## 3. **Testing Report Summary**
 Include a screenshot of unit_test.html showing the results of all the above tests. 
 
