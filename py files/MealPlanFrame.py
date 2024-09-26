@@ -9,6 +9,7 @@
 
 import wx
 import wx.xrc
+import wx.grid
 
 
 ###########################################################################
@@ -55,9 +56,31 @@ class MealPlanFrame(wx.Frame):
 
         bSizer9.Add(sbSizer5, 0, wx.EXPAND, 5)
 
-        self.meal_plan_list = wx.ListCtrl(self, wx.ID_ANY, wx.DefaultPosition, wx.Size(780, 300),
-                                          wx.LC_REPORT | wx.LC_SINGLE_SEL)
-        bSizer9.Add(self.meal_plan_list, 1, wx.ALL | wx.EXPAND, 5)
+        self.meal_plan_list = wx.grid.Grid(self, wx.ID_ANY, wx.DefaultPosition, wx.Size(-1, 400), 0)
+
+        # Grid
+        self.meal_plan_list.CreateGrid(5, 5)
+        self.meal_plan_list.EnableEditing(True)
+        self.meal_plan_list.EnableGridLines(True)
+        self.meal_plan_list.EnableDragGridSize(False)
+        self.meal_plan_list.SetMargins(0, 0)
+
+        # Columns
+        self.meal_plan_list.EnableDragColMove(False)
+        self.meal_plan_list.EnableDragColSize(True)
+        self.meal_plan_list.SetColLabelSize(30)
+        self.meal_plan_list.SetColLabelAlignment(wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+
+        # Rows
+        self.meal_plan_list.EnableDragRowSize(True)
+        self.meal_plan_list.SetRowLabelSize(80)
+        self.meal_plan_list.SetRowLabelAlignment(wx.ALIGN_CENTRE, wx.ALIGN_CENTRE)
+
+        # Label Appearance
+
+        # Cell Defaults
+        self.meal_plan_list.SetDefaultCellAlignment(wx.ALIGN_LEFT, wx.ALIGN_TOP)
+        bSizer9.Add(self.meal_plan_list, 0, wx.ALL, 5)
 
         self.nutrient_summary = wx.StaticText(self, wx.ID_ANY,
                                               u"Total for the day: Calories: 0, Protein: 0g, Carbs: 0g, Fat: 0g",

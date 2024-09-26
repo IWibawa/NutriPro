@@ -12,7 +12,7 @@ class MealPlanManager:
     def __init__(self, food_dataset):
         self.meal_plan = {day: {'Breakfast': [], 'Lunch': [], 'Dinner': [], 'Snack': []} for day in
                           ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']}
-        self.food_dataset = food_dataset  # Store the dataset in the manager
+        self.food_dataset = food_dataset
 
     def add_food(self, day, meal, food):
         self.meal_plan[day][meal].append(food)
@@ -41,17 +41,13 @@ class MealPlanManager:
 
 class MainApp(wx.App):
     def OnInit(self):
-        # Load the food dataset
         self.food_dataset = pd.read_csv('Food_Nutrition_Dataset.csv')
-
-        # Pass the dataset to the MealPlanManager
         self.meal_plan_manager = MealPlanManager(self.food_dataset)
         self.main_frame = MainFrame(None)
         self.main_frame.search_comparison_button.Bind(wx.EVT_BUTTON, self.on_search_compare)
         self.main_frame.meal_plan_button.Bind(wx.EVT_BUTTON, self.on_meal_plan)
         self.main_frame.exit_button.Bind(wx.EVT_BUTTON, self.on_exit)
         self.main_frame.Show()
-
         self.dataset_list = None
         self.meal_plan_frame = None
 
@@ -73,7 +69,6 @@ class MainApp(wx.App):
 
     def show_meal_plan(self):
         if self.meal_plan_frame is None:
-            # Pass the MealPlanManager (with dataset) to the MealPlanFrameLogic
             self.meal_plan_frame = MealPlanFrameLogic(self.main_frame, self.meal_plan_manager)
         self.meal_plan_frame.Show()
         self.main_frame.Hide()
