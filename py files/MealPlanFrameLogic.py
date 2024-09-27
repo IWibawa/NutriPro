@@ -34,47 +34,36 @@ class MealPlanFrameLogic(MealPlanFrame):
 
         self.update_meal_plan_display()
 
-        # Resize the frame
         self.SetSize((650, 600))
 
     def initialize_grid(self):
-        # Clear existing grid
         self.meal_plan_list.ClearGrid()
 
-        # If there are existing columns, delete them
         if self.meal_plan_list.GetNumberCols() > 0:
             self.meal_plan_list.DeleteCols(0, self.meal_plan_list.GetNumberCols())
 
-        # Add the required number of columns
         self.meal_plan_list.AppendCols(7)
 
-        # Set column labels
         column_labels = ["Day", "Meal", "Food", "Calories", "Protein (g)", "Carbs (g)", "Fat (g)"]
         for col, label in enumerate(column_labels):
             self.meal_plan_list.SetColLabelValue(col, label)
 
-        # Set minimum size for the grid
         self.meal_plan_list.SetMinSize((600, 400))
 
-        # Enable scrolling
         self.meal_plan_list.EnableScrolling(True, True)
 
-        # Enable auto-sizing of rows and columns
         self.meal_plan_list.AutoSizeColumns()
         self.meal_plan_list.AutoSizeRows()
 
     def adjust_layout(self):
-        # Get the main sizer
         main_sizer = self.GetSizer()
 
-        # Find the sizer item containing the grid and set it to expand
         for item in main_sizer.GetChildren():
             if item.GetWindow() == self.meal_plan_list:
                 item.SetProportion(1)
                 item.SetFlag(wx.EXPAND | wx.ALL)
                 break
 
-        # Force the frame to adjust its layout
         self.Layout()
 
     def on_day_selected(self, event):
@@ -113,7 +102,6 @@ class MealPlanFrameLogic(MealPlanFrame):
                 self.meal_plan_list.SetCellValue(row, 5, str(food['carbs']))
                 self.meal_plan_list.SetCellValue(row, 6, str(food['fat']))
 
-        # Adjust column widths
         self.meal_plan_list.SetColSize(0, 100)  # Day column
         self.meal_plan_list.SetColSize(1, 80)  # Meal column
         self.meal_plan_list.SetColSize(2, 200)  # Food column
@@ -238,11 +226,3 @@ class MealPlanFrameLogic(MealPlanFrame):
     def on_back_to_main_menu(self, event):
         self.Hide()
         wx.GetApp().main_frame.Show()
-
-
-# This allows the file to be run standalone for testing
-if __name__ == '__main__':
-    app = wx.App(False)
-    frame = MealPlanFrameLogic(None, MealPlanManager())
-    frame.Show(True)
-    app.MainLoop()
