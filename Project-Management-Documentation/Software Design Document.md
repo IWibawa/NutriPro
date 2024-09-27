@@ -186,7 +186,21 @@ The Use Case Diagram illustrates the main functionalities of the NutriPro applic
 - The rectangle enclosing the use cases represents the **boundary of the NutriPro system**, clearly delineating what functionalities are within the scope of our application.
 
 This diagram provides a high-level view of the system's capabilities and how users will interact with NutriPro, serving as a roadmap for development and a quick reference for understanding the app's core functionalities.
-![UCD.png](..%2FDiagrams%2FUCD.png) 
+![UCD.png](..%2FDiagrams%2FUCD.png)
+#### <span style="color: red;">Use Case Diagram Updates
+<span style="color: red;">The Use Case Diagram for NutriPro has been revised to better reflect system functionality:</span>
+- <span style="color: red;">Added clear "NutriPro System" boundary</span>
+- <span style="color: red;">Updated use case relationships:
+  - <span style="color: red;">UC001 includes UC002 and UC006
+  - <span style="color: red;">UC006 extends to UC007 and includes UC008
+  - <span style="color: red;">UC002 extends to UC003 and is extended by UC004
+  - <span style="color: red;">UC003 extends to UC005</span>
+- <span style="color: red;">User now directly connects to all use cases (UC001-UC008)</span>
+- <span style="color: red;">Added detailed notes for each use case, describing key functionalities</span>
+- <span style="color: red;">Improved layout with UC001 (Access Main Menu) at the top, branching to other functionalities</span>
+- <span style="color: red;">Clarified relationships using dotted lines with "<<includes>>" and "<<extends>>" labels</span>
+
+<span style="color: red;">These updates provide a more accurate and detailed representation of NutriPro's structure and user interactions.</span>
 ### **2.4 Use Cases**
 
 | Use Case ID | Use Case Name | Actors | Description | Flow of Events                                                                                                                                                                                                                                                                                                     | Alternate Flow | Postcondition |
@@ -199,6 +213,7 @@ This diagram provides a high-level view of the system's capabilities and how use
 | UC006 | Manage Meal Plan | User | User views and edits a weekly meal plan <--this is new | 1. User selects "Meal Plan" from the main menu<br>2. System displays the weekly meal plan view<br>3. User can add foods to specific meals and days<br>4. System updates the nutritional summary for each day<br><span style="color: red;">5. User can toggle between daily and weekly views <--this is new         | <span style="color: red;">If adding a food exceeds daily nutritional goals, system updates the nutritional summary <--this is new | Weekly meal plan is displayed and can be edited |
 | UC007 | Generate Meal Plan | User | User generates a random, balanced meal plan <--this is new | 1. In the Meal Planner, user selects "Generate Meal Plan"<br><span style="color: red;">2. System generates a balanced meal plan for the entire week <--this is new<br>3. System displays the generated meal plan                                                                                                   | <span style="color: red;">If generation fails, system notifies the user <--this is new | Generated meal plan is displayed in the weekly view |
 | UC008 | View Nutritional Summary | User | User views a summary of nutritional information for planned meals | <span style="color: red;">1. In the Meal Planner, user views the daily or weekly nutritional summary <--this is new<br>2. System calculates and displays total nutrients for the selected view <--this is new<br>3. User can toggle between different views to view summaries <--this is new                                          | N/A | <span style="color: red;">Daily or weekly nutritional summaries are displayed <--this is new |
+
 ---
 ## **3. Software Design and System Components**
 
