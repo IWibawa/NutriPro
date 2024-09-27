@@ -253,58 +253,69 @@ Component Breakdown:
 
 ### **3.2.1 Functions**
 
-1. <span style="color: red;">search_food(query: str) -> pd.DataFrame <--this is new
-    - Description: Searches for food items based on user input
-    - Input Parameters: query (string) - The search term entered by the user
-    - <span style="color: red;">Return Value: A pandas DataFrame containing matching food items <--this is new
-    - Side Effects: None
-2. <span style="color: red;">generate_comparison_chart(food_items: List\[Dict\]) -> None <--this is new
-    - Description: Creates a visual representation of the nutritional comparison
-    - <span style="color: red;">Input Parameters: food_items (List of Dictionaries) - The selected food items <--this is new
-    - Return Value: None
-    - Side Effects: Displays a matplotlib chart <--this is new
-3. <span style="color: red;">apply_nutritional_filters(df: pd.DataFrame, high_protein: bool, low_carbs: bool, low_fat: bool) -> pd.DataFrame <--this is new
-    - Description: Filters foods based on nutritional criteria
-    - Input Parameters:
-        1. df (pandas DataFrame) - The food dataset
-        2. high_protein (bool) - Whether to filter for high protein foods
-        3. low_carbs (bool) - Whether to filter for low carb foods
-        4. low_fat (bool) - Whether to filter for low fat foods
-    - Return Value: A filtered pandas DataFrame
-    - Side Effects: None
-4. <span style="color: red;">add_food_to_meal_plan(day: str, meal: str, food: Dict) -> None <--this is new
-    - Description: Adds a food item to the meal plan
-    - Input Parameters:
-        1. day (string) - The day of the week
-        2. meal (string) - The meal type (Breakfast, Lunch, Dinner, Snack)
-        3. food (Dictionary) - The food item to add
-    - Return Value: None
-    - Side Effects: Updates the meal plan
-5. <span style="color: red;">compare_foods(food_items: List\[Dict\]) -> pd.DataFrame <--this is new
-    - Description: Compares multiple food items
-    - Input Parameters: food_items (List of Dictionaries) - A list of food items to compare <--this is new
-    - Return Value: A pandas DataFrame containing the comparison data <--this is new
-    - Side Effects: None
-6. <span style="color: red;">generate_balanced_meal_plan() -> Dict <--this is new
-    - Description: Generates a balanced weekly meal plan
-    - Input Parameters: None
-    - Return Value: A dictionary containing the generated meal plan
-    - Side Effects: None
-7. navigate_to_main_menu()
-    - Description: Returns the user to the main menu from any screen
-    - Input Parameters: None
-    - Return Value: None
-    - Side Effects: Changes the current view to the main menu
-8. <span style="color: red;">toggle_meal_plan_view() <--this is new
-    - Description: Toggles between daily and weekly meal plan views
-    - Input Parameters: None
-    - Return Value: None
-    - Side Effects: Updates the meal plan display
-9. <span style="color: red;">update_nutrient_summary(view: str) -> str <--this is new
-    - Description: Calculates and returns the nutrient summary for the current view
-    - Input Parameters: view (string) - 'daily' or 'weekly'
-    - Return Value: A string containing the nutrient summary
-    - Side Effects: None
+
+1. <span style="color: red;">on_search(self, event)
+   - <span style="color: red;">Description: Searches for food items based on user input
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering the search
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the food list display with search results
+
+2. <span style="color: red;">on_generate_chart(self, event)
+   - <span style="color: red;">Description: Creates a visual representation of the nutritional comparison
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering chart generation
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Displays a matplotlib chart
+
+3. <span style="color: red;">on_apply_filters(self, event)
+   - <span style="color: red;">Description: Filters foods based on nutritional criteria
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering filter application
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the food list display with filtered results
+
+4. <span style="color: red;">add_food(self, day, meal, food)
+   - <span style="color: red;">Description: Adds a food item to the meal plan
+   - <span style="color: red;">Input Parameters:
+     1. <span style="color: red;">day (string) - The day of the week
+     2. <span style="color: red;">meal (string) - The meal type (Breakfast, Lunch, Dinner, Snack)
+     3. <span style="color: red;">food (Dictionary) - The food item to add
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the meal plan
+
+5. <span style="color: red;">on_add_to_comparison(self, event)
+   - <span style="color: red;">Description: Adds selected food item to the comparison table
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering the addition
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the comparison table
+
+6. <span style="color: red;">on_generate_random_meal_plan(self, event)
+   - <span style="color: red;">Description: Generates a balanced weekly meal plan
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering meal plan generation
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the meal plan display
+
+7. <span style="color: red;">on_back_to_main_menu(self, event)
+   - <span style="color: red;">Description: Returns the user to the main menu from any screen
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering navigation
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Changes the current view to the main menu
+
+8. <span style="color: red;">toggle_view(self, event)
+   - <span style="color: red;">Description: Toggles between daily and weekly meal plan views
+   - <span style="color: red;">Input Parameters: event (wx.Event) - The event triggering the view change
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the meal plan display
+
+9. <span style="color: red;">update_nutrient_summary(self)
+   - <span style="color: red;">Description: Calculates and updates the nutrient summary for the current view
+   - <span style="color: red;">Input Parameters: None
+   - <span style="color: red;">Return Value: None
+   - <span style="color: red;">Side Effects: Updates the nutrient summary display
+
+10. <span style="color: red;">generate_balanced_meal(self)
+    - <span style="color: red;">Description: Generates a balanced meal based on nutritional criteria
+    - <span style="color: red;">Input Parameters: None
+    - <span style="color: red;">Return Value: List of dictionaries containing selected food items
+    - <span style="color: red;">Side Effects: None
 
 ### **3.2.2 Data Structures / Data Source**
 
