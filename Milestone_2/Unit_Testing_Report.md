@@ -123,10 +123,8 @@ def test_nutritional_database_initialization():
 | **Invalid Input**             | **Expected Output** |
 |-------------------------------|---------------------|
 | file_path = 'test_data.csv'   | len(food_items) > 0 |
-|                                 `...`               |
-
+              
 - **2) Code for the Test Function**
-```python
 def test_load_data():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
@@ -137,7 +135,7 @@ def test_load_data():
 | **Invalid Input**  | **Expected Output** |
 |--------------------|---------------------|
 |  query = 'apple'   | len(results) > 0    |
-|                      `...`               |
+
 
 - **3) Code for the Test Function**
 def test_search_food():
