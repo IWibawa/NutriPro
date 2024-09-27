@@ -103,6 +103,7 @@ def test_get_nutrient_value():
   - load_data(self, file_path)
   - search_food(self, query)
   - apply_filters(self, filters)
+
 - **Description**
 The NutritionalDatabase class manages a database of food items. It includes methods for initializing the database, loading data from a file, searching for food items, and applying filters to the food items.
 
@@ -117,7 +118,7 @@ The NutritionalDatabase class manages a database of food items. It includes meth
 def test_nutritional_database_initialization():
     db = NutritionalDatabase()
     assert db.food_items == []
-```
+
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the load_data method correctly loads food items from a file.
 | **Invalid Input**             | **Expected Output** |
