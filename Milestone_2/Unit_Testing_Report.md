@@ -130,7 +130,7 @@ def test_load_data():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
     assert len(db.food_items) > 0
-```
+
 - **3) Invalid Input and Expected Output**
 - Purpose: To verify that the search_food method correctly searches for food items by name.
 | **Invalid Input**  | **Expected Output** |
@@ -144,23 +144,23 @@ def test_search_food():
     db.load_data('test_data.csv')
     results = db.search_food('apple')
     assert len(results) > 0
-```
-- *4) Invalid Input and Expected Output**
+
+- **4) Invalid Input and Expected Output**
 - Purpose: To verify that the apply_filters method correctly filters food items based on nutritional values.
 | **Invalid Input**             | **Expected Output**                          |
 |-------------------------------|----------------------------------------------|
 |  filters = {'calories': 100}  | all(food.calories <= 100 for food in results)|
 |                                 `...`                                        |
 
-- **) Code for the Test Function**
-```python
+- **4) Code for the Test Function**
+
 def test_apply_filters():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
     filters = {'calories': 100}
     results = db.apply_filters(filters)
     assert all(food.calories <= 100 for food in results)
-```
+
 ### Test Case 3:
 - **Test Function/Module**
   - test_nutrition_chart_initialization()  
@@ -172,6 +172,7 @@ def test_apply_filters():
   - render(self)	 
 - **Description**
   - The NutritionChart class is designed to visualize nutritional data. It includes attributes such as chart_type and data. The __init__ method initializes these attributes, while the render method generates the appropriate chart based on the chart_type.
+    
 - **1) Valid Input and Expected Output**  
 - Purpose: To verify that the __init__ method correctly initializes the attributes of the NutritionChart class.
 | **Valid Input**                        | **Expected Output**                     |
@@ -186,7 +187,7 @@ def test_nutrition_chart_initialization():
     chart = NutritionChart('bar', data)
     assert chart.chart_type == 'bar'
     assert chart.data == data
-```
+
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the render method correctly generates a bar chart.
 | **Invalid Input**                      | **Expected Output**       |
@@ -196,12 +197,12 @@ def test_nutrition_chart_initialization():
 | `...`                                                              |
 
 - **2) Code for the Test Function**
-```python
+
 def test_render_bar_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('bar', data)
     chart.render()  # This should display a bar chart without errors
-```
+
 - **3) Invalid Input and Expected Output**
 - Purpose: To verify that the render method handles unsupported chart types correctly.
 | **Invalid Input**                       | **Expected Output**    |
@@ -215,22 +216,23 @@ def test_render_unsupported_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('unsupported', data)
     chart.render()  # This should print "Unsupported chart type"
-```
-- *4) Invalid Input and Expected Output**
+
+- **4) Invalid Input and Expected Output**
 - Purpose: To verify that the render method correctly generates a pie chart.
+  
 | **Invalid Input**                      | **Expected Output**                          |
 |----------------------------------------|----------------------------------------------|
 | chart_type = 'pie'                     | A pie chart is displayed without errors.     |
 | data = {'Calories': 95, 'Protein': 0.5}|                                              |
 |                                 `...`                                                 |
 
-- **) Code for the Test Function**
-```python
+- **4) Code for the Test Function**
+
 def test_render_pie_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('pie', data)
     chart.render()  # This should display a pie chart without errors
-```
+
 ### Test Case 4:
 - **Test Function/Module**
   - test_comparison_result_initialization() 
@@ -240,6 +242,7 @@ def test_render_pie_chart():
   - get_comparison_data(self, nutrient)	 
 - **Description**
   - The ComparisonResult class is designed to represent the result of a food comparison. It includes attributes such as food_items (a list of compared FoodItem objects) and comparison_data (nutritional data for comparison). The __init__ method initializes these attributes, while the get_comparison_data method retrieves the comparison data for a specified nutrient.
+
 - **1) Valid Input and Expected Output**  
 - The ComparisonResult class is designed to represent the result of a food comparison. It includes attributes such as food_items (a list of compared FoodItem objects) and comparison_data (nutritional data for comparison). The __init__ method initializes these attributes, while the get_comparison_data method retrieves the comparison data for a specified nutrient.
 | **Valid Input**                                                                | **Expected Output**                                                   |
@@ -270,7 +273,7 @@ def test_comparison_result_initialization():
 | `...`                                                                                             |
 
 - **2) Code for the Test Function**
-```python
+
 def test_get_comparison_data():
     apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
     banana = FoodItem("Banana", 105, 1.3, 27, 0.3, {"Vitamin C": 10.3}, {"Potassium": 422})
@@ -278,7 +281,7 @@ def test_get_comparison_data():
     assert comparison.get_comparison_data('calories') == {'Apple': 95, 'Banana': 105}
     assert comparison.get_comparison_data('protein') == {'Apple': 0.5, 'Banana': 1.3}
     assert comparison.get_comparison_data('nonexistent') == {}
-```
+
 
 
 ### Test Case 5:
@@ -294,6 +297,7 @@ def test_get_comparison_data():
   - get_weekly_overview(self) 
 - **Description**
   - The MealPlan class represents a weekly meal plan with daily breakdowns. It includes attributes such as weekly_plan (structured meal data) and daily_summaries (nutritional summaries). The __init__ method initializes these attributes, while the add_food_to_meal method adds food items to specific meals on specific days. The calculate_daily_summary method calculates the nutritional summary for a day, and the get_weekly_overview method provides a summary of the nutritional data for the entire week.
+
 - **1) Valid Input and Expected Output**  
 - Purpose: To verify that the __init__ method correctly initializes the attributes of the MealPlan class.
 | **Valid Input**  | **Expected Output**                                                     |
@@ -303,14 +307,14 @@ def test_get_comparison_data():
 |                                                                        `...`               |
 
 - **1) Code for the Test Function**
-```python
+
 def test_meal_plan_initialization():
     meal_plan = MealPlan()
     assert 'Monday' in meal_plan.weekly_plan
     assert 'breakfast' in meal_plan.weekly_plan['Monday']
     assert meal_plan.weekly_plan['Monday']['breakfast'] == []
     assert meal_plan.daily_summaries['Monday'] == {}
-```
+
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the add_food_to_meal method correctly adds food items to specific meals on specific days.
 | **Invalid Input**                                 | **Expected Output**   |
@@ -348,7 +352,7 @@ def test_calculate_daily_summary():
     assert summary['protein'] == 0.5
     assert summary['carbohydrates'] == 25
     assert summary['fats'] == 0.3
-```
+
 ```
 - **4) Invalid Input and Expected Output**
 - Purpose: To verify that the get_weekly_overview method correctly provides a summary of the nutritional data for the entire week.
