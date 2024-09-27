@@ -183,10 +183,38 @@ class DatasetListLogic(DatassetList):
         selected_row = self.food_list.GetGridCursorRow()
         if selected_row != -1:
             food = self.get_food_from_grid(selected_row)
-            meal = self.get_selected_meal()
-            day = "Monday"
-            self.meal_plan_manager.add_food(day, meal, food)
-            wx.MessageBox(f"Added {food['name']} to {meal} on {day}", "Food Added", wx.OK | wx.ICON_INFORMATION)
+            if food:
+                dialog = wx.Dialog(self, title="Add to Meal Plan")
+                dialog_sizer = wx.BoxSizer(wx.VERTICAL)
+
+                day_label = wx.StaticText(dialog, label="Select Day of the Week:")
+                dialog_sizer.Add(day_label, 0, wx.ALL, 5)
+                days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+                day_choice = wx.Choice(dialog, choices=days)
+                day_choice.SetSelection(0)
+                dialog_sizer.Add(day_choice, 0, wx.ALL | wx.EXPAND, 5)
+
+                button_sizer = wx.StdDialogButtonSizer()
+                ok_button = wx.Button(dialog, wx.ID_OK)
+                ok_button.SetDefault()
+                button_sizer.AddButton(ok_button)
+                cancel_button = wx.Button(dialog, wx.ID_CANCEL)
+                button_sizer.AddButton(cancel_button)
+                button_sizer.Realize()
+                dialog_sizer.Add(button_sizer, 0, wx.ALL | wx.EXPAND, 5)
+
+                dialog.SetSizer(dialog_sizer)
+                dialog.Fit()
+
+                if dialog.ShowModal() == wx.ID_OK:
+                    day = days[day_choice.GetSelection()]
+                    meal = self.get_selected_meal()
+                    self.meal_plan_manager.add_food(day, meal, food)
+                    wx.MessageBox(f"Added {food['name']} to {meal} on {day}", "Food Added", wx.OK | wx.ICON_INFORMATION)
+
+                dialog.Destroy()
+        else:
+            wx.MessageBox("Please select a food item from the list.", "No Selection", wx.OK | wx.ICON_INFORMATION)
 
     def get_selected_meal(self):
         if self.meal_plan_breakfast.GetValue():
