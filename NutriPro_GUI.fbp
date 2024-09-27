@@ -460,7 +460,7 @@
             <property name="minimum_size"></property>
             <property name="name">FoodSearchDialog</property>
             <property name="pos"></property>
-            <property name="size">511,401</property>
+            <property name="size">734,698</property>
             <property name="style">wxDEFAULT_DIALOG_STYLE</property>
             <property name="subclass"></property>
             <property name="title">Select Food</property>
@@ -2228,7 +2228,7 @@
             <property name="minimum_size"></property>
             <property name="name">DatassetList</property>
             <property name="pos"></property>
-            <property name="size">900,821</property>
+            <property name="size">900,746</property>
             <property name="style">wxDEFAULT_FRAME_STYLE</property>
             <property name="subclass"></property>
             <property name="title">Search and Food Comparison</property>
