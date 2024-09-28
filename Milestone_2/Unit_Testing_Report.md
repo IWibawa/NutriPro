@@ -220,6 +220,7 @@ def test_render_bar_chart():
 |                      `...`                                       |
 
 - **3) Code for the Test Function**
+- 
 def test_render_unsupported_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('unsupported', data)
@@ -235,11 +236,12 @@ def test_render_unsupported_chart():
 |                                 `...`                                                 |
 
 - **4) Code for the Test Function**
-
+```python
 def test_render_pie_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('pie', data)
     chart.render()  # This should display a pie chart without errors
+```
 
 ### Test Case 4:
 - **Test Function/Module**
@@ -318,14 +320,14 @@ def test_get_comparison_data():
 |                                                                        `...`               |
 
 - **1) Code for the Test Function**
-
+```python
 def test_meal_plan_initialization():
     meal_plan = MealPlan()
     assert 'Monday' in meal_plan.weekly_plan
     assert 'breakfast' in meal_plan.weekly_plan['Monday']
     assert meal_plan.weekly_plan['Monday']['breakfast'] == []
     assert meal_plan.daily_summaries['Monday'] == {}
-
+```
 - **2) Invalid Input and Expected Output**
   - Purpose: To verify that the add_food_to_meal method correctly adds food items to specific meals on specific days.
   
@@ -365,7 +367,6 @@ def test_calculate_daily_summary():
     assert summary['protein'] == 0.5
     assert summary['carbohydrates'] == 25
     assert summary['fats'] == 0.3
-
 ```
 - **4) Invalid Input and Expected Output**
   - Purpose: To verify that the get_weekly_overview method correctly provides a summary of the nutritional data for the entire week.
