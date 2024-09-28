@@ -49,7 +49,7 @@ the five required features.</span> There is no need to test the GUI components. 
   - The FoodItem class is designed to represent a single food item with all its nutritional information. It includes attributes such as name, calories, protein, carbohydrates, fats, vitamins, and minerals. The __init__ method initializes these attributes, while the get_nutrient_value method retrieves the value of a specified nutrient.
     
 - **1) Valid Input and Expected Output**
-- Purpose: To verify that the __init__ method correctly initializes the attributes of the FoodItem class.
+  - Purpose: To verify that the __init__ method correctly initializes the attributes of the FoodItem class.
 
 | **Valid Input**                 | **Expected Output**            |
 |---------------------------------|--------------------------------|
@@ -75,7 +75,7 @@ def test_food_item_initialization():
     assert apple.minerals == {"Potassium": 195}
 ```
 - **2) Invalid Input and Expected Output**
-- Purpose: To verify that the get_nutrient_value method correctly retrieves the value of a specified nutrient.
+  - Purpose: To verify that the get_nutrient_value method correctly retrieves the value of a specified nutrient.
   
 | **Invalid Input**             | **Expected Output**                      |
 |-------------------------------|------------------------------------------|
