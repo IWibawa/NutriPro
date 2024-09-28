@@ -110,6 +110,7 @@ The NutritionalDatabase class manages a database of food items. It includes meth
 
 - **1) Valid Input and Expected Output**  
 - Purpose: To verify that the __init__ method correctly initializes the NutritionalDatabase class.
+  
 | **Valid Input**   | **Expected Output** |
 |-------------------|---------------------|
 |  None             |food_items == []     |
@@ -122,6 +123,7 @@ def test_nutritional_database_initialization():
 
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the load_data method correctly loads food items from a file.
+  
 | **Invalid Input**             | **Expected Output** |
 |-------------------------------|---------------------|
 | file_path = 'test_data.csv'   | len(food_items) > 0 |
@@ -134,6 +136,7 @@ def test_load_data():
 
 - **3) Invalid Input and Expected Output**
 - Purpose: To verify that the search_food method correctly searches for food items by name.
+  
 | **Invalid Input**  | **Expected Output** |
 |--------------------|---------------------|
 |  query = 'apple'   | len(results) > 0    |
@@ -148,6 +151,7 @@ def test_search_food():
 
 - **4) Invalid Input and Expected Output**
 - Purpose: To verify that the apply_filters method correctly filters food items based on nutritional values.
+  
 | **Invalid Input**             | **Expected Output**                          |
 |-------------------------------|----------------------------------------------|
 |  filters = {'calories': 100}  | all(food.calories <= 100 for food in results)|
@@ -176,6 +180,7 @@ def test_apply_filters():
     
 - **1) Valid Input and Expected Output**  
 - Purpose: To verify that the __init__ method correctly initializes the attributes of the NutritionChart class.
+  
 | **Valid Input**                        | **Expected Output**                     |
 |----------------------------------------|-----------------------------------------|
 | chart_type = 'bar'                     | chart_type == 'bar'                     |
@@ -191,6 +196,7 @@ def test_nutrition_chart_initialization():
 
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the render method correctly generates a bar chart.
+  
 | **Invalid Input**                      | **Expected Output**       |
 |----------------------------------------|---------------------------|
 | chart_type = 'bar'                     | A bar chart is displayed  |
@@ -206,6 +212,7 @@ def test_render_bar_chart():
 
 - **3) Invalid Input and Expected Output**
 - Purpose: To verify that the render method handles unsupported chart types correctly.
+  
 | **Invalid Input**                       | **Expected Output**    |
 |-----------------------------------------|------------------------|
 | chart_type = 'unsupported'              | A message “Unsupported |
@@ -246,6 +253,7 @@ def test_render_pie_chart():
 
 - **1) Valid Input and Expected Output**  
 - The ComparisonResult class is designed to represent the result of a food comparison. It includes attributes such as food_items (a list of compared FoodItem objects) and comparison_data (nutritional data for comparison). The __init__ method initializes these attributes, while the get_comparison_data method retrieves the comparison data for a specified nutrient.
+  
 | **Valid Input**                                                                | **Expected Output**                                                   |
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | food_items = [FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4},          |food_items == [FoodItem("Apple", 95, 0.5, 25, 0.3,                     |
@@ -266,6 +274,7 @@ def test_comparison_result_initialization():
 ```
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the get_comparison_data method correctly retrieves the comparison data for a specified nutrient.
+  
 | **Invalid Input**             | **Expected Output**                                               |
 |-------------------------------|-------------------------------------------------------------------|
 | nutrient = 'calories'         | get_comparison_data('calories') == {'Apple': 95, 'Banana': 105}`  |
@@ -301,6 +310,7 @@ def test_get_comparison_data():
 
 - **1) Valid Input and Expected Output**  
 - Purpose: To verify that the __init__ method correctly initializes the attributes of the MealPlan class.
+  
 | **Valid Input**  | **Expected Output**                                                     |
 |------------------|-------------------------------------------------------------------------|
 | None             | weekly_plan is initialized with empty lists for each meal on each day.  |
@@ -318,6 +328,7 @@ def test_meal_plan_initialization():
 
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the add_food_to_meal method correctly adds food items to specific meals on specific days.
+  
 | **Invalid Input**                                 | **Expected Output**   |
 |---------------------------------------------------|-----------------------|
 | day = 'Monday'                                    |The food item is added |
@@ -335,6 +346,7 @@ def test_add_food_to_meal():
 ```
 - **3) Invalid Input and Expected Output**
 - Purpose: To verify that the calculate_daily_summary method correctly calculates the nutritional summary for a day.
+  
 | **Invalid Input**                                 | **Expected Output**   |
 |---------------------------------------------------|-----------------------|
 | day = 'Monday'                                    |The daily summary for  |
@@ -357,6 +369,7 @@ def test_calculate_daily_summary():
 ```
 - **4) Invalid Input and Expected Output**
 - Purpose: To verify that the get_weekly_overview method correctly provides a summary of the nutritional data for the entire week.
+  
 | **Invalid Input**                                 | **Expected Output**         |
 |---------------------------------------------------|-----------------------------|
 | food_item = FoodItem("Apple", 95, 0.5, 25, 0.3,   |The weekly overview correctly|
