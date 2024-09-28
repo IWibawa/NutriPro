@@ -161,13 +161,14 @@ def test_search_food():
 |                                 `...`                                        |
 
 - **4) Code for the Test Function**
-
+```python 
 def test_apply_filters():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
     filters = {'calories': 100}
     results = db.apply_filters(filters)
     assert all(food.calories <= 100 for food in results)
+```
 
 ### Test Case 3:
 - **Test Function/Module**
@@ -191,12 +192,13 @@ def test_apply_filters():
 |                                                              `...`               |
 
 - **1) Code for the Test Function**
+```python 
 def test_nutrition_chart_initialization():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('bar', data)
     assert chart.chart_type == 'bar'
     assert chart.data == data
-
+```
 - **2) Invalid Input and Expected Output**
   - Purpose: To verify that the render method correctly generates a bar chart.
   
@@ -207,11 +209,12 @@ def test_nutrition_chart_initialization():
 | `...`                                                              |
 
 - **2) Code for the Test Function**
-
+```python 
 def test_render_bar_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('bar', data)
     chart.render()  # This should display a bar chart without errors
+```
 
 - **3) Invalid Input and Expected Output**
   - Purpose: To verify that the render method handles unsupported chart types correctly.
@@ -223,11 +226,13 @@ def test_render_bar_chart():
 |                      `...`                                       |
 
 - **3) Code for the Test Function**
-- 
+
+```python  
 def test_render_unsupported_chart():
     data = {'Calories': 95, 'Protein': 0.5}
     chart = NutritionChart('unsupported', data)
     chart.render()  # This should print "Unsupported chart type"
+```
 
 - **4) Invalid Input and Expected Output**
   - Purpose: To verify that the render method correctly generates a pie chart.
