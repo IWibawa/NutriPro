@@ -283,7 +283,7 @@ def test_comparison_result_initialization():
 | `...`                                                                                             |
 
 - **2) Code for the Test Function**
-
+```python
 def test_get_comparison_data():
     apple = FoodItem("Apple", 95, 0.5, 25, 0.3, {"Vitamin C": 8.4}, {"Potassium": 195})
     banana = FoodItem("Banana", 105, 1.3, 27, 0.3, {"Vitamin C": 10.3}, {"Potassium": 422})
@@ -291,7 +291,7 @@ def test_get_comparison_data():
     assert comparison.get_comparison_data('calories') == {'Apple': 95, 'Banana': 105}
     assert comparison.get_comparison_data('protein') == {'Apple': 0.5, 'Banana': 1.3}
     assert comparison.get_comparison_data('nonexistent') == {}
-
+```
 
 
 ### Test Case 5:
