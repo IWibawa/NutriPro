@@ -12,23 +12,23 @@ the five required features.</span> There is no need to test the GUI components. 
 ## 1. **Test Summary**
 | **Tested Functions**                                                                   | **Test Functions**                               |
 |----------------------------------------------------------------------------------------|--------------------------------------------------|
-| 1. FoodItem Class                                                                      |                                                  |
+| **1. FoodItem Class**                                                                     |                                                  |
 | __init__(self, name, calories, protein, carbohydrates, fats, vitamins, minerals)       | test_food_item_initialization()                  |
 | get_nutrient_value(self, nutrient)                                                     | test_get_nutrient_value()                        |
-| 2. NutritionalDatabase Class                                                           |                                                  |
+| **2. NutritionalDatabase Class**                                                          |                                                  |
 | __init__(self)                                                                         | test_nutritional_database_initialization()       |
 | load_data(self, file_path)                                                             | test_load_data()                                 |
 | search_food(self, query)                                                               | test_search_food()                               |
 | apply_filters(self, filters)                                                           | test_apply_filters()                             |
-| 3. NutritionChart Class                                                                |                                                  |
+| **3. NutritionChart Class**                                                                |                                                  |
 | __init__(self, chart_type, data)	                                                     | test_nutrition_chart_initialization()            |
 | render(self)	                                                                         | test_render_bar_chart()                          |  
 |                                                                                        | test_render_pie_chart()                          |
 |                                                                                        | test_render_unsupported_chart()                  |
-| 4. ComparisonResult Class                                                              |                                                  |
+| **4. ComparisonResult Class**                                                              |                                                  |
 | __init__(self, food_items)	                                                           | test_comparison_result_initialization()          |
 | get_comparison_data(self, nutrient)	                                                   | test_get_comparison_data()                       |
-| 5. MealPlan Class                                                                      |                                                  |
+| **5. MealPlan Class**                                                                      |                                                  |
 | __init__(self)	                                                                       | test_meal_plan_initialization()                  |
 | add_food_to_meal(self, day, meal, food_item)                                           | test_add_food_to_meal()                          |
 | calculate_daily_summary(self, day)	                                                   | test_calculate_daily_summary()                   |
