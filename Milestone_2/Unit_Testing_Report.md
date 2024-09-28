@@ -117,10 +117,11 @@ def test_get_nutrient_value():
 |  `...`                                  |
 
 - **1) Code for the Test Function**
-def test_nutritional_database_initialization():
+```python  
+  def test_nutritional_database_initialization():
     db = NutritionalDatabase()
     assert db.food_items == []
-
+```
 - **2) Invalid Input and Expected Output**
   - Purpose: To verify that the load_data method correctly loads food items from a file.
   
@@ -129,11 +130,12 @@ def test_nutritional_database_initialization():
 | file_path = 'test_data.csv'   | len(food_items) > 0 |
               
 - **2) Code for the Test Function**
+```python 
 def test_load_data():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
     assert len(db.food_items) > 0
-
+```
 - **3) Invalid Input and Expected Output**
   - Purpose: To verify that the search_food method correctly searches for food items by name.
   
@@ -143,12 +145,13 @@ def test_load_data():
 
 
 - **3) Code for the Test Function**
+```python 
 def test_search_food():
     db = NutritionalDatabase()
     db.load_data('test_data.csv')
     results = db.search_food('apple')
     assert len(results) > 0
-
+```
 - **4) Invalid Input and Expected Output**
   - Purpose: To verify that the apply_filters method correctly filters food items based on nutritional values.
   
