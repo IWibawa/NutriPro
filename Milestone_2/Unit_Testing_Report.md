@@ -76,6 +76,7 @@ def test_food_item_initialization():
 ```
 - **2) Invalid Input and Expected Output**
 - Purpose: To verify that the get_nutrient_value method correctly retrieves the value of a specified nutrient.
+  
 | **Invalid Input**             | **Expected Output**                      |
 |-------------------------------|------------------------------------------|
 | nutrient = "calories"         | get_nutrient_value("calories") == 95     |
