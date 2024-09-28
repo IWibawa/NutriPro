@@ -122,9 +122,7 @@ Include screenshots for each step demonstrating the use of this feature.
 
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.    
-![1](./visual_design.png)
-
-![2](./visual_design.png)
+![1](https://github.com/IWibawa/NutriPro/blob/main/Diagrams/visual_design%20-%20search_and_comparison_screen.png?raw=true)
 
 
 ---
