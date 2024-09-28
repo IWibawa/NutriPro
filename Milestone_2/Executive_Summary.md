@@ -32,7 +32,7 @@ You should use your software to prepare an executive summary as outlined below f
   
 ### Screenshots
 Include screenshots for each step demonstrating the use of this feature.  
-![1](./visual_design - main_screen.png)
+![1](https://github.com/IWibawa/NutriPro/blob/main/Diagrams/visual_design%20-%20main_screen.png?raw=true)
 
 
 ---
