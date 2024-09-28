@@ -3,14 +3,6 @@
 ## Nutritional Food Database Analysis and Visualization Tool
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ANY UPDATES PLACE HERE. 
-Check the Section in Software Document (Detailed Design - Section3) for you psudo code section to complete and create. 
-
-Ogi - 2, 3, 5 
-Kate - 1, 4, 9
-Naveen - 6, 7, 8
-
-
 
 ### Project Overview
 
