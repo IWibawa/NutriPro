@@ -34,7 +34,7 @@ the five required features.</span> There is no need to test the GUI components. 
 | calculate_daily_summary(self, day)	                                                   | test_calculate_daily_summary()                   |
 | get_weekly_overview(self)                                                              | test_get_weekly_overview()                       |
 |
----
+
 
 ## 2. **Test Case Details**
 
