@@ -64,12 +64,12 @@
 
 
 <span style="color: red;">- Accomplishments: Milestone_2
-<span style="color: red;">1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
-<span style="color: red;">2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
-<span style="color: red;">3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
-<span style="color: red;">4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
-<span style="color: red;">5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
-<span style="color: red;">6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
+<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
+<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
+<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
+<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
+<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
+<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
 
 
 
@@ -78,19 +78,19 @@
   - Accomplishments: Gant Chart
 
 1. **Clear Project Timeline:** Establish Start and End Dates: Define the overall project duration. Set Milestones: Identify key dates for major deliverables or phases.
-1. **Task Breakdown: Identify Tasks**: List all tasks required to complete the project. Define Task Dependencies: Determine which tasks depend on the completion of others.
-1. **Resource Allocation:** Assign Responsibilities: Allocate tasks to team members. Balance Workload: Ensure that no team member is overloaded with tasks.
-1. **Progress Tracking:** Set Deadlines: Assign specific deadlines for each task. Monitor Progress: Track the completion status of tasks in real-time.
-1. **Visual Representation:** Create Visual Timeline: Use bars to represent the duration of each task. Highlight Critical Path: Identify the sequence of tasks that directly impact the project timeline.
-1. **Communication Tool:** Share with Stakeholders: Provide a clear visual representation of the project timeline to all stakeholders. Update Regularly: Keep the Gantt chart updated to reflect any changes in the project plan.
+2. **Task Breakdown: Identify Tasks**: List all tasks required to complete the project. Define Task Dependencies: Determine which tasks depend on the completion of others.
+3. **Resource Allocation:** Assign Responsibilities: Allocate tasks to team members. Balance Workload: Ensure that no team member is overloaded with tasks.
+4. **Progress Tracking:** Set Deadlines: Assign specific deadlines for each task. Monitor Progress: Track the completion status of tasks in real-time.
+5. **Visual Representation:** Create Visual Timeline: Use bars to represent the duration of each task. Highlight Critical Path: Identify the sequence of tasks that directly impact the project timeline.
+6. **Communication Tool:** Share with Stakeholders: Provide a clear visual representation of the project timeline to all stakeholders. Update Regularly: Keep the Gantt chart updated to reflect any changes in the project plan.
 
 <span style="color: red;">- Accomplishments: Milestone_2
-<span style="color: red;">1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
-<span style="color: red;">2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
-<span style="color: red;">3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
-<span style="color: red;">4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
-<span style="color: red;">5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
-<span style="color: red;">6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
+<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
+<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
+<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
+<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
+<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
+<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
 
  
 <div style="page-break-after: always;"></div>
