@@ -29,6 +29,15 @@
 1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
 1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
+- ![#f03c15]- Accomplishments: Milestone_2
+1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.
+2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.
+3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
+4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.
+5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.
+6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone. `#f03c15`
+
+
 - s5374957, I Wibawa
 
   - Accomplishments: Software Development
@@ -50,6 +59,15 @@
 15. **Documentation**: Maintain and update the Software Development Document throughout the development process, ensuring it remains a comprehensive and accurate representation of the system.
 16. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
+- Accomplishments: Milestone_2
+1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
+2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
+3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.
+4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
+5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
+6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
+
+
 - s5414931, Naveen Arakkal Nelson
 
   - Accomplishments: Gant Chart
@@ -61,8 +79,15 @@
 1. **Visual Representation:** Create Visual Timeline: Use bars to represent the duration of each task. Highlight Critical Path: Identify the sequence of tasks that directly impact the project timeline.
 1. **Communication Tool:** Share with Stakeholders: Provide a clear visual representation of the project timeline to all stakeholders. Update Regularly: Keep the Gantt chart updated to reflect any changes in the project plan.
 
+- Accomplishments: Milestone_2
+1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
+2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
+3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.
+4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
+5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
+6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
 
-  
+ 
 <div style="page-break-after: always;"></div>
 
 
