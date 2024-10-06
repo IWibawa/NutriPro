@@ -29,7 +29,7 @@
 1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
 1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-- <span style="color:red">Accomplishments: Milestone_2</span>
+- <span style="color:red">Accomplishments: Milestone_2 </span>
 1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.
 2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.
 3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
