@@ -132,13 +132,13 @@ Nutirital Database Programs Objectives
          Low: Less than 33% of the highest value.
          Mid: Between 33% and 66% of the highest value.
          High: Greater than 66% of the highest value.
-5. Standard Procedures are in line with international guildlines
-6. Integrated in an international network
+5. Standard Procedures are in line with international guildlines  <---- Taken Out Not Accomplished
+6. Integrated in an international network <---- Taken Out Not Accomplished
 7. Document all data
-8. Systematically be able to explain your data and data choices.
-9. Laugauge (English, Chinese, Japanese)
-10. Food Identification (classification/description)
-11. Food Numbering (indicating food groups and swquential numbering within)
+8. Systematically be able to explain your data and data choices. 
+9. Laugauge (English, Chinese, Japanese) <---- Taken Out Not Accomplished
+10. Food Identification (classification/description) <---- Taken Out Not Accomplished
+11. Food Numbering (indicating food groups and swquential numbering within) <---- Taken Out Not Accomplished
 
 ### 1.2 Project Stakeholders
 
