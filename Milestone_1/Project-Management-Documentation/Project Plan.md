@@ -29,13 +29,13 @@
 1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
 1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-- ![#f03c15]- Accomplishments: Milestone_2
+- - Accomplishments: Milestone_2
 1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.
 2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.
 3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
 4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.
 5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.
-6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone. `#f03c15`
+6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone. -
 
 
 - s5374957, I Wibawa
