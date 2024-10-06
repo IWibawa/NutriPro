@@ -18,24 +18,26 @@
   - Accomplishments: Project Plan
 
 1. **Defining Project Objectives**: Clearly outline the goals of the nutritional database. This might include providing accurate nutritional information, supporting dietary planning, or integrating with other health apps.
-1. **Scope Definition**: Establish the boundaries of the project. Determine what types of nutritional data will be included (e.g., macronutrients, micronutrients, allergens), and what features the database will support (e.g., search functionality, user input).
-1. **Data Collection and Validation**: Identify reliable sources for nutritional data and establish methods for validating this information. This ensures the database contains accurate and trustworthy data.
-1. **Task Breakdown**: Create a Work Breakdown Structure (WBS) that details all tasks required to develop the database. This might include data collection, database design, user interface development, and testing.
-1. **Resource Allocation**: Assign the necessary resources, such as data analysts, database developers, and nutrition experts. Ensure that the project has the required budget, tools, and technology.
-1. **Timeline Creation**: Develop a detailed schedule that outlines when each task will be completed. Set milestones for key phases such as data collection, database development, and user testing.
-1. **Risk Management**: Identify potential risks, such as data inaccuracies or technical challenges, and develop strategies to mitigate these risks. This helps to anticipate and address issues proactively.
-1. **Communication Plan**: Establish how information will be shared among team members and stakeholders. Set up regular meetings, progress reports, and communication channels to ensure everyone is informed and aligned.
-1. **Quality Assurance**: Define the quality standards for the nutritional data and the database functionality. Develop testing protocols to ensure the database meets these standards before launch.
-1. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
-1. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
+2. **Scope Definition**: Establish the boundaries of the project. Determine what types of nutritional data will be included (e.g., macronutrients, micronutrients, allergens), and what features the database will support (e.g., search functionality, user input).
+3. **Data Collection and Validation**: Identify reliable sources for nutritional data and establish methods for validating this information. This ensures the database contains accurate and trustworthy data.
+4. **Task Breakdown**: Create a Work Breakdown Structure (WBS) that details all tasks required to develop the database. This might include data collection, database design, user interface development, and testing.
+5. **Resource Allocation**: Assign the necessary resources, such as data analysts, database developers, and nutrition experts. Ensure that the project has the required budget, tools, and technology.
+6. **Timeline Creation**: Develop a detailed schedule that outlines when each task will be completed. Set milestones for key phases such as data collection, database development, and user testing.
+7. **Risk Management**: Identify potential risks, such as data inaccuracies or technical challenges, and develop strategies to mitigate these risks. This helps to anticipate and address issues proactively.
+8. **Communication Plan**: Establish how information will be shared among team members and stakeholders. Set up regular meetings, progress reports, and communication channels to ensure everyone is informed and aligned.
+9. **Quality Assurance**: Define the quality standards for the nutritional data and the database functionality. Develop testing protocols to ensure the database meets these standards before launch.
+10. **Stakeholder Engagement**: Identify all stakeholders, including end-users, nutrition experts, and regulatory bodies. Understand their needs and expectations to ensure the database meets their requirements.
+11. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-<span style="color: red;">Accomplishments: Milestone_2 </span>
-<span style="color: red;">1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.</span>
-<span style="color: red;">2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.</span>
-<span style="color: red;">3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.</span>
-<span style="color: red;">4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.</span>
-<span style="color: red;">5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.</span>
-<span style="color: red;">6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone. </span>
+🔴 **Accomplishments: Milestone_2**
+1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.
+2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.
+3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
+4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.
+5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.
+6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone.
+
+
 
 
 - s5374957, I Wibawa
@@ -59,13 +61,15 @@
 15. **Documentation**: Maintain and update the Software Development Document throughout the development process, ensuring it remains a comprehensive and accurate representation of the system.
 16. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
-<span style="color: red;">- Accomplishments: Milestone_2 </span>
+```html
+<span style="color: red;">- Accomplishments: Milestone_2</span>
 <span style="color: red;">1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.</span>
 <span style="color: red;">2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.</span>
 <span style="color: red;">3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
 <span style="color: red;">4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.</span>
 <span style="color: red;">5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.</span>
 <span style="color: red;">6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.</span>
+```
 
 
 - s5414931, Naveen Arakkal Nelson
@@ -79,6 +83,7 @@
 1. **Visual Representation:** Create Visual Timeline: Use bars to represent the duration of each task. Highlight Critical Path: Identify the sequence of tasks that directly impact the project timeline.
 1. **Communication Tool:** Share with Stakeholders: Provide a clear visual representation of the project timeline to all stakeholders. Update Regularly: Keep the Gantt chart updated to reflect any changes in the project plan.
 
+```html
 <span style="color: red;">- Accomplishments: Milestone_2</span>
 <span style="color: red;">1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.</span>
 <span style="color: red;">2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.</span>
@@ -86,6 +91,8 @@
 <span style="color: red;">4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.</span>
 <span style="color: red;">5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.</span>
 <span style="color: red;">6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.</span>
+```
+
 
  
 <div style="page-break-after: always;"></div>
