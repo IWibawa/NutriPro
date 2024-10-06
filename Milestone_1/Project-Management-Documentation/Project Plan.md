@@ -35,7 +35,7 @@
 3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
 4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.
 5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.
-6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone. </span>
+6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone text</span>.
 
 
 - s5374957, I Wibawa
