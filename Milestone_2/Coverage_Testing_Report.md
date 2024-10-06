@@ -81,7 +81,7 @@ pytest --cov=all_functions --cov-report=term
 ```
 Note: In the command above, the file/module `all_functions` does not include the .py extension. all_functions.py should contain all the tested functions related to the five required features.
 
-![statement_coverage](https://github.com/IWibawa/NutriPro/edit/main/Milestone_2/Coverage_Testing_Report.md)">
+![statement_coverage]([https://github.com/IWibawa/NutriPro/edit/main/Milestone_2/Coverage_Testing_Report.md](https://github.com/IWibawa/NutriPro/edit/main/Milestone_2/Coverage_Testing_Report.md))
 
 ## 3. **Branch Coverage Test**
 
