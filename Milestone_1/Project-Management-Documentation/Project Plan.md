@@ -30,12 +30,12 @@
 11. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
 <span style="color: red;">Accomplishments: Milestone_2
-<span style="color: red;"> 1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.
-<span style="color: red;"> 2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.
-<span style="color: red;" >3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.
-<span style="color: red;"> 4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.
-<span style="color: red;"> 5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.
-<span style="color: red;"> 6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone.
+<span style="color: red;"> 1. **Documented Unit Testing Process**: I meticulously recorded each test case, ensuring they were clearly defined and executed accurately.<-- this is new
+<span style="color: red;"> 2. **Provided Exclusive Summary**: I highlighted key findings, successes, and areas needing improvement in a detailed summary.<-- this is new
+<span style="color: red;" >3. **Compiled Comprehensive Testing Reports**: I covered all aspects of the testing phase, offering valuable insights and actionable recommendations.<-- this is new
+<span style="color: red;"> 4. **Maintained High Standards**: My thorough documentation and detailed reports were crucial in upholding the quality and reliability of the software.<-- this is new
+<span style="color: red;"> 5. **Facilitated Effective Communication**: I ensured clear and effective communication within the development team through my detailed reports.<-- this is new
+<span style="color: red;"> 6. **Handled All Communication and Documentation**: Due to technical difficulties beyond my control, I was delegated to manage all communication and documentation for this milestone.<-- this is new
 
 
 
@@ -63,13 +63,13 @@
 16. **Approval and Sign-off**: Obtain formal approval from stakeholders on the project plan. This ensures that everyone agrees with the plan and is committed to its success.
 
 
-<span style="color: red;">- Accomplishments: Milestone_2
-<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
-<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
-<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
-<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
-<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
-<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
+<span style="color: red;">- Accomplishments: Milestone_2<-- this is new
+<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.<-- this is new
+<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.<-- this is new
+<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.<-- this is new
+<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.<-- this is new
+<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.<-- this is new
+<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.<-- this is new
 
 
 
@@ -84,13 +84,13 @@
 5. **Visual Representation:** Create Visual Timeline: Use bars to represent the duration of each task. Highlight Critical Path: Identify the sequence of tasks that directly impact the project timeline.
 6. **Communication Tool:** Share with Stakeholders: Provide a clear visual representation of the project timeline to all stakeholders. Update Regularly: Keep the Gantt chart updated to reflect any changes in the project plan.
 
-<span style="color: red;">- Accomplishments: Milestone_2
-<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.
-<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.
-<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.</span>
-<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.
-<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.
-<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.
+<span style="color: red;">- Accomplishments: Milestone_2<-- this is new
+<span style="color: red;"> 1. **Conducted Python Unit Testing**: I meticulously tested each function and module to ensure they performed correctly and reliably.<-- this is new
+<span style="color: red;"> 2. **Performed Exclusive Testing**: I focused on specific components, identifying hidden issues and edge cases that might not be apparent in broader tests.<-- this is new
+<span style="color: red;"> 3. **Carried Out Comprehensive Cover Testing**: I ensured that every line of code was executed and validated, leaving no part of the codebase untested.<-- this is new
+<span style="color: red;"> 4. **Documented the Testing Process**: I recorded each test case, its execution, and the results, providing a clear and detailed account of the testing activities.<-- this is new
+<span style="color: red;"> 5. **Compiled Testing Reports**: I created comprehensive reports that summarized the testing phase, highlighted key findings, and offered actionable recommendations for improvement.<-- this is new
+<span style="color: red;"> 6. **Maintained High Standards**: Through thorough testing and detailed documentation, I contributed to maintaining the high quality and robustness of the software.<-- this is new
 
  
 <div style="page-break-after: always;"></div>
